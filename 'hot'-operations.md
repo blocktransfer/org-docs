@@ -20,7 +20,6 @@ Pending much owrk around the support portal and trema config:
                  * `{{closingDate = day--}}`/`CODE`-`START_LEDGER`-`END_LEDGER`-`NumUnrestricted`-`NumRestricted`-`NumContract`
         * get the numbers at the start of the function (call)
 
-Let me know if you'd like this structured as code or integrated into a script.
 
 
     * implement reading back from S3
