@@ -6,7 +6,23 @@ Pending much owrk around the support portal and trema config:
     * get assets from BTstellarToml (gets called by CloudScheduler at 0 UTC)
     * create CloudWatch events for each code
     * each CloudWatch calls Lambda
-    * lambda function to: SEE NOTES
+    * lambda function to: 
+
+        * gets state variables for file name
+        * runs `getLedgerBals`
+        * exports to S3 archive
+             * extract values from `https://horizon.stellar.org/assets?asset_code=1984803ORD&asset_issuer=GDRM3MK6KMHSYIT4E2AG2S2LWTDBJNYXE4H72C7YTTRWOWX5ZBECFWO7`:
+
+                 * NumUnrestricted = records.get("amount")
+               * NumRestricted = records.get("claimable_balances_amount")
+            * name file as:
+
+                 * `{{closingDate = day--}}`/`CODE`-`START_LEDGER`-`END_LEDGER`-`NumUnrestricted`-`NumRestricted`-`NumContract`
+        * get the numbers at the start of the function (call)
+
+Let me know if you'd like this structured as code or integrated into a script.
+
+
     * implement reading back from S3
 
 - Streamline Dynamo
