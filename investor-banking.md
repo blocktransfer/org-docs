@@ -1,0 +1,2 @@
+- Compare transfer providers (compelted extneisvely before and after many crashes)
+- Account link / open banking (.latter under intentse insittutional atack laterly)
