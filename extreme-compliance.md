@@ -26,3 +26,9 @@
     * Figure out if children of insiders matter
     * Which employees? Only E\&O?
     * JOBS Act Title V also excluded from the count securities held by persons who received the securities pursuant to an employee compensation plan rule 503
+
+
+* Revamp Privacy Policy to include user data retention and deletion policies (see ad12)
+
+
+
