@@ -30,5 +30,11 @@
 
 * Revamp Privacy Policy to include user data retention and deletion policies (see ad12)
 
+* Rebuking Defense Against DTC Transfer Monopoly
+    * [Rules](https://www.sec.gov/rules-regulations/self-regulatory-organization-rulemaking/sr-dtc-2006-16)
+    * [Sentiment](https://www.sec.gov/comments/s7-05-22/s70522-20120580-272764.pdf) (p.6  is TAD)
+    * [Appeals](https://www.sec.gov/comments/s7-05-22/s70522.htm)
 
-
+* Plan Custodianship as Bank TA
+    * exemption from broker-dealer registration afforded to bank transfer agents in connection with their administration of various types of plans
+        * https://www.govinfo.gov/content/pkg/FR-2001-05-18/pdf/01-12388.pdf
