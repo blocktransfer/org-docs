@@ -1,4 +1,4 @@
-* API (compelted)
+* API (completed)
 
 * Insider Documents
     * user agreements
@@ -19,7 +19,7 @@
     * determine how to format PDF as needed
     * email to issuer
 
-- COrporate  Reporting
+- Corporate Reporting
 
     - One investor record - more info
 

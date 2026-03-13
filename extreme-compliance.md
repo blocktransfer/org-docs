@@ -9,7 +9,7 @@
     * Persona session verification
     * Detect transfers that need additional verification in the authorization server
 
-- (^ Which presumes elementariyl) Authorpizaiton  Server
+- (^ Which presumes elementarily) Authorization Server
 
     * Implement trustline on/off logic for affiliates (requires use of CBs)
 

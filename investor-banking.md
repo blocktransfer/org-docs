@@ -1,2 +1,2 @@
-- Compare transfer providers (compelted extneisvely before and after many crashes)
-- Account link / open banking (.latter under intentse insittutional atack laterly)
+- Compare transfer providers (completed extensively before and after many crashes)
+- Account link / open banking (latter under intense institutional attack lately)
