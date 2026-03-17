@@ -1,7 +1,7 @@
-Pending much owrk around the support portal and trema config:
+Pending much work around the support portal and Trema config:
 
 * AWS Signing and Submission
-* Daily holder backups (see CRONs to be migrated onto GitHub wit hte IAM permissions)
+* Daily holder backups (see CRONs to be migrated onto GitHub with the IAM permissions)
 
     * get assets from BTstellarToml (gets called by CloudScheduler at 0 UTC)
     * create CloudWatch events for each code
@@ -43,4 +43,4 @@ Pending much owrk around the support portal and trema config:
 
     * Configure Secrets Manager medium signer for the distributor account
     * Decide whether or not to implement key rotation
-    * See how Franklin Templeton did it  (but here we know thry custody it)
+    * See how Franklin Templeton did it (but here we know they custody it)

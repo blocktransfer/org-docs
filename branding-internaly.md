@@ -1,6 +1,6 @@
-To  the extent this would be form jsut us as  a singel agent: 
+To the extent this would be from just us as a single agent:
 
-- separating investor/issuer whitepapers (competed)
+- separating investor/issuer whitepapers (completed)
 
     * update whitepaper page on website to be tailored for executives
     * simplify whitepaper page to focus on core mission
@@ -12,12 +12,12 @@ To  the extent this would be form jsut us as  a singel agent:
     * Click "Learn" do something
 
 
-- Client Meeting Email Foot Link (partially  compelted  but not open-source since  in email client)
+- Client Meeting Email Foot Link (partially completed but not open-source since in email client)
 
     * make an HTML page with a single input field
     * connect input field/submit button to AWS function
     * lambda checks current CIKs against WellKnown Live assets
-    * lambda – if valid, get the current list of insiders from issuers.info
+    * lambda - if valid, get the current list of insiders from issuers.info
     * style input page
     * brand input page
     * make drop-down list show using result from lambda

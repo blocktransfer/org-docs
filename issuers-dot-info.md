@@ -1,3 +1,3 @@
 - Make root API return all CIKs
 
-Adn then  we  can epxand this  sdisclosure o latform to  all TAs
+And then we can expand this disclosure platform to all TAs.

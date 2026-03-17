@@ -4,7 +4,7 @@
     * Get welcome letter ready to print
     * Design personal goal check
     * Determine any other items you want to include for investors in package
-    * Get N2N ready to mail  (needs feeback, but appreciated  so  galt)
+    * Get N2N ready to mail (needs feedback, but appreciated so far)
     * Get envelopes to mail materials in
     * Get welcome letter / check automation done
     * Set up way to print check and letter together efficiently
