@@ -1,3 +1,10 @@
+---
+title: Internal Branding
+description: Branding and client meeting workflow notes.
+---
+
+# Internal Branding
+
 To the extent this would be from just us as a single agent:
 
 - separating investor/issuer whitepapers (completed)
