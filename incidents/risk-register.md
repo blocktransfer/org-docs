@@ -24,6 +24,21 @@ Impact:
 
 Risk score equals likelihood multiplied by impact.
 
+## Risk Workflow
+
+```mermaid
+flowchart TD
+    identify["Identify risk"]
+    score["Score likelihood and impact"]
+    assign["Assign owner and mitigation"]
+    review["Review quarterly or after material change"]
+    close["Mitigate, accept, or close"]
+
+    identify --> score --> assign --> review
+    review -->|Risk remains open| assign
+    review -->|Risk addressed| close
+```
+
 ## Register
 
 | ID | Risk | Category | Owner | Likelihood | Impact | Score | Mitigation | Status | Review Date |
