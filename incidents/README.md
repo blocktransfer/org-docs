@@ -1,3 +1,3 @@
 # Regulation S-P
 
-- Disposal requirements
+- [Disposal Responsibility Map](disposal-responsibility-map.md)
