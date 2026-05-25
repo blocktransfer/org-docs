@@ -25,7 +25,7 @@
   - INturino detection
   - ACtivity rensponses
   - Ressponse & recovery
-
+- Decentralisved Quirks
 
 other persons responsible for incident response activities.
 ^ Resposible is pretty brad nad could cccover DUNA particpaitno
