@@ -21,22 +21,13 @@
   - What's outsourced (info daigrams##)
   - Public collaborani platofgrms
   - PRovider Secrets acceess
-
 - Incident response PRgima
-  - 
+  - INturino detection
+  - ACtivity rensponses
+  - Ressponse & recovery
 
 
 
-
-
-
-- Incident Response Specific Requests
-  - Incident Response Plan
-    - Policies and Procedures that Document 
-    - Registrant Program to 
-    - 
-    - 
-    - Detect, Respond to, and Recover from Unauthorized Access to or Use of Customer Information, including Customer Notification Procedures
     - Listing of staff, vendors, contractors, or other persons responsible for incident response activities.
     - Listing of all tools that facilitate detection and monitoring of the Registrant's network environment.
 
