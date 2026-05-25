@@ -1,40 +1,37 @@
 # ORGANIZATION final as README
 
-
 - Risk registry
-  - Cotrela assessemntss
-  - Technololoy assessments
-  - Cpbesecury assessments
-- Velnerabelity management
-  - TAD surfadces
-  - Stellar surfgaces
-  - Deployment viulneabilitess
+  - Control assessments
+  - Technology assessments
+  - Cybersecurity assessments
+- Vulnerability management
+  - TAD surfaces
+  - Stellar surfaces
+  - Deployment vulnerabilities
 - Key management
-  - Technical adimuininstratni, proviniinnig
-  - Physical safegeards
-  - OVrsight
-- Investor Clalfoificoatn
-  - Covored Investor INformatn
+  - Technical administration, provisioning
+  - Physical safeguards
+  - Oversight
+- Investor Classification
+  - Covered Investor Information
   - Investor notices
-  - Mali materials
+  - Mail materials
 - Service provider oversight
-  - What's outsourced (info daigrams##)
-  - Public collaborani platofgrms
-  - PRovider Secrets acceess
-- Incident response PRgima
-  - INturino detection
-  - ACtivity rensponses
-  - Ressponse & recovery
-- Decentralisved  coordination
-  - THesis ethos (ref values #decentaraid {#collective-wisdom})
-  - Colllabetoraative frinedship
-  - Open network ([ detection and monitoring of the Registrant's  intra environment; ec exec2 )]
+  - What's outsourced (info diagrams)
+  - Public collaboration platforms
+  - Provider secrets access
+- Incident response program
+  - Intrusion detection
+  - Activity responses
+  - Response & recovery
+- Decentralized coordination
+  - Thesis ethos (ref values #decentralized {#collective-wisdom})
+  - Collaborative friendship ([gov -- Who owns risk, policy, roles, oversight, suppliers, and priorities])
+  - Open network ([detection and monitoring of the Registrant's intra environment; ec exec2])
 
+- Reports or supporting documentation that confirms
+- monitoring of information systems,
+- ~~networks,~~ and
+- personnel activity //to detect incidents.
 
-
-
-  - Reports or supporting documentation that confirms monitoring of information systems, networks, and personnel activity to detect incidents.
-
-  - If Registrant Suffered a Security Incident During Review Period, Provide Documentation Demonstrating their Incident Response Program Steps Were Followed for Each Incident.
-
-gov -- Who owns risk, policy, roles, oversight, suppliers, and priorities
+- If Registrant suffered a Security Incident during the review period, provide documentation demonstrating their Incident Response Program steps were followed for each incident.
