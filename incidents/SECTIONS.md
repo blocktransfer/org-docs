@@ -7,9 +7,7 @@
 - Service provider oversight
 
 
-frmo 7 we have 
 
-# INITIAL DOCUMENT REQUEST
 
 - Registrant "Compliance Manual"
 
