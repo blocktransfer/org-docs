@@ -10,7 +10,7 @@ matures.
 > Give me six hours to chop down a tree and I will spend the first four
 > sharpening the axe.
 >
-> Abraham Lincoln
+> — Abraham Lincoln
 
 DRS adoption is a serious challenge with material implications. These are the
 principles we use to make TAD3 worth trusting.
