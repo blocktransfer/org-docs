@@ -12,8 +12,6 @@ matures.
 >
 > Abraham Lincoln
 
-## Why This Page Exists
-
 DRS adoption is a serious challenge with material implications. These are the
 principles we use to make TAD3 worth trusting.
 
@@ -22,7 +20,7 @@ principles we use to make TAD3 worth trusting.
 - Operate compliance-first with transparent controls.
 - Make quality equity access more global and less exclusionary.
 
-## 1: Benefit Investors
+## 1: Benefit Investors {#benefit-investors}
 
 In every step we take, the prosperity of our investors remains our guiding star.
 
@@ -62,7 +60,7 @@ In our pursuit of efficiency, we've adopted electronic notice systems. This
 minimizes polluting physical mail, reduces bills, removes large intermediaries,
 and improves operational efficiency.
 
-## 2: Benefit Companies
+## 2: Benefit Companies {#benefit-companies}
 
 We stretch your dollar further than traditional brokers, custodians, or other
 centralized financial systems with inherent conflicts of interest.
@@ -70,7 +68,7 @@ centralized financial systems with inherent conflicts of interest.
 We spread out TAD3 costs so that emerging businesses can focus on what they do
 best: innovate.
 
-## 3: Compliance First
+## 3: Compliance First {#compliance-first}
 
 We actively engage with regulators to ensure our policies not only meet but
 exceed the standards set for legacy intermediaries.
@@ -92,7 +90,7 @@ Our internal policies don't just follow the letter of the law, but its true
 spirit. We're dedicated to understanding and aligning with the intent behind the
 international laws governing legacy capital-market firms.
 
-## 4: Global Impact
+## 4: Global Impact {#global-impact}
 
 We're committed to tearing down the barriers that prevent people from accessing
 valuable compounding equities.
@@ -114,7 +112,7 @@ We embrace the challenge of building robust global infrastructure with localized
 rails so the platform is not just universally accessible, but genuinely relevant
 to unique users.
 
-## 5: Collective Wisdom
+## 5: Collective Wisdom {#collective-wisdom}
 
 In the vast expanse of financial innovation and market dynamics, no single
 entity can claim to possess all knowledge or perspectives.
@@ -134,7 +132,7 @@ By tapping into diverse thoughts, experiences, and insights, we ensure that our
 systems and services stay connected to real needs and remain truly by investors,
 for investors.
 
-## 6: Trustless Trust
+## 6: Trustless Trust {#trustless-trust}
 
 Our operations are under the vigilant eye of the Securities and Exchange
 Commission within a framework designed to protect you.
@@ -153,7 +151,7 @@ As a Delaware company, we have the autonomy to accept or reject clients. That
 freedom carries a responsibility to be discerning, and accepting a new client is
 not an endorsement of their business practices or ethics.
 
-## 7: Extreme Security
+## 7: Extreme Security {#extreme-security}
 
 We've adapted our security measures to the digital realm, ensuring the highest
 level of protection for our clients' assets.
@@ -171,5 +169,3 @@ to the internet.
 
 When given access to sensitive wallets, team members must pass FBI background
 checks.
-
-Source: [Block Transfer values page](https://github.com/blocktransfer/website/blob/7e4bfab2aa54922352b7e64e587617db4bf6b5eb/about/values/index.html)
