@@ -25,13 +25,13 @@
   - INturino detection
   - ACtivity rensponses
   - Ressponse & recovery
-- Decentralisved Quirks
+- Decentralisved  coordination
+  - THesis ethos (ref values #decentaraid {#collective-wisdom})
+  - Colllabetoraative frinedship
+  - Open network ([ detection and monitoring of the Registrant's  intra environment; ec exec2 )]
 
-other persons responsible for incident response activities.
-^ Resposible is pretty brad nad could cccover DUNA particpaitno
 
 
-    - Listing of all tools that facilitate detection and monitoring of the Registrant's network environment.
 
   - Reports or supporting documentation that confirms monitoring of information systems, networks, and personnel activity to detect incidents.
 
