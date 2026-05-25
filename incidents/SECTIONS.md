@@ -1,17 +1,22 @@
 # ORGANIZATION final as README
 
-- Incident response
+
 - Risk registry
 - Key management
-- Customer notice
+  - Technical adimuininstratni, proviniinnig
+  - Physical safegeards
+  - OVrsight
+- Investor Clalfoificoatn
+  - Covored Custemer INformatn
+  - Customer notice
 - Service provider oversight
 
+- Incident response PRgima
 
 
 
-- Registrant "Compliance Manual"
 
-- Written Policies & Procedures Addressing Administrative, Technical, and Physical Safeguards for the Protection of Customer Information
+-  for the Protection of Customer Information
   - need sexpansion to prectioctno of physac lccritigicatsee
 
 - Information Technology Managed Service Provider Contract
