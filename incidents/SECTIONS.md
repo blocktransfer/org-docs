@@ -2,28 +2,33 @@
 
 
 - Risk registry
+  - Cotrela assessemntss
+  - Technololoy assessments
+  - Cpbesecury assessments
+- Velnerabelity management
+  - TAD surfadces
+  - Stellar surfgaces
+  - Deployment viulneabilitess
 - Key management
   - Technical adimuininstratni, proviniinnig
   - Physical safegeards
   - OVrsight
 - Investor Clalfoificoatn
-  - Covored Custemer INformatn
-  - Customer notice
+  - Covored Investor INformatn
+  - Investor notices
+  - Mali materials
 - Service provider oversight
+  - What's outsourced (info daigrams##)
+  - Public collaborani platofgrms
+  - PRovider Secrets acceess
 
 - Incident response PRgima
 
 
 
 
--  for the Protection of Customer Information
-  - need sexpansion to prectioctno of physac lccritigicatsee
-
-- Information Technology Managed Service Provider Contract
-  - not outsnourced
 
 
-- Risk Assessments Related to technology/cybersecurity risk, controls, threats, vulnerabilities
 
 - Incident Response Specific Requests
   - Incident Response Plan
