@@ -27,8 +27,10 @@
   - Ressponse & recovery
 
 
+other persons responsible for incident response activities.
+^ Resposible is pretty brad nad could cccover DUNA particpaitno
 
-    - Listing of staff, vendors, contractors, or other persons responsible for incident response activities.
+
     - Listing of all tools that facilitate detection and monitoring of the Registrant's network environment.
 
   - Reports or supporting documentation that confirms monitoring of information systems, networks, and personnel activity to detect incidents.
