@@ -14,11 +14,11 @@ frmo 7 we have
 - Registrant "Compliance Manual"
 
 - Written Policies & Procedures Addressing Administrative, Technical, and Physical Safeguards for the Protection of Customer Information
-  - need sexpansion
+  - need sexpansion to prectioctno of physac lccritigicatsee
 
 - Information Technology Managed Service Provider Contract
+  - not outsnourced
 
-- Organization Charts
 
 - Risk Assessments Related to technology/cybersecurity risk, controls, threats, vulnerabilities
 
