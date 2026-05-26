@@ -1,43 +1,8 @@
-# Risk Register
 
-## Purpose
-
-Track operational, compliance, security, vendor, and incident-response risks that require ownership, mitigation, and periodic review.
-
-## Scoring
-
-Likelihood:
-
-- 1: Rare
-- 2: Unlikely
-- 3: Possible
-- 4: Likely
-- 5: Almost certain
-
-Impact:
-
-- 1: Low
-- 2: Moderate
-- 3: Material
-- 4: High
-- 5: Severe
 
 Risk score equals likelihood multiplied by impact.
 
-## Risk Workflow
 
-```mermaid
-flowchart TD
-    identify["Identify risk"]
-    score["Score likelihood and impact"]
-    assign["Assign owner and mitigation"]
-    review["Review quarterly or after material change"]
-    close["Mitigate, accept, or close"]
-
-    identify --> score --> assign --> review
-    review -->|Risk remains open| assign
-    review -->|Risk addressed| close
-```
 
 ## Register
 
@@ -57,6 +22,4 @@ flowchart TD
 - Accepted
 - Closed
 
-## Review Cadence
 
-Review the register at least quarterly and after any material incident, vendor change, system change, or regulatory update.
