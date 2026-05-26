@@ -1,16 +1,14 @@
 # Attack Surface Map
 
-## Purpose
-
 This document maps the primary attack surfaces that may affect covered investor information, operational records, internal systems, and incident response readiness.
-
-## Scope
 
 The map covers systems, accounts, vendors, communications channels, and human workflows that could be used to gain unauthorized access, disrupt operations, or expose sensitive information.
 
 ## External Services
 
-- Cloud infrastructure, storage, databases, and deployment services
+- Cloud infrastructure
+  - AWS sys in py-TAD3
+  - storage, databases, and deployment services
 - Domain registrar, DNS, email delivery, and authentication services
 - Public websites, documentation sites, investor portals, and hosted forms
 - Third-party collaboration, support, analytics, and monitoring tools
@@ -63,9 +61,3 @@ The map covers systems, accounts, vendors, communications channels, and human wo
 3. Contain access by rotating credentials, disabling sessions, and reducing privileges.
 4. Determine whether covered investor information or operational records were accessed, altered, or exposed.
 5. Record decisions, evidence, notices, vendor contacts, and recovery actions in the incident timeline.
-
-## Review
-
-- Owner: Operations
-- Review cadence: At least annually or after a material system, vendor, or workflow change
-- Status: Draft
