@@ -36,3 +36,7 @@ const risks = [
     impact: 10,
   },
 ];
+
+...https://github.com/blocktransfer/org-docs/discussions/categories/risks?discussions_q=is%3Aopen+category%3ARisks
+
+is%3Aopen  v  a clonsed subsbusec bellow 

@@ -55,10 +55,10 @@ THis timelptase the Doculaulns groitdh which soherd aslo list in hover form by R
 Then render it as a scatter/pinpoint chart. If this repo uses Docusaurus/MDX, I’d make something like:
 
 <RiskPinpointChart risks={risks} />
-The component would map likelihood and impact onto a 5x5 grid:
+The component would map likelihood and impact onto a 10x10 grid:
 
-const left = `${((risk.likelihood - 1) / 4) * 100}%`;
-const bottom = `${((risk.impact - 1) / 4) * 100}%`;
+const left = `${((risk.likelihood - 1) / 9) * 100}%`;
+const bottom = `${((risk.impact - 1) / 9) * 100}%`;
 Each risk becomes a button positioned on the chart:
 
 <button
