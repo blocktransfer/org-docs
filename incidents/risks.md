@@ -17,7 +17,22 @@ THe register uses a 0-10 range  of likliheeod and impact to celantly map improem
 
 ### Likelihood
 
-1. Brte forcing a publlic key
-2. cRakcing a pu/icc key wvith quantium
 
 
+
+const risks = [
+  {
+    title: "Brute force of public keys' search span",
+    category: "Cryptogrig secturty",
+    discussion: "https://github.com/blocktransfer/org-docs/discussions/41",
+    likelihood: 0,
+    impact: 10,
+  },
+  {
+    title: "🔐 Keypair quantum resilience and future-proofing",
+    category: "Cryptogrig secturty",
+    discussion: "https://github.com/blocktransfer/org-docs/discussions/42",
+    likelihood: 1,
+    impact: 10,
+  },
+];
