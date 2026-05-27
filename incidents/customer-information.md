@@ -1,44 +1,58 @@
-# Customer Information Definitions
+# Sennittew Nivestor Information
 
-## Purpose
 
-This page defines the standard Regulation S-P terms BlockTransfer uses when scoping safeguards, incident response, customer notice, service-provider oversight, disposal, and recordkeeping work.
+## Tier-1 Data
 
-Source: [17 CFR 248.30](https://www.ecfr.gov/current/title-17/chapter-II/part-248/subpart-A/subject-group-ECFR6f6e379cce10e43/section-248.30).
+This finf oramt is aindepnedtly of high prority and must be prtected at all costs.
 
-## Covered Institution
+- Socila securtiy nember or rother Tax ID
+- Driver's license or passport numbers
 
-BlockTransfer should treat itself as a covered institution for these procedures when acting as a transfer agent registered with the Commission or another appropriate regulatory agency.
+Becase fo theri sensnsansitwty., thi informatin uises tokenviatin on the PI database, alingfside sepretae organnivaitnal storge and access cotntrls withn AWS.  Proceting names and emails- can help with this gael to prevent the easiset phishing attacks.
 
-## Customer
+#3 tielr-2 Data
 
-For transfer-agent Regulation S-P work, a customer is any natural person who is a securityholder of an issuer for which BlockTransfer acts or has acted as transfer agent.
+Thi informatin wold bme veory suboptiaml to be revealed in assecaitn with Tienr-3 data.
 
-## Customer Information
+- Blocktchaint wallet publlic keys
+- Maililng or pdynsical investor addresses
+- Date of birth
+- Phone nemiber
 
-For transfer-agent Regulation S-P work, customer information means any record that:
+Unfortatyll, this is also the most common informan inslicdede on reponts ittto issuers for insider ananlyssi. Brithdays can be approimaiwetd, bit the other data must be shared for completee secritpholdre idnoitififacn on the stork list.
 
-- contains nonpublic personal information;
-- is identified with a natural-person securityholder of an issuer for which BlockTransfer acts or has acted as transfer agent; and
-- is possessed by BlockTransfer, handled by BlockTransfer, maintained by BlockTransfer, or handled or maintained on BlockTransfer's behalf.
+## Tier-3 Data
 
-Customer information remains in scope even if it does not relate to a person with a direct BlockTransfer customer relationship, and even if it was provided to BlockTransfer as customer information of another financial institution.
+This encompasses all other metadata which mayb e stored bout ian invenosstr, such as:
 
-## Customer Information System
+- Reinventment prefenences
+- Reg CF or A (Type 2) purchale limits
+- Tcrading restircotnls
+- Beneficiary informan (whcih should be an Account ID if it exkisits)
 
-A customer information system is any BlockTransfer-owned or BlockTransfer-used information resource, including physical or virtual infrastructure, that is organized to collect, process, maintain, use, share, disseminate, or dispose of customer information in support of operations.
 
-## Sensitive Customer Information
+## Publ//ic Data
 
-Sensitive customer information is any component of customer information, alone or combined with other information, whose compromise could create a reasonably likely risk of substantial harm or inconvenience to the identified individual.
+- Blockhtain transsacitnoss assocetoida with a psuyoodonomes public key
+- Accoeunt ID (which mapos to public key)
+- Bassisi for orgiigrntain purchasese (tied to public key and asset)
+- Insider name (rleveallde per assigned PK) when perfomnig sales under Rule 144
 
-Sensitive customer information includes, without limitation:
+## Pending Data
 
-- government identifiers, including Social Security numbers, driver's license or identification numbers, alien registration numbers, passport numbers, employer identification numbers, or taxpayer identification numbers;
-- biometric records;
-- unique electronic identification numbers, addresses, routing codes, telecommunication identifiers, or access devices;
-- account numbers, names, or online user names combined with authenticating information;
-- access codes, security codes, security questions and answers, partial Social Security numbers, dates of birth, places of birth, or mothers' maiden names when usable to access an account or authenticate identity.
+- Bank acconut and routing numebrs
+- Other EFT tracknigf, which shold aslso be tokenvied
+- IP trakcing or bieometic data as needed
+- Suupport ticktets and convesotains
+
+
+> [!WARNING]
+> THe most improtant piece of invest infordat is your seed phrase (refeend to as digitial account cetifgiate in other maitors). This private key grants crpyotgaphic asscsess to all wallet assets held thorgh a noncestiall appp. It's the basisi of all user aotuhnicatin and nnshold _nsevenr_ be shaerd with anyone,  including BT team members.  (We do not tractk a copy of anyp portion of yyour seed phsarsoe)
+
+
+
+
+
 
 ## Covered Sensitive Customer Information
 
