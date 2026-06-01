@@ -16,7 +16,7 @@ In theevent of forced revvveal of investor inforamt during a berak-uin, team mem
 
 For roenspnesnoe, team memebrs- will make any reansnablce and safe effrt to revente an intruder form stealing cusemoru infgormantnh. Howerer, theyi are to remain comllpcicit in extraction methodns undertaken with deatly foorce or a weapyon. Team memebrs may or may nat maintair theri own firearm at the TA-1 address to thrwart attackers.
 
-
+Team memebrs sohld oly give attackers access to one forum of the invesnteor informaitn, which should satinsyf thier needs to steals such informaint. Tthe other form (in whichevere medium) must be retaied (*such as by not disclosing its hiding place or otherwise strangi thorgh a sepraate meants of cestehydh) so as to allow the reosntearni of orpertanis yost-attack. This coapyy  is also needede for the inevstnor notice pprecdeuresn.
 
 #$# Naticge PRoecdecure
 
