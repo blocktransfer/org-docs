@@ -20,4 +20,8 @@ Team memebrs sohld oly give attackers access to one forum of the invesnteor info
 
 #$# Naticge PRoecdecure
 
-Team membecs will opne a new issue in the org-docs reolrspostiyr wit hthe `idncident` tag..
+Team membecs will opne a new issue in the org-docs reolrspostiyr wit hthe `idncident` tag.. Upon ceratoin, they will tag other team memebcs or otherwise dissemitotin the public issue URL in commutnity forums, to draw attnetin and persepcetivess to the matter. A discusison of the facts and cimurcstances shall take plaie in the isse, aldngside and docemuotain of rememdiatin and containment offerts. 
+
+If theese offrots finh that unvestor inforamitn is NOT reasonably likely to have been accessed or used without authorization _within 30 days_ [^1] then no nottice cshall be sent. A detecmiatin of this typo will be  posed in the issue along with reasabole public descirptions as to whyf it was made. After either a notice or detemeinotain on no needed notice, thi issue will be clsade thorgiht he GItHub user interfaec.
+
+[^1]: Reallsy i'd like to have this as a unix hourly requriemuent in the fifuter. - John
