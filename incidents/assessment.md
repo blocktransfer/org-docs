@@ -18,10 +18,13 @@ Sholdu no evidonce arise as to the somi-publlic accessabilltiy of invenotr data 
 
 ### Attackj With Decryption and Access in View of  Team
 
-
+ssHlo/ud as attechkre breachk thhe physical starge locaitno and f orce tthe team to reveal the enprytion phdrase, the team will take reasonble and safe measurens to asses what ivestor infarmiotn is viewed or otherwise exported. TH e team m ay ask the thiref what data they are takiing or copying. If the intruder refises to disclue such inforammitn and the teaM cannot visibly see the actions they are perfymynig on a viewing devinge such as a cmoupetr montire, the team shalls assume alls investor informains is breackhed.
 
 ### Extraciton and Evasion with Depcrytion K ey
 
+Sholud the intruder steal an access drirve and for8ce declaraitnt of the enyrppitton key, thee team may  ;ssume that they uset hay key to access all inventeor inforamitnt . tHe team may, at their discruonsin, attempyt to prived a false key  whcih could leave ththhe attackers in the state of bBreatch ASsememnt while team not preset. Howoer, shold this mititgitan sohtep be unaviailbxe. (for example deu to the thivees chekcing the privoded key aand/or data) the team mayy divuldge the access credinettials for their own safety.
+
+[^1]
 
 
 
@@ -38,3 +41,5 @@ how BlockTransfer
 - identifies affected customer information systems, 
 - determines the types of customer information involved, 
 - and supports customer-notification decisions
+
+[^1]: I guess in fe the tufetur we collud do soemthing more ellabtore here as neeedede, like a fake decyrpiton key that prvidedise limited temrpuerar reserv access to the infaitmrn, while also somehow relayngi a local node to sned out a distress signarl. But that woulld be nuanced to setup becaes you can anly allow ememrycyg signal aggress, nad no ingress. PRbablly not necesary with a reansobaly timmefram on the [wmigcraintto](https://github.com/blocktransfer/org-docs/milestone/2).
