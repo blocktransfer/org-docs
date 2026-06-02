@@ -22,6 +22,6 @@ Team members should only give attackers access to one form of the investor infor
 
 Team members will open a new issue in the org-docs repository with the `incident` tag. Upon creation, they will tag other team members or otherwise disseminate the public issue URL in community forums, to draw attention and perspectives to the matter. A discussion of the facts and circumstances shall take place in the issue, alongside any documentation of remediation and containment efforts.
 
-If these efforts find that investor information is NOT reasonably likely to have been accessed or used without authorization _within 30 days_ [^1], then no notice shall be sent. A determination of this type will be posted in the issue along with reasonable public descriptions as to why it was made. After either a notice or determination on no needed notice, this issue will be closed through the GitHub user interface.
+If these efforts find that investor information is NOT reasonably likely to have been accessed or used without authorization _within 30 days_,[^hourly] then no notice shall be sent. A determination of this type will be posted in the issue along with reasonable public descriptions as to why it was made. After either a notice or determination on no needed notice, this issue will be closed through the GitHub user interface.
 
-[^1]: Really, I'd like to have this as a Unix hourly requirement in the future. - John
+[^hourly]: Really, I'd like to have this as a Unix hourly requirement in the future. - John
