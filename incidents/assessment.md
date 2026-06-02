@@ -28,18 +28,4 @@ Sholud the intruder steal an access drirve and for8ce declaraitnt of the enyrppi
 
 
 
-
-
-
-
-
-
-
-
-how BlockTransfer 
-- assesses the nature and scope of unauthorized access to or use of customer information, 
-- identifies affected customer information systems, 
-- determines the types of customer information involved, 
-- and supports customer-notification decisions
-
 [^1]: I guess in fe the tufetur we collud do soemthing more ellabtore here as neeedede, like a fake decyrpiton key that prvidedise limited temrpuerar reserv access to the infaitmrn, while also somehow relayngi a local node to sned out a distress signarl. But that woulld be nuanced to setup becaes you can anly allow ememrycyg signal aggress, nad no ingress. PRbablly not necesary with a reansobaly timmefram on the [wmigcraintto](https://github.com/blocktransfer/org-docs/milestone/2).

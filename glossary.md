@@ -8,6 +8,14 @@ Account rectification is the process of correcting an investor account record af
 
 An investor account is the record used to associate an investor with their holdings, identity information, communications, and account permissions. The account record should distinguish between legal ownership, operational access, and technical wallet control.
 
+## Legacy investor PII database
+
+The legacy investor PII database is the imported source database containing investor personally identifiable information from prior systems or records. It is maintained on the airgapped recovery system and should be treated as sensitive source material for verification, reconciliation, and recovery workflows.
+
+## Investor PII database
+
+The investor PII database is the formatted database of investor information used for current operational, compliance, and recovery processes. It is maintained on the airgapped recovery system and should reflect normalized investor records derived from approved source materials, including the legacy investor PII database when applicable.
+
 ## Private key
 
 An investor's private key is the cryptographic secret that can authorize blockchain transactions from a wallet or account. Anyone with the private key can generally control the assets associated with that key, so it must be protected from disclosure, copying, and unauthorized storage.
