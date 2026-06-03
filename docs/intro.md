@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: Overview of the Blocktransfer organization documentation site.
+description: Overview of the BlockTransfer organization documentation site.
 ---
 
 # Introduction

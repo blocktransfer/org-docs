@@ -26,15 +26,15 @@ const sections = [
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="Blocktransfer Org Docs"
-      description="Operational documents, records, and archived posts for Blocktransfer."
+      title="BlockTransfer Org Docs"
+      description="Operational documents, records, and archived posts for BlockTransfer."
     >
       <main>
         <section className={styles.hero}>
           <div className={styles.heroInner}>
             <p className={styles.eyebrow}>Organization documentation</p>
             <Heading as="h1" className={styles.title}>
-              Blocktransfer Org Docs
+              BlockTransfer Org Docs
             </Heading>
             <p className={styles.subtitle}>
               A Docusaurus site for internal documentation, public records, and archived posts.

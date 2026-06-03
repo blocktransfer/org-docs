@@ -2,7 +2,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Blocktransfer Org Docs',
+  title: 'BlockTransfer Org Docs',
   tagline: 'Operational documents, records, and archived posts.',
   url: 'https://blocktransfer.github.io',
   baseUrl: '/org-docs/',
@@ -31,7 +31,7 @@ const config: Config = {
           path: 'old_posts',
           routeBasePath: 'blog',
           blogTitle: 'Archived Posts',
-          blogDescription: 'Older Blocktransfer posts preserved with the organization docs.',
+          blogDescription: 'Older BlockTransfer posts preserved with the organization docs.',
           showReadingTime: true,
           editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
           onInlineAuthors: 'ignore',
@@ -47,7 +47,7 @@ const config: Config = {
     navbar: {
       title: 'BlockTransfer',
       logo: {
-        alt: 'Blocktransfer logo',
+        alt: 'BlockTransfer logo',
         src: 'img/icon.png',
       },
       items: [
@@ -84,7 +84,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} Blocktransfer.`,
+      copyright: `Copyright ${new Date().getFullYear()} BlockTransfer.`,
     },
     prism: {
       additionalLanguages: ['powershell', 'bash'],

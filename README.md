@@ -1,6 +1,6 @@
-# Blocktransfer Org Docs
+# BlockTransfer Org Docs
 
-This repository is a TypeScript Docusaurus site for Blocktransfer organization documentation, archived posts, and downloadable records.
+This repository is a TypeScript Docusaurus site for BlockTransfer organization documentation, archived posts, and downloadable records.
 
 ## Development
 
