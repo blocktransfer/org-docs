@@ -25,7 +25,7 @@
   - Activity responses
   - Response & recovery
 - Decentralized coordination
-  - Thesis ethos (ref values #decentralized {#collective-wisdom})
+  - Thesis ethos (ref values #decentralized \{#collective-wisdom\})
   - Collaborative friendship ([gov -- Who owns risk, policy, roles, oversight, suppliers, and priorities])
   - Open network ([detection and monitoring of the Registrant's intra environment; ec exec2])
 - Team reports

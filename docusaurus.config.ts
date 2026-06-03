@@ -46,6 +46,10 @@ const config: Config = {
   themeConfig: {
     navbar: {
       title: 'Blocktransfer Org Docs',
+      logo: {
+        alt: 'Blocktransfer logo',
+        src: 'img/logo.png',
+      },
       items: [
         {
           type: 'docSidebar',

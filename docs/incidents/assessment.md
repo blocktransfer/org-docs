@@ -1,4 +1,6 @@
-## Breach Assessment {title elemP$#}
+---
+title: Breach Assessment
+---
 
 We scope out three main breach methods, with continuous values throughout which can be expanded to edge cases. The first presumes only retroactive action possible by team members. The last implies team members act in intense situations for the benefit of investor protection, which is expected of information carriers bonded under 17 C.F.R. § 240.17f-2.
 
