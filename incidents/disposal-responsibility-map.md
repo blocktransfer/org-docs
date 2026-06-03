@@ -1,24 +1,5 @@
-# Disposal Responsibility Map
 
-## Purpose
 
-This page maps the responsibilities BlockTransfer should assign when maintaining written disposal policies and procedures for consumer information and customer information under Regulation S-P.
-
-The older Disposal Rule already required reasonable disposal controls for consumer-report-type information. Current Regulation S-P 17 CFR 248.30(b) is broader because it covers both consumer information and customer information, requires written disposal policies and procedures for covered institutions other than notice-registered broker-dealers, and connects disposal work to expanded compliance recordkeeping.
-
-## Regulatory Baseline
-
-Before the 2024 Regulation S-P amendments, transfer agents already had disposal obligations for consumer report information and records under the Disposal Rule adopted by the SEC in 2004 under the FACT Act.
-
-Current Regulation S-P broadens and clarifies the obligation for transfer-agent operations:
-
-- covered information includes consumer information and customer information;
-- disposal means discarding or abandoning covered information, or selling, donating, or transferring media that stores covered information;
-- covered institutions must use reasonable measures to protect against unauthorized access to or use of covered information during disposal;
-- written disposal policies and procedures are required for covered institutions other than notice-registered broker-dealers;
-- disposal decisions must account for other legal retention requirements before destruction.
-
-## Responsibility Map
 
 | Responsibility | Owner | Required Work | Evidence |
 | --- | --- | --- | --- |
