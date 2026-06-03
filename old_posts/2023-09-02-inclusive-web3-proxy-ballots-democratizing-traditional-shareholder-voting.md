@@ -125,8 +125,6 @@ With direct registered ownership, your vote truly counts. You're not just a face
 
 Our systems make every vote [traceable and transparent](https://stellar.expert/explorer/public/account/GBF5JFCABT4SJFW7KPTNSB6YGZJ2AM5QK5DGLDSZZDGAVUJJVYLOVOTE). Once voting opens, we send investors standard proxy notices. But instead of dialing a call center or mailing back a postcard, investors use a wallet app to cryptographically vote with math. They go through an interface with the voting items specific to each meeting, selecting "for," "nay," "abstain," or "withhold" for each item. These choices get encoded in a transaction memo, which is then sent to a public blockchain voting address. At the meeting, vote results from these public distributed ledger are reconciled with shareholder record-date balances as recorded on the blockchain. Anyone can tally up public transaction memos to verify final counts, and all votes have the same security backing our stock transfers. 
 
-So, if you're tired of navigating the labyrinthine world of proxy voting, where middlemen dictate the rules and companies are left in the dark, it's time for a change. At Block Transfer, we're revolutionizing the way proxy voting is done. No more hidden fees, no more anonymity barriers, and no more convoluted processes. Just a straightforward, user-friendly system that makes your voice heard. If you're ready to make the switch and experience the future of proxy voting, we invite you to [schedule a free brief consultation](https://book.blocktransfer.com/#/customer/new) with us. Let's change the game together. 
-
 Sources
 
 [Block Transfer Yellowpaper](https://blocktransfer.com/.well-known/yellowpaper.pdf)

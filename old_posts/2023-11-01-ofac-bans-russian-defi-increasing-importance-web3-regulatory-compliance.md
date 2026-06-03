@@ -50,8 +50,6 @@ The WalletConnect situation showcases the complex relationship between Web3 tech
 
 Regulatory compliance may not be the most glamorous aspect of running a Web3 project, but it's definitely among the most important. Legal frameworks around investing are continually evolving. WalletConnect's recent update is a sign of how much external factors like government regulations can affect the Web3 landscape. We have to be prepared for these changes as they come. If you're a blockchain company with over 35 investors, we can make your shareholder compliance life easy.
 
-[Schedule a free brief consultation.](https://book.blocktransfer.com/#/customer/new)
-
 Sources
 
 [WalletConnect Protocol Update Email](https://drive.blocktransfer.com/external/2dabfc827e93a9e5e59115d43cc2df2aad5f398b3b50fe5ad72d2ffc4dbef08f)

@@ -145,7 +145,5 @@ Enter blockchain: the revolution we didn't know we needed but can no longer igno
 
 And that's where we come in. Block Transfer isn’t just another company intrigued by blockchain technology; we are a transfer agent specializing in implementing these blockchain solutions. If you're a CFO of a public American company, understanding and leveraging the potential of blockchain technology should be at the top of your to-do list. And at Block Transfer, we're making it easier than ever to bring this transformative technology into your financial operations. And if you're interested in making your financial operations more secure, efficient, and transparent, it's time to learn more about what we have to offer.
 
-[Schedule a free brief consultation.](https://book.blocktransfer.com/#/customer/new)
-
 Sources
 [US Patent Application 17/396,742](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20220284507)
