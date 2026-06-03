@@ -45,10 +45,10 @@ const config: Config = {
   ],
   themeConfig: {
     navbar: {
-      title: 'Blocktransfer Org Docs',
+      title: 'BlockTransfer',
       logo: {
         alt: 'Blocktransfer logo',
-        src: 'img/logo.png',
+        src: 'img/icon.png',
       },
       items: [
         {
@@ -60,8 +60,9 @@ const config: Config = {
         {to: '/blog', label: 'Posts', position: 'left'},
         {
           href: 'https://github.com/blocktransfer/org-docs',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub',
         },
       ],
     },

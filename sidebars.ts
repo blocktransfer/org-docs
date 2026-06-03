@@ -44,18 +44,6 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Taxes',
-      items: [
-        'taxes/index',
-        'taxes/cash/index',
-        'taxes/cash/2025',
-      ],
-    },
-    'glossary',
-    'team',
-    'values',
-    {
-      type: 'category',
       label: 'Incidents',
       items: [
         'incidents/index',
@@ -70,6 +58,18 @@ const sidebars: SidebarsConfig = {
         'incidents/sections',
       ],
     },
+    {
+      type: 'category',
+      label: 'Taxes',
+      items: [
+        'taxes/index',
+        'taxes/cash/index',
+        'taxes/cash/2025',
+      ],
+    },
+    'glossary',
+    'team',
+    'values',
   ],
 };
 
