@@ -14,16 +14,3 @@
 | Disposal exception management | Compliance | Document when disposal is delayed because another law, hold, investigation, operational dependency, or vendor limitation requires retention. | Exception register, approval, next-review date |
 | Recordkeeping | Compliance | Preserve disposal policies, procedures, evidence, exceptions, and review records for the applicable retention period. | Binder index, dated records, storage-location reference |
 
-## Operating Standard
-
-No covered information should be discarded, abandoned, sold, donated, transferred, deleted, wiped, or destroyed until the responsible owner has confirmed:
-
-- the information type and system or medium involved;
-- the applicable retention period and any active hold;
-- the disposal method and person or service provider performing it;
-- the evidence that will prove disposal was completed; and
-- any exception or follow-up review date.
-
-## Procedure Dependencies
-
-This map should be used with the written disposal procedure, service-provider oversight standards, customer-information definitions, and transfer-agent recordkeeping index.
