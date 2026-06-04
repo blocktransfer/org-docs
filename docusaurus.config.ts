@@ -32,7 +32,7 @@ const config: Config = {
               label: 'Current',
             },
             '0.1.0': {
-              label: '3 Jun 2026',
+              label: '2 Jun 2026',
               banner: 'none',
             },
           },

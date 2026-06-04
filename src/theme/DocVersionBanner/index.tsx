@@ -17,7 +17,7 @@ export default function DocVersionBanner({className}: Props): ReactNode {
           'alert alert--info margin-bottom--md',
         )}
         role="note">
-        <strong>Archived compliance snapshot from 3 Jun 2026.</strong>{' '}
+        <strong>Archived compliance snapshot from 2 Jun 2026.</strong>{' '}
         This page preserves the organization docs as they existed on that date.
         For the latest editable materials, see the{' '}
         <Link to="/docs/intro">current docs</Link>.
