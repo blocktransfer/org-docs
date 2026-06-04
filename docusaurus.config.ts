@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'BlockTransfer Org Docs',
   tagline: 'Operational documents, records, and archived posts.',
-  url: 'https://blocktransfer.github.io',
+  url: 'https://blocktransfer.org',
   baseUrl: '/org-docs/',
   organizationName: 'blocktransfer',
   projectName: 'org-docs',
