@@ -37,7 +37,7 @@ function syncSidebars(sourceDir, targetDir) {
   fs.mkdirSync(targetDir, {recursive: true});
 
   for (const fileName of fs.readdirSync(sourceDir)) {
-    const match = /^archive-(.+)\.json$/.exec(fileName);
+    const match = /^version-(.+)\.json$/.exec(fileName);
 
     if (match) {
       fs.copyFileSync(
