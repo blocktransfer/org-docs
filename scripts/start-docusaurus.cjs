@@ -3,13 +3,19 @@ const fs = require('fs');
 const path = require('path');
 
 const siteDir = path.resolve(__dirname, '..');
-const docusaurusDir = path.join(siteDir, 'versioned_docs');
 const docusaurusBin = process.platform === 'win32' ? 'npx.cmd' : 'npx';
 const args = ['docusaurus', 'start', ...process.argv.slice(2)];
 const useShell = process.platform === 'win32';
 
 function cleanup() {
-  fs.rmSync(docusaurusDir, {recursive: true, force: true});
+  fs.rmSync(path.join(siteDir, 'versioned_docs'), {
+    recursive: true,
+    force: true,
+  });
+  fs.rmSync(path.join(siteDir, 'versioned_sidebars'), {
+    recursive: true,
+    force: true,
+  });
 }
 
 require('./sync-versioned-docs.cjs');

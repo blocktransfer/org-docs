@@ -3,4 +3,5 @@ node_modules/
 .docusaurus/
 build/
 versioned_docs/
+versioned_sidebars/
 .docusaurus-dev*.log

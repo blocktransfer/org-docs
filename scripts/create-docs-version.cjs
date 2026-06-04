@@ -11,8 +11,12 @@ if (!version) {
 
 const siteDir = path.resolve(__dirname, '..');
 const docusaurusVersionedDir = path.join(siteDir, 'versioned_docs');
+const docusaurusSidebarsDir = path.join(siteDir, 'versioned_sidebars');
 const sourceVersionsDir = path.join(siteDir, 'versions');
+const sourceSidebarsDir = path.join(siteDir, 'sidebars');
 const versionDirName = `version-${version}`;
+const docusaurusSidebarsFileName = `version-${version}-sidebars.json`;
+const sourceSidebarsFileName = `version-${version}.json`;
 
 const result = spawnSync(
   process.platform === 'win32' ? 'npx.cmd' : 'npx',
@@ -34,4 +38,10 @@ fs.cpSync(
   path.join(sourceVersionsDir, versionDirName),
   {recursive: true},
 );
+fs.mkdirSync(sourceSidebarsDir, {recursive: true});
+fs.copyFileSync(
+  path.join(docusaurusSidebarsDir, docusaurusSidebarsFileName),
+  path.join(sourceSidebarsDir, sourceSidebarsFileName),
+);
 fs.rmSync(docusaurusVersionedDir, {recursive: true, force: true});
+fs.rmSync(docusaurusSidebarsDir, {recursive: true, force: true});
