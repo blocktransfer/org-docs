@@ -16,10 +16,12 @@ function syncDocs(sourceDir, targetDir) {
   fs.mkdirSync(targetDir, {recursive: true});
 
   for (const dirent of fs.readdirSync(sourceDir, {withFileTypes: true})) {
-    if (dirent.isDirectory() && /^version-.+/.test(dirent.name)) {
+    const match = /^archive-(.+)$/.exec(dirent.name);
+
+    if (dirent.isDirectory() && match) {
       fs.cpSync(
         path.join(sourceDir, dirent.name),
-        path.join(targetDir, dirent.name),
+        path.join(targetDir, `version-${match[1]}`),
         {recursive: true},
       );
     }
@@ -35,7 +37,7 @@ function syncSidebars(sourceDir, targetDir) {
   fs.mkdirSync(targetDir, {recursive: true});
 
   for (const fileName of fs.readdirSync(sourceDir)) {
-    const match = /^version-(.+)\.json$/.exec(fileName);
+    const match = /^archive-(.+)\.json$/.exec(fileName);
 
     if (match) {
       fs.copyFileSync(
