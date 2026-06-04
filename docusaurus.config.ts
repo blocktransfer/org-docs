@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'BlockTransfer Org Docs',
   tagline: 'Operational documents, records, and archived posts.',
-  url: 'https://blocktransfer.github.io',
+  url: 'https://blocktransfer.org',
   baseUrl: '/org-docs/',
   organizationName: 'blocktransfer',
   projectName: 'org-docs',
@@ -26,6 +26,17 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'Current',
+              badge: false,
+            },
+            '0.1.0': {
+              label: '2 Jun 2026',
+              banner: 'none',
+            },
+          },
         },
         blog: {
           path: 'old_posts',
@@ -58,6 +69,10 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Posts', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
         {
           href: 'https://github.com/blocktransfer/org-docs',
           position: 'right',
