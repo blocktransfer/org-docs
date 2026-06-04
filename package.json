@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run sync:versioned-docs && docusaurus start",
+    "start": "node scripts/start-docusaurus.cjs",
     "build": "npm run sync:versioned-docs && docusaurus build && npm run clean:versioned-docs",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
