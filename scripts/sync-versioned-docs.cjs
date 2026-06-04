@@ -4,16 +4,26 @@ const path = require('path');
 const siteDir = path.resolve(__dirname, '..');
 const sourceDocsDir = path.join(siteDir, 'versions');
 const docusaurusDocsDir = path.join(siteDir, 'versioned_docs');
-const sourceSidebarsDir = path.join(siteDir, 'sidebars');
+const sourceSidebarsDir = path.join(siteDir, 'versions', 'sidebars');
 const docusaurusSidebarsDir = path.join(siteDir, 'versioned_sidebars');
 
-function syncDir(sourceDir, targetDir) {
+function syncDocs(sourceDir, targetDir) {
   if (!fs.existsSync(sourceDir)) {
     return;
   }
 
   fs.rmSync(targetDir, {recursive: true, force: true});
-  fs.cpSync(sourceDir, targetDir, {recursive: true});
+  fs.mkdirSync(targetDir, {recursive: true});
+
+  for (const dirent of fs.readdirSync(sourceDir, {withFileTypes: true})) {
+    if (dirent.isDirectory() && /^version-.+/.test(dirent.name)) {
+      fs.cpSync(
+        path.join(sourceDir, dirent.name),
+        path.join(targetDir, dirent.name),
+        {recursive: true},
+      );
+    }
+  }
 }
 
 function syncSidebars(sourceDir, targetDir) {
@@ -36,5 +46,5 @@ function syncSidebars(sourceDir, targetDir) {
   }
 }
 
-syncDir(sourceDocsDir, docusaurusDocsDir);
+syncDocs(sourceDocsDir, docusaurusDocsDir);
 syncSidebars(sourceSidebarsDir, docusaurusSidebarsDir);
