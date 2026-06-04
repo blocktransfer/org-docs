@@ -1,7 +1,10 @@
 # Sensitive Investor Information
 
-> [!WARNING]
-> The most important piece of investor information is your seed phrase (referred to as digital account certificate in other materials). This private key grants cryptographic access to all wallet assets held through a noncustodial app. It's the basis of all user authentication and should _never_ be shared with anyone, including BT team members. (We do not track a copy of any portion of your seed phrase.)
+:::warning
+
+The most important piece of investor information is your seed phrase (referred to as digital account certificate in other materials). This private key grants cryptographic access to all wallet assets held through a noncustodial app. It's the basis of all user authentication and should _never_ be shared with anyone, including BT team members. (We do not track a copy of any portion of your seed phrase.)
+
+:::
 
 ## Tier-1 Data
 
