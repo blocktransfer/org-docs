@@ -26,6 +26,16 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'Current',
+            },
+            '0.1.0': {
+              label: '3 Jun 2026',
+              banner: 'none',
+            },
+          },
         },
         blog: {
           path: 'old_posts',
@@ -58,6 +68,10 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Posts', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
         {
           href: 'https://github.com/blocktransfer/org-docs',
           position: 'right',
