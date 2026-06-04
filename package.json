@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "start": "npm run sync:versioned-docs && docusaurus start",
+    "build": "npm run sync:versioned-docs && docusaurus build && npm run clean:versioned-docs",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "docusaurus": "docusaurus",
-    "version:docs": "docusaurus docs:version",
+    "sync:versioned-docs": "node scripts/sync-versioned-docs.cjs",
+    "clean:versioned-docs": "node scripts/clean-versioned-docs.cjs",
+    "version:docs": "node scripts/create-docs-version.cjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
