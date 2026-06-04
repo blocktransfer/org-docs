@@ -30,6 +30,7 @@ const config: Config = {
           versions: {
             current: {
               label: 'Current',
+              badge: false,
             },
             '0.1.0': {
               label: '2 Jun 2026',
