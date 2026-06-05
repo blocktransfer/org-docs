@@ -5,7 +5,7 @@ const config: Config = {
   title: 'BlockTransfer Org Docs',
   tagline: 'Operational documents, records, and archived posts.',
   url: 'https://blocktransfer.org',
-  baseUrl: '/org-docs/',
+  baseUrl: '/',
   organizationName: 'blocktransfer',
   projectName: 'org-docs',
   trailingSlash: false,
