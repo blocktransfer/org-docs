@@ -31,4 +31,4 @@
 - Team reports
   - Post security incidents **demonstrating Incident Response Program steps were followed**
   - System monitoring log
-  - Team protective practices (**collection of concepts with sourcing akin to the nondirective bias basis)
+  - Team protective practices (collection of concepts with sourcing akin to the nondirective bias basis)

@@ -14,7 +14,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'operations/hot-operations',
         'operations/extreme-compliance',
-        'operations/branding-internaly',
+        'operations/branding-internally',
       ],
     },
     {
@@ -39,7 +39,7 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'investors/investor-banking',
-        'investors/investor-correspondances',
+        'investors/investor-correspondence',
       ],
     },
     {

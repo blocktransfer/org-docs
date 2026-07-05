@@ -14,11 +14,11 @@ In the event of physical investor information intrusions, team members will firs
 
 In the event of forced reveal of investor information during a break-in, team members will attempt to recall as much about what information was confiscated or otherwise accessed without authorization. This written account will be made through the Notice Procedure for breaches, detailed below. It will act as the basis of a determination as to which customers have been revealed to the attacker.
 
-For response, team members will make any reasonable and safe effort to prevent an intruder from stealing customer information. However, they are to remain complicit in extraction methods undertaken with deadly force or a weapon. Team members may or may not maintain their own firearm at the TA-1 address to thwart attackers.
+For response, team members will make any reasonable and safe effort to prevent an intruder from stealing customer information. However, they are to remain compliant in extraction methods undertaken with deadly force or a weapon. Team members may or may not maintain their own firearm at the TA-1 address to thwart attackers.
 
-Team members should only give attackers access to one form of the investor information, which should satisfy their needs to steal such information. The other form (in whichever medium) must be retained (*such as by not disclosing its hiding place or otherwise storing through a separate means of custody) so as to allow the restoration of operations post-attack. This copy is also needed for the investor notice procedures.
+Team members should only give attackers access to one form of the investor information, which should satisfy their need to steal such information. The other form (in whichever medium) must be retained (such as by not disclosing its hiding place or otherwise storing through a separate means of custody) so as to allow the restoration of operations post-attack. This copy is also needed for the investor notice procedures.
 
-#$# Notice Procedure
+## Notice Procedure
 
 Team members will open a new issue in the org-docs repository with the `incident` tag. Upon creation, they will tag other team members or otherwise disseminate the public issue URL in community forums, to draw attention and perspectives to the matter. A discussion of the facts and circumstances shall take place in the issue, alongside any documentation of remediation and containment efforts.
 
