@@ -4,6 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'BlockTransfer Org Docs',
   tagline: 'Operational documents, records, and archived posts.',
+  favicon: 'img/icon.png',
   url: 'https://blocktransfer.org',
   baseUrl: '/',
   organizationName: 'blocktransfer',
