@@ -60,11 +60,24 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Taxes',
+      label: 'Taxes & Financials',
+      link: {
+        type: 'doc',
+        id: 'finance/index',
+      },
       items: [
-        'taxes/index',
-        'taxes/cash/index',
-        'taxes/cash/2025',
+        'finance/how-finances-work',
+        'finance/operating-balances',
+        'finance/annual-records',
+        {
+          type: 'category',
+          label: 'Taxes',
+          items: [
+            'taxes/index',
+            'taxes/cash/index',
+            'taxes/cash/2025',
+          ],
+        },
       ],
     },
     'glossary',
