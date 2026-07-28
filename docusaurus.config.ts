@@ -55,6 +55,23 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'],
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 12,
+        searchResultContextMaxLength: 80,
+        searchBarShortcut: false,
+        searchBarPosition: 'right',
+      },
+    ],
+  ],
   themeConfig: {
     navbar: {
       title: 'BlockTransfer',
