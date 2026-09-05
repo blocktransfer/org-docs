@@ -46,6 +46,19 @@ h6 {
     var(--ifm-transition-timing-default);
 }
 
+.exam-pdf-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--ifm-leading);
+}
+
+[data-theme='dark'] .exam-pdf-open-button,
+[data-theme='dark'] .exam-pdf-open-button:hover,
+[data-theme='dark'] .exam-pdf-open-button:focus,
+[data-theme='dark'] .exam-pdf-open-button:visited {
+  color: #fff;
+}
+
 .exam-pdf-frame {
   width: 100%;
   min-height: 75vh;
