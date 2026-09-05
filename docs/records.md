@@ -7,6 +7,10 @@ description: Downloadable records served with the Docusaurus site.
 
 These files are copied into the Docusaurus static output so they remain available from the generated site.
 
+## Examination responses
+
+- [2025 New York Regional Office examination responses](/docs/examinations)
+
 ## Taxes
 
 - [2024 tax PDF](/files/taxes/2024.pdf)

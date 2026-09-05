@@ -6,6 +6,21 @@ const sidebars: SidebarsConfig = {
     'records',
     {
       type: 'category',
+      label: 'Examination Responses',
+      items: [
+        'examinations/index',
+        'examinations/1',
+        'examinations/2',
+        'examinations/3',
+        'examinations/4',
+        'examinations/5',
+        'examinations/6',
+        'examinations/7',
+        'examinations/8',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Operations',
       link: {
         type: 'generated-index',

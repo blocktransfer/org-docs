@@ -45,3 +45,11 @@ h6 {
   transition: background-color var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
 }
+
+.exam-pdf-frame {
+  width: 100%;
+  min-height: 75vh;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  background: var(--ifm-background-surface-color);
+}
