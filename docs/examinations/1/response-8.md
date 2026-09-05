@@ -21,4 +21,4 @@ This September 15, 2025 letter responds to the findings of Block Transfer's firs
 - Principal-office requirements, mail-processing arrangements, and distributed operational models
 - Proposed community participation and governance structures for future remediation
 
-<ExamPdf src="/exams/8.pdf" title="Examination Response #8 PDF" />
+<ExamPdf src="/ref/exams/8.pdf" title="Examination Response #8 PDF" />

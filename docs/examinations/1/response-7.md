@@ -20,4 +20,4 @@ This August 13, 2025 letter follows an examination meeting held that morning. It
 - Correction of basis information and reconciliation of internal and public records
 - Proposals for maximizing useful public information without publishing personal information
 
-<ExamPdf src="/exams/7.pdf" title="Examination Response #7 PDF" />
+<ExamPdf src="/ref/exams/7.pdf" title="Examination Response #7 PDF" />

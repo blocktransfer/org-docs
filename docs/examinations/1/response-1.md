@@ -19,4 +19,4 @@ This May 8, 2025 letter responds to the initial transfer-agent examination reque
 - Internal accounting controls, audits, signature-guarantee procedures, and lost-securityholder searches
 - Litigation and complaint records, fees, fidelity coverage, contingency planning, reconciliations, supervision, and AML procedures
 
-<ExamPdf src="/exams/1.pdf" title="Examination Response #1 PDF" />
+<ExamPdf src="/ref/exams/1.pdf" title="Examination Response #1 PDF" />

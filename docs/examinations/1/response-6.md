@@ -20,4 +20,4 @@ This July 1, 2025 letter responds to staff's June 27 document request. It addres
 - Capitalization-table omissions involving minor or beneficial ownership
 - Revocation, reissuance, claimable balances, and supporting authorization records
 
-<ExamPdf src="/exams/6.pdf" title="Examination Response #6 PDF" />
+<ExamPdf src="/ref/exams/6.pdf" title="Examination Response #6 PDF" />

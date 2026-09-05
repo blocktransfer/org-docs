@@ -20,4 +20,4 @@ This June 16, 2025 letter answers detailed staff questions about control books a
 - The proprietary book-entry system and its relationship to distributed-ledger data
 - Claimable balances, pending holdings, certificate detail, and historical file comparisons
 
-<ExamPdf src="/exams/3.pdf" title="Examination Response #3 PDF" />
+<ExamPdf src="/ref/exams/3.pdf" title="Examination Response #3 PDF" />

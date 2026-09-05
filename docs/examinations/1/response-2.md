@@ -19,4 +19,4 @@ This June 13, 2025 letter supplies the first portion of Block Transfer's respons
 - Private onboarding records and the relationship between issuer and investor verification
 - Identity verification, sanctions screening, periodic monitoring, record retention, and account restrictions
 
-<ExamPdf src="/exams/2.pdf" title="Examination Response #2 PDF" />
+<ExamPdf src="/ref/exams/2.pdf" title="Examination Response #2 PDF" />

@@ -20,4 +20,4 @@ This June 20, 2025 letter responds to staff questions about asset-holder and tok
 - Treatment of an original restricted issuance through a claimable balance
 - Time limitations, restrictive legends, and transaction memo evidence
 
-<ExamPdf src="/exams/5.pdf" title="Examination Response #5 PDF" />
+<ExamPdf src="/ref/exams/5.pdf" title="Examination Response #5 PDF" />

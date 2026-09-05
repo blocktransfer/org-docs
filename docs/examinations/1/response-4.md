@@ -19,4 +19,4 @@ This June 17, 2025 letter extends Response #3 with transaction-level support and
 - Design choices involving minor relationships and combined transactions
 - Privacy implications of placing transaction evidence and account information on a public ledger
 
-<ExamPdf src="/exams/4.pdf" title="Examination Response #4 PDF" />
+<ExamPdf src="/ref/exams/4.pdf" title="Examination Response #4 PDF" />
