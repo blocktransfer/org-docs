@@ -6,17 +6,30 @@ const sidebars: SidebarsConfig = {
     'records',
     {
       type: 'category',
-      label: 'Examination Responses',
+      label: 'Examinations',
+      link: {
+        type: 'doc',
+        id: 'examinations/index',
+      },
       items: [
-        'examinations/index',
-        'examinations/1',
-        'examinations/2',
-        'examinations/3',
-        'examinations/4',
-        'examinations/5',
-        'examinations/6',
-        'examinations/7',
-        'examinations/8',
+        {
+          type: 'category',
+          label: 'Examination #1',
+          link: {
+            type: 'doc',
+            id: 'examinations/1/index',
+          },
+          items: [
+            'examinations/1/response-1',
+            'examinations/1/response-2',
+            'examinations/1/response-3',
+            'examinations/1/response-4',
+            'examinations/1/response-5',
+            'examinations/1/response-6',
+            'examinations/1/response-7',
+            'examinations/1/response-8',
+          ],
+        },
       ],
     },
     {

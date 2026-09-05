@@ -1,12 +1,12 @@
 ---
-title: "Examination Response #1 (NY Regional Office)"
+title: "Examination Response #1"
 description: Public response associated with the 2025 New York Regional Office examination.
 sidebar_label: "Response #1"
 ---
 
 import ExamPdf from '@site/src/components/ExamPdf';
 
-# Examination Response #1 (NY Regional Office)
+# Examination Response #1
 
 This May 8, 2025 letter responds to the New York Regional Office's initial transfer-agent examination request dated April 30, 2025. It introduces Block Transfer's organizational model and identifies the records, policies, and supporting exhibits supplied to staff.
 

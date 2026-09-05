@@ -1,12 +1,12 @@
 ---
-title: "Examination Response #7 (NY Regional Office)"
+title: "Examination Response #7"
 description: Public response associated with the 2025 New York Regional Office examination.
 sidebar_label: "Response #7"
 ---
 
 import ExamPdf from '@site/src/components/ExamPdf';
 
-# Examination Response #7 (NY Regional Office)
+# Examination Response #7
 
 This August 13, 2025 letter follows an examination meeting held that morning. It records follow-up questions about the transfer agent's principal office, the maintenance of issuance dates for imported holdings, and the relationship between internal records and publicly available ledger information.
 

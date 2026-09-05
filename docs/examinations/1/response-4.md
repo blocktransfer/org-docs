@@ -1,12 +1,12 @@
 ---
-title: "Examination Response #4 (NY Regional Office)"
+title: "Examination Response #4"
 description: Public response associated with the 2025 New York Regional Office examination.
 sidebar_label: "Response #4"
 ---
 
 import ExamPdf from '@site/src/components/ExamPdf';
 
-# Examination Response #4 (NY Regional Office)
+# Examination Response #4
 
 This June 17, 2025 letter extends Response #3 with transaction-level support and simplified documentation of ledger activity. It addresses how new securityholder positions were issued, recorded, and displayed within the transfer-agent system.
 

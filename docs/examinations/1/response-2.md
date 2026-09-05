@@ -1,12 +1,12 @@
 ---
-title: "Examination Response #2 (NY Regional Office)"
+title: "Examination Response #2"
 description: Public response associated with the 2025 New York Regional Office examination.
 sidebar_label: "Response #2"
 ---
 
 import ExamPdf from '@site/src/components/ExamPdf';
 
-# Examination Response #2 (NY Regional Office)
+# Examination Response #2
 
 This June 13, 2025 letter supplies the first portion of Block Transfer's response to an additional staff request dated June 9. It focuses on lost-securityholder searches and the identity-verification and anti-money-laundering methods used when opening and servicing investor accounts.
 

@@ -1,12 +1,12 @@
 ---
-title: "Examination Response #5 (NY Regional Office)"
+title: "Examination Response #5"
 description: Public response associated with the 2025 New York Regional Office examination.
 sidebar_label: "Response #5"
 ---
 
 import ExamPdf from '@site/src/components/ExamPdf';
 
-# Examination Response #5 (NY Regional Office)
+# Examination Response #5
 
 This June 20, 2025 letter responds to staff questions about asset-holder and token-history information shown in public ledger tools. It explains the roles of issuer and distribution accounts and interprets payment and restricted-balance records.
 
