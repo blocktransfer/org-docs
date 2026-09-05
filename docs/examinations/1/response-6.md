@@ -1,7 +1,8 @@
 ---
 title: "Examination Response #6"
-description: Public response associated with the 2025 New York Regional Office examination.
+description: Public response from BlockTransfer's first examination.
 sidebar_label: "Response #6"
+slug: /examinations/6
 ---
 
 import ExamPdf from '@site/src/components/ExamPdf';

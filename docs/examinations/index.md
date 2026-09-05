@@ -1,6 +1,6 @@
 ---
 title: Examinations
-description: Block Transfer's archive of regulatory examinations and responses.
+description: BlockTransfer's archive of regulatory examinations and responses.
 slug: /examinations
 ---
 

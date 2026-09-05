@@ -1,7 +1,7 @@
 ---
 title: "Examination #1"
-description: Responses from Block Transfer's first examination, conducted in 2025 by the SEC's New York Regional Office.
-slug: /examinations/1
+description: Responses from BlockTransfer's first examination, conducted in 2025 by the SEC's New York Regional Office.
+slug: /examinations/examination-1
 ---
 
 import DocCardList from '@theme/DocCardList';
