@@ -1,0 +1,24 @@
+---
+title: "Examination Response #8"
+description: Public response from BlockTransfer's first examination.
+sidebar_label: "Response #8"
+slug: /examinations/8
+---
+
+import ExamPdf from '@site/src/components/ExamPdf';
+
+# Examination Response #8
+
+This September 15, 2025 letter responds to the findings of Block Transfer's first Commission examination, including the August 14 deficiency letter reproduced in the response. It combines responses to individual findings with proposed technical, procedural, and governance improvements.
+
+## Topics covered
+
+- Master securityholder-file maintenance and preliminary network architecture
+- Certificate-detail posting, legacy file segmentation, record modifications, issue dates, and control-data corrections
+- Client identity verification, public policies, sanctions controls, and lost-securityholder evidence
+- Handling mail and securities, cybersecurity safeguards, and software-governance considerations
+- Physical-certificate cancellation, destruction, loss reporting, and backup records
+- Principal-office requirements, mail-processing arrangements, and distributed operational models
+- Proposed community participation and governance structures for future remediation
+
+<ExamPdf src="/ref/exams/8.pdf" title="Examination Response #8 PDF" />
