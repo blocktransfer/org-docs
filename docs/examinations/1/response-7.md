@@ -1,6 +1,6 @@
 ---
 title: "Examination Response #7"
-description: Redacted response from BlockTransfer's first examination.
+description: Redacted: Principal-office records, issuance-date maintenance, and public-information practices.
 sidebar_label: "Response #7"
 slug: /examinations/7
 ---

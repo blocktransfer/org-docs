@@ -1,6 +1,6 @@
 ---
 title: "Examination Response #6"
-description: Public response from BlockTransfer's first examination.
+description: Public: Authorized-share controls, issue dates, investor records, and revocation or reissuance documentation.
 sidebar_label: "Response #6"
 slug: /examinations/6
 ---

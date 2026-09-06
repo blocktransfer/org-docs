@@ -1,6 +1,6 @@
 ---
 title: "Examination Response #3"
-description: Public response from BlockTransfer's first examination.
+description: Public: Control books, master securityholder files, issuances, revocations, and distributed-ledger records.
 sidebar_label: "Response #3"
 slug: /examinations/3
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Examination Response #2"
-description: Redacted response from BlockTransfer's first examination.
+description: Redacted: Lost-securityholder searches, issuer records, onboarding, identity verification, and AML controls.
 sidebar_label: "Response #2"
 slug: /examinations/2
 ---

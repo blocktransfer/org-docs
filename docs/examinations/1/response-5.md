@@ -1,6 +1,6 @@
 ---
 title: "Examination Response #5"
-description: Public response from BlockTransfer's first examination.
+description: Public: Asset-holder records, distribution accounts, payment history, and restricted balances.
 sidebar_label: "Response #5"
 slug: /examinations/5
 ---

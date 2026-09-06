@@ -1,6 +1,6 @@
 ---
 title: "Examination Response #1"
-description: Public response from BlockTransfer's first examination.
+description: Public: Initial document request, organization, regulatory records, policies, and controls.
 sidebar_label: "Response #1"
 slug: /examinations/1
 ---
