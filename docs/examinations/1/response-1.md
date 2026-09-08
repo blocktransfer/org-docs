@@ -9,7 +9,7 @@ import ExamPdf from '@site/src/components/ExamPdf';
 
 # Examination Response #1
 
-This May 8, 2025 letter responds to the initial transfer-agent examination request dated April 30, 2025. It introduces Block Transfer's organizational model and identifies the records, policies, and supporting exhibits supplied to staff.
+This May 8, 2025 letter responds to the initial transfer-agent examination request dated April 30, 2025. It introduces BlockTransfer's organizational model and identifies the records, policies, and supporting exhibits supplied to staff.
 
 ## Topics covered
 

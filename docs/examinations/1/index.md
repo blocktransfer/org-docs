@@ -8,9 +8,9 @@ import DocCardList from '@theme/DocCardList';
 
 # Examination #1
 
-These public documents are responses from Block Transfer's first examination, conducted in 2025 by the U.S. Securities and Exchange Commission's New York Regional Office.
+These public documents are responses from BlockTransfer's first examination, conducted in 2025 by the U.S. Securities and Exchange Commission's New York Regional Office.
 
-The series documents Block Transfer's responses to successive staff requests concerning its transfer-agent operations and blockchain-based recordkeeping system. The final response addresses findings from the examination. Certain third-party details in the public copies have been redacted.
+The series documents BlockTransfer's responses to successive staff requests concerning its transfer-agent operations and blockchain-based recordkeeping system. The final response addresses findings from the examination. Certain third-party details in the public copies have been redacted.
 
 ## Scope of the collection
 

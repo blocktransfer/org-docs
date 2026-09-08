@@ -9,7 +9,7 @@ import ExamPdf from '@site/src/components/ExamPdf';
 
 # Examination Response #8
 
-This September 15, 2025 letter responds to the findings of Block Transfer's first Commission examination, including the August 14 deficiency letter reproduced in the response. It combines responses to individual findings with proposed technical, procedural, and governance improvements.
+This September 15, 2025 letter responds to the findings of BlockTransfer's first Commission examination, including the August 14 deficiency letter reproduced in the response. It combines responses to individual findings with proposed technical, procedural, and governance improvements.
 
 ## Topics covered
 

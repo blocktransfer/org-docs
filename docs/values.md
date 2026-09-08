@@ -33,7 +33,7 @@ create value for you.
 When it comes to the choice to charge a fee or not, our stance is clear: we opt
 for free. Ensuring efficiency for our investors is paramount.
 
-At the heart of Block Transfer lies a steadfast commitment: our investors always
+At the heart of BlockTransfer lies a steadfast commitment: our investors always
 come first. Every decision we make and every path we tread is aligned with the
 best interests of our investors.
 
