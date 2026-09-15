@@ -22,7 +22,7 @@ Direct investor trading is a symbol of financial liberation. It's about breaking
 
 ![Global impact of P2P equity trading](https://www.blocktransfer.com/imgs/blogs/the-sdex.png)
 
-## The Basics of Direct Trading
+## The Basics of Direct Trading <!-- #direct-trading -->
 
 At its heart, TAD3 is about simplicity and connection. It's the financial equivalent of a farmers' market, where producers and consumers interact without a supermarket acting as a go-between. This translates to a system where individuals like you and me can trade securities directly with each other, without a traditional broker setting the terms or taking a slice of the pie. 
 
@@ -30,7 +30,7 @@ At its heart, TAD3 is about simplicity and connection. It's the financial equiva
 
 Now, you might wonder, how is this all possible? Well, it's thanks to [federal trading exemptions](https://www.pillsburylaw.com/images/content/1/0/v2/104489/OffersSalesandResalesofSecuritiesandGeneralSolicitation1.pdf) for anyone other than an "issuer, underwriter, or dealer." Imagine the process as if you're handing over a prized painting to a friend. You have a "painting certificate," a tangible representation of your investment. Instead of going through a centralized dealer gallery, you and I sit down to make a private deal. On our own behalves, I agree to wire you money directly, and you sign the Van Gogh over to me. There's a sense of satisfaction in handling the transaction ourselves, without intermediaries. That's TAD3, [powered by distributed ledger technology](https://patents.google.com/patent/US20220284507A1).
 
-### Efficient Secondary Markets ↔ 
+### Efficient Secondary Markets ↔ <!-- #secondary-markets -->
 
 Picture this: Miguel, an early investor in an innovative manufacturing startup, can sell his shares to Sarah, a retired scientist, without jumping through the [hoops of traditional systems](https://blocktransfer.com/.well-known/yellowpaper.pdf). They find common ground in TAD3, a beacon of efficiency with no trading fees nibbling away at their finances. 
 
@@ -38,7 +38,7 @@ Picture this: Miguel, an early investor in an innovative manufacturing startup, 
 
 Just as artists trust galleries to distribute their paintings, companies use transfer agents to manage their stock. There's just a smidge more compliance work on the securities side. That's why only a few companies in the entire US market act as their own transfer agent, [in fear of sub-par services](https://youtu.be/hC8fKl86Kos). TAD3 is like a public, global digital archive rather than a physical gallery on Wall Street, only for a special few. Stellar holds detailed records of every transaction, maintaining a distributed ledger that's as clear and reliable as a museum's catalog (and don't forget [programmatically accessible](https://developers.stellar.org/api/horizon)). 
 
-### TAD3's Non-Intermediary Model 
+### TAD3's Non-Intermediary Model <!-- #non-intermediary -->
 
 TAD3 acts as a silent witness rather than a vocal auctioneer. TAD3 doesn't stand between buyers and sellers, shouting out bids and offers. Instead, Stellar enables transactions directly between investors, much like a bulletin board in a community center where people can pin up offers and requests. (Don't worry, we have systems in place to enforce SEC trading halts.) This means that TAD3 does not profit from each transaction, but rather it allows us to facilitate the smooth transfer of ownership from one investor to another. You could think of the decentralized Stellar network as a librarian who organizes books for the depository, TAD3. 
 
@@ -46,11 +46,11 @@ TAD3 acts as a silent witness rather than a vocal auctioneer. TAD3 doesn't stand
 
 When TAD3 doesn't take a cut, the savings are passed directly to your savings and retirements. Imagine keeping every dollar you earn from selling tomatoes in your backyard garden instead of paying a vendor fee at the farmers' market. This is the financial equivalent. By not charging fees or acting as middlemen, TAD3 empowers investors to keep more of their profits, which can then be reinvested or spent as they see fit—the ultimate financial freedom. Moreover, this streamlined approach creates a more dynamic market, where securities change hands more freely and efficiently. 
 
-## "Atomic Swaps" Make This Work 
+## "Atomic Swaps" Make This Work <!-- #atomic-swaps -->
 
 Atomic swaps let you trade with no middlemen. They are a revolutionary piece of blockchain technology using [math](https://www.youtube.com/watch?v=10Wl4ZRorrA&list=PLWUFvhKuc_5sf6xhDONTEPOyrDtEn3wwm&index=2) and the foundational principle behind the SDEX's global decentralized limit order book. Offers are "atomic" because either a trade happens in its entirety, or not at all. This eliminates counterparty risk, which [removes the need for a centralized clearing system entirely](https://youtu.be/NOjUOLxFFL8).
 
-### Facilitating Trustless Trust 
+### Facilitating Trustless Trust <!-- #trustless-trust -->
 
 Atomic swaps are a cornerstone of direct trading in TAD3. By using automated, decentralized protocols, the SDEX lets investors privately trade securely at scale in a way never before seen. This approach streamlines the trading process, reduces dependency on third parties, and (importantly) removes transaction fees that would otherwise go to intermediaries.
 
