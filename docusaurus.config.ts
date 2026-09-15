@@ -1,6 +1,9 @@
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const stripBlogPostDate = (permalink: string): string =>
+  permalink.replace(/^(\/blog)\/\d{4}\/\d{1,2}\/\d{1,2}\//, '$1/');
+
 const config: Config = {
   title: 'BlockTransfer Org Docs',
   tagline: 'Operational documents, records, and archived posts.',
@@ -48,6 +51,25 @@ const config: Config = {
           editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
           onInlineAuthors: 'ignore',
           onUntruncatedBlogPosts: 'ignore',
+          processBlogPosts: async ({blogPosts}) => {
+            const processedPosts = blogPosts.map((post) => ({
+              ...post,
+              metadata: {
+                ...post.metadata,
+                permalink: stripBlogPostDate(post.metadata.permalink),
+              },
+            }));
+            const permalinks = new Set<string>();
+            for (const post of processedPosts) {
+              if (permalinks.has(post.metadata.permalink)) {
+                throw new Error(
+                  `Duplicate archived-post permalink: ${post.metadata.permalink}`,
+                );
+              }
+              permalinks.add(post.metadata.permalink);
+            }
+            return processedPosts;
+          },
         },
         theme: {
           customCss: './src/css/custom.css',
