@@ -1,9 +1,12 @@
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const stripBlogPostDate = (permalink: string): string =>
+  permalink.replace(/^(\/blog)\/\d{4}\/\d{1,2}\/\d{1,2}\//, '$1/');
+
 const config: Config = {
   title: 'BlockTransfer Org Docs',
-  tagline: 'Operational documents, records, and archived posts.',
+  tagline: 'Operational documents, records, and posts.',
   favicon: 'img/icon.png',
   url: 'https://blocktransfer.org',
   baseUrl: '/',
@@ -40,14 +43,33 @@ const config: Config = {
           },
         },
         blog: {
-          path: 'old_posts',
+          path: 'blog',
           routeBasePath: 'blog',
-          blogTitle: 'Archived Posts',
-          blogDescription: 'Older BlockTransfer posts preserved with the organization docs.',
+          blogTitle: 'Posts',
+          blogDescription: 'BlockTransfer posts and organizational references.',
           showReadingTime: true,
           editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
           onInlineAuthors: 'ignore',
           onUntruncatedBlogPosts: 'ignore',
+          processBlogPosts: async ({blogPosts}) => {
+            const processedPosts = blogPosts.map((post) => ({
+              ...post,
+              metadata: {
+                ...post.metadata,
+                permalink: stripBlogPostDate(post.metadata.permalink),
+              },
+            }));
+            const permalinks = new Set<string>();
+            for (const post of processedPosts) {
+              if (permalinks.has(post.metadata.permalink)) {
+                throw new Error(
+                  `Duplicate blog-post permalink: ${post.metadata.permalink}`,
+                );
+              }
+              permalinks.add(post.metadata.permalink);
+            }
+            return processedPosts;
+          },
         },
         theme: {
           customCss: './src/css/custom.css',

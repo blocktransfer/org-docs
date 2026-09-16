@@ -60,7 +60,7 @@ You're not alone in receiving this "full set delivery" of materials. The company
 
 You spend the next couple of hours diligently filling out your ballot. After all, this is why you invested—to have a say in the company's future. You seal the return envelope and drop it back in the mailbox, but as you do, a nagging question remains: In an age where almost everything is digitized, why is the proxy voting system so stuck in the past? Why does it feel like your voice is being muffled by an outdated, inefficient process? 
 
-In all reality, t here's no guarantee that your vote will be accurately recorded or even received. Costly paper ballots can get lost in the mail, miscounted, or arrive past the deadline, effectively nullifying your vote. 
+In all reality, there's no guarantee that your vote will be accurately recorded or even received. Costly paper ballots can get lost in the mail, miscounted, or arrive past the deadline, effectively nullifying your vote. 
 
 ### Control Number Quandaries 
 
@@ -105,7 +105,7 @@ This disconnect between voting power and economic interest is more than just unf
 
 Picture this: You're at a town hall meeting, and everyone is given a single token to cast their vote on community issues. You drop your token into the voting box, confident that your voice will be heard. But then you notice something odd—some people have multiple tokens, and they're gleefully dropping them into the box. Your heart sinks as you realize that your single vote has been diluted, overshadowed by the unfair advantage of others. This is the essence of overvoting in the corporate world, a system where the "one share, one vote" principle is often compromised. 
 
-In the traditional proxy voting system,[overvoting is a rampant issue](https://blocktransfer.com/.well-known/yellowpaper.pdf). It occurs when more votes are cast than there are shares available, often due to the lending of shares by brokers. This dilutes the voting power of individual shareholders and creates a chaotic, unreliable voting landscape. It's like a game where the rules are constantly changing, and not in your favor. 
+In the traditional proxy voting system, [overvoting is a rampant issue](https://blocktransfer.com/.well-known/yellowpaper.pdf). It occurs when more votes are cast than there are shares available, often due to the lending of shares by brokers. This dilutes the voting power of individual shareholders and creates a chaotic, unreliable voting landscape. It's like a game where the rules are constantly changing, and not in your favor. 
 
 #### Veil of Anonymity 
 
@@ -123,12 +123,12 @@ Enter blockchain technology. Our solution leverages the transparency and securit
 
 With direct registered ownership, your vote truly counts. You're not just a face in the crowd but a recognized, valued participant in corporate governance. It's time to take back control, to ensure that your voice is heard loud and clear. With blockchain-based voting, we're not just fixing a broken system; we're building a new one, rooted in fairness, transparency, and trust. 
 
-Our systems make every vote [traceable and transparent](https://stellar.expert/explorer/public/account/GBF5JFCABT4SJFW7KPTNSB6YGZJ2AM5QK5DGLDSZZDGAVUJJVYLOVOTE). Once voting opens, we send investors standard proxy notices. But instead of dialing a call center or mailing back a postcard, investors use a wallet app to cryptographically vote with math. They go through an interface with the voting items specific to each meeting, selecting "for," "nay," "abstain," or "withhold" for each item. These choices get encoded in a transaction memo, which is then sent to a public blockchain voting address. At the meeting, vote results from these public distributed ledger are reconciled with shareholder record-date balances as recorded on the blockchain. Anyone can tally up public transaction memos to verify final counts, and all votes have the same security backing our stock transfers. 
+Our systems make every vote [traceable and transparent](https://stellar.expert/explorer/public/account/GBF5JFCABT4SJFW7KPTNSB6YGZJ2AM5QK5DGLDSZZDGAVUJJVYLOVOTE). Once voting opens, we send investors standard proxy notices. But instead of dialing a call center or mailing back a postcard, investors use a wallet app to cryptographically vote with math. They go through an interface with the voting items specific to each meeting, selecting "for," "nay," "abstain," or "withhold" for each item. These choices get encoded in a transaction memo, which is then sent to a public blockchain voting address. At the meeting, vote results from these public distributed ledgers are reconciled with shareholder record-date balances as recorded on the blockchain. Anyone can tally up public transaction memos to verify final counts, and all votes have the same security backing our stock transfers. 
 
 Sources
 
 [Block Transfer Yellowpaper](https://blocktransfer.com/.well-known/yellowpaper.pdf)
 
-[Komisa r's P hantom Shares](https://www.thekomisarscoop.com/2020/03/how-phantom-shares-on-wall-street-threaten-u-s-companies-and-investors/)
+[Komisar's Phantom Shares](https://www.thekomisarscoop.com/2020/03/how-phantom-shares-on-wall-street-threaten-u-s-companies-and-investors/)
 
-Trimbath's Post [#1](https://ko-fi.com/post/PROXY-PLUMBING-PART-ONE-CORPORATE-VOTING-CHARADE-S6S1S0Q84),[#2](https://ko-fi.com/post/PROXY-PLUMBING-PART-DEUX-CALL-TO-ACTION-G2G3SESCF), &[#3](https://ko-fi.com/post/PROXY-PLUMBING-PART-TERCERA-G2G3T7DPM)
+Trimbath's Post [#1](https://ko-fi.com/post/PROXY-PLUMBING-PART-ONE-CORPORATE-VOTING-CHARADE-S6S1S0Q84), [#2](https://ko-fi.com/post/PROXY-PLUMBING-PART-DEUX-CALL-TO-ACTION-G2G3SESCF), & [#3](https://ko-fi.com/post/PROXY-PLUMBING-PART-TERCERA-G2G3T7DPM)

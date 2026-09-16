@@ -26,7 +26,7 @@ If you're scratching your head thinking, "Isn't this the digital age?", you're n
 
 Despite its grandiose name, medallions are essentially a specialized stamp to authenticate financial transactions. Traditionally, you needed this seal as a measure of fraud protection when you wanted to transfer stock on the books of an issuer (think direct share purchase plans or employee stock options). The stamp is not just any ordinary stamp, it's backed by a monetary guarantee from the issuing bank that you are, in fact, you. 
 
-Basically, a banker reviews your documents and government IDs (yes, you need two at most banks). First, they must approve your documents as financial statements and legal representations related specifically to you. Some banks won't stamp if you're withdrawing from an affiliate (think brokerage to [DRS](https://en.wikipedia.org/wiki/Direct_holding_system) ). If all is good, they watch you sign the physical document, and they rubber stamp it. 
+Basically, a banker reviews your documents and government IDs (yes, you need two at most banks). First, they must approve your documents as financial statements and legal representations related specifically to you. Some banks won't stamp if you're withdrawing from an affiliate (think brokerage to [DRS](https://en.wikipedia.org/wiki/Direct_holding_system)). If all is good, they watch you sign the physical document, and they rubber stamp it. 
 
 The idea is to provide an extra layer of security in financial transactions. But in a world that's rapidly digitizing, the question arises: Is this old-school method of security still effective, or even reasonable? Forcing this antiquated system onto modern financial transactions is like trying to fit a square peg in a round hole. Sure, it might fit with enough force, but there's a better shape out there that makes the whole process easier. 
 
@@ -88,7 +88,7 @@ It was an eye-opener for us, and it played a part in shaping our current directi
 
 ## The Web3 Revolution 
 
-So we've talked at length about the archaic and problematic nature of medallions in the world of financial transactions. But it's not all doom and gloom; in fact, far from it. Enter the [Blockchain Revolution](https://youtu.be/WBNSkptlE_Y) —a paradigm shift that promises to change the landscape of financial transactions and security measures, making many of the problems we've discussed virtually obsolete. 
+So we've talked at length about the archaic and problematic nature of medallions in the world of financial transactions. But it's not all doom and gloom; in fact, far from it. Enter the [Blockchain Revolution](https://youtu.be/WBNSkptlE_Y)—a paradigm shift that promises to change the landscape of financial transactions and security measures, making many of the problems we've discussed virtually obsolete. 
 
 What if we told you that there's a way to conduct share transfers that is secure, transparent, and doesn't require you to step foot in a financial institution? What if you could eliminate the multiple checks against stolen stamps, the endless documentation, and, most importantly, the incessant waiting? 
 
@@ -132,7 +132,7 @@ Beyond cyber threats, blockchain also mitigates the risk of identity theft throu
 
 One of our early advisors was the CISO of Intercontinental Exchange for two decades, building the organization's whole cyber program from scratch, based on experience founding an ISP in the '90s. He mentioned that people usually have a relatively weak password, but a relatively strong second-factor method (think Google Authenticator). Naturally, authenticating users based solely on that second-factor would be equally secure, and much more efficient. 
 
-Without going into [the weeds](https://www.youtube.com/watch?v=10Wl4ZRorrA&list=PLWUFvhKuc_5sf6xhDONTEPOyrDtEn3wwm&index=2), you secure your Block Transfer account using a completely random string of words written down during onboarding. This "backup phrase," "account certificate," "seed phrase" —whatever you want to call it, we think it's the most secure way to authenticate yourself based on mathematical secrets. Your words never change, which means you can store the credentials in a safe for a lifetime. (Don't worry, we have fallback systems in case of robberies.)
+Without going into [the weeds](https://www.youtube.com/watch?v=10Wl4ZRorrA&list=PLWUFvhKuc_5sf6xhDONTEPOyrDtEn3wwm&index=2), you secure your Block Transfer account using a completely random string of words written down during onboarding. This "backup phrase," "account certificate," "seed phrase"—whatever you want to call it, we think it's the most secure way to authenticate yourself based on mathematical secrets. Your words never change, which means you can store the credentials in a safe for a lifetime. (Don't worry, we have fallback systems in case of robberies.)
 
 ![image](https://www.blocktransfer.com/imgs/blogs/secret-vault.png)
 Last but not least, blockchain also addresses the very real risk of data manipulation. Once a transaction is verified and added to the public ledger, it becomes immutable. This feature drastically reduces the chance of data tampering, adding another layer of security and peace of mind to each transaction. 
