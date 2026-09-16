@@ -36,7 +36,7 @@ Picture this: Miguel, an early investor in an innovative manufacturing startup, 
 
 ## TAD3 Principles 
 
-Just as artists trust galleries to distribute their paintings, companies use transfer agents to manage their stock. There's just a smidge more compliance work on the securities side. That's why only a few companies in the entire US market act as their own transfer agent, [in fear of sub-par services](https://youtu.be/hC8fKl86Kos). TAD3 is like a public, global digital archive rather than a physical gallery on Wall Street, only for a special few. Stellar holds detailed records of every transaction, maintaining a distributed ledger that's as clear and reliable as a museum's catalog (and don't forget [programmatically accessible](https://developers.stellar.org/api/horizon)). 
+Just as artists trust galleries to distribute their paintings, companies use transfer agents to manage their stock. There's just a smidge more compliance work on the securities side. That's why only a few companies in the entire US market act as their own transfer agent, [in fear of sub-par services](https://youtu.be/hC8fKl86Kos). TAD3 is like a public, global digital archive rather than a physical gallery on Wall Street, only for a special few. Stellar holds detailed records of every transaction, maintaining a distributed ledger that's as clear and reliable as a museum's catalog (and don't forget [programmatically accessible](https://developers.stellar.org/docs/data/apis/horizon)). 
 
 ### TAD3's Non-Intermediary Model <!-- #non-intermediary -->
 
@@ -54,7 +54,7 @@ Atomic swaps let you trade with no middlemen. They are a revolutionary piece of 
 
 Atomic swaps are a cornerstone of direct trading in TAD3. By using automated, decentralized protocols, the SDEX lets investors privately trade securely at scale in a way never before seen. This approach streamlines the trading process, reduces dependency on third parties, and (importantly) removes transaction fees that would otherwise go to intermediaries.
 
-The [Stellar Consensus Protocol](https://stellar.org/learn/stellar-consensus-protocol) underpins these transactions, ensuring they are fast, reliable, and tamper-proof. It's like a global farmers' market where companies can send crops to investors in exchange for payments, all through one email. The distributed network checks for [fair trade conditions](https://developers.stellar.org/docs/encyclopedia/liquidity-on-stellar-sdex-liquidity-pools) before finalizing all transactions. Seamless, secure, and nearly instant swaps—that's TAD3.
+The [Stellar Consensus Protocol](https://stellar.org/learn/stellar-consensus-protocol) underpins these transactions, ensuring they are fast, reliable, and tamper-proof. It's like a global farmers' market where companies can send crops to investors in exchange for payments, all through one email. The distributed network checks for [fair trade conditions](https://developers.stellar.org/docs/learn/fundamentals/liquidity-on-stellar-sdex-liquidity-pools) before finalizing all transactions. Seamless, secure, and nearly instant swaps—that's TAD3.
 
 ### A Unique Network 
 
@@ -82,7 +82,7 @@ We need to level the playing field for all investors, regardless of their tradin
 
 Transparency is key in a new, trusting financial system. We shouldn't need to worry about [when our broker is trading against us](https://www.sec.gov/answers/internalization.htm). Clear, auditable processes must allow users to understand how their trades execute—that's TAD3.
 
-Lastly, for the finance geeks, all these different ATS trading venues split volume apart, segmenting the entire stock market. The [implications and costs](https://www.sec.gov/files/bats_moc_analysis.pdf) of this practice are very difficult to quantify, but they dramatically affect your investment returns over time. ⌚ This leads to [higher spreads](https://www.researchgate.net/publication/2488223_Alternative_Trading_Systems_and_Liquidity), a [fragmented view of transaction history](https://youtu.be/UjI7lfTbvrw), and [other problems](https://www.smartermarketspod.com/) detrimental to 'smarter markets.' A unified, or at least interoperable, recordkeeping system could eliminate this fragmentation. Not one controlled by a [private for-profit monopoly](https://www.blocktransfer.com/blog/post/might-not-own-stock-in-your-portfolio).
+Lastly, for the finance geeks, all these different ATS trading venues split volume apart, segmenting the entire stock market. The [implications and costs](https://www.sec.gov/files/bats_moc_analysis.pdf) of this practice are very difficult to quantify, but they dramatically affect your investment returns over time. ⌚ This leads to [higher spreads](https://www.researchgate.net/publication/2488223_Alternative_Trading_Systems_and_Liquidity), a [fragmented view of transaction history](https://youtu.be/UjI7lfTbvrw), and [other problems](https://smartermarkets.media/) detrimental to 'smarter markets.' A unified, or at least interoperable, recordkeeping system could eliminate this fragmentation. Not one controlled by a [private for-profit monopoly](https://www.blocktransfer.com/blog/post/might-not-own-stock-in-your-portfolio).
 
 ## The Takeaway
 
