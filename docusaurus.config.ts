@@ -117,7 +117,11 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} BlockTransfer.`,
+      copyright: [
+        `Copyright ${new Date().getFullYear()} BlockTransfer.`,
+        'Original content: <a href="https://github.com/blocktransfer/org-docs/blob/main/LICENSE-content">CC BY-SA 4.0</a>.',
+        'Repository code: <a href="https://github.com/blocktransfer/org-docs/blob/main/LICENSE-code">AGPL-3.0</a>.',
+      ].join(' '),
     },
     prism: {
       additionalLanguages: ['powershell', 'bash'],
