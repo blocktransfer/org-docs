@@ -1,65 +1,62 @@
-# Historical documentation version protection
+# Version archive approval policy
 
-The contents of `versions/` are published historical documentation snapshots.
-Changes to those snapshots (including additions, deletions, and renames) and
-changes to the root `versions.json` manifest need **explicit approval** before
-they can enter `main`.
+Protected content:
 
-## Activate the required GitHub ruleset
+- All files under versions/, including archived snapshots, sidebars, and a
+  future versions/history.json manifest.
+- The current Docusaurus manifest at the repository root: versions.json.
+- This policy and the privileged verification workflow/helper scripts, to
+  prevent changes that could quietly disable the approval gate.
 
-This repository does not load rulesets from committed files. A repository
-administrator must set up the policy in GitHub after merging this PR:
+A pull request targeting main that changes any protected path (including a
+deletion or a rename out of a protected path) requires an explicit APPROVED
+GitHub review **on its current head commit** from a different human with
+write/admin access to this repository. Older approvals, the PR author's own
+approval, bot approvals, dismissed approvals, and read-only reviews do not
+qualify. If a newer commit is pushed, a fresh approval is necessary.
 
-1. Open [Repository settings → Rules → Rulesets](https://github.com/blocktransfer/org-docs/settings/rules) and create a **branch ruleset** named **Protect historical versions**.
-2. Set enforcement to **Active** and target the default branch, `main`.
-3. Enable **Require a pull request before merging**. Keep the *general*
-   required approval count at **0** if ordinary documentation changes should
-   continue without mandatory approval.
-4. Under **Required reviewers**, choose a designated `blocktransfer`
-   organization **team** with write access to this repository and set
-   **Minimum approvals: 1**. Enter these file patterns:
-   ```gitignore
-   versions/**
-   versions.json
-   .github/CODEOWNERS
-   ```
-5. Enable **Dismiss stale pull request approvals when new commits are pushed**
-   so approval must still cover subsequent changes. Do not configure a bypass
-   actor if all changes to the archives must be reviewed.
-6. Save the ruleset, then verify its enforcement on a test pull request before
-   considering the historical releases protected.
+Pull requests that change no protected paths receive a successful
+version-archives commit status automatically without requiring review.
+Failures querying GitHub fail closed.
 
-**The ruleset's Required reviewers option accepts an organization team, not
-an individual GitHub username.** Select an existing authorized team or create
-one first, with a reviewer other than the author of the PR. GitHub does not
-allow authors to approve their own pull requests.
+## Activate the ruleset after merging
 
-## CODEOWNERS
+GitHub rulesets are administrator-managed repository settings; they cannot be
+activated by committing a file. Unlike CODEOWNERS, this project uses the same
+trusted status-check architecture as the SEC-publications repository.
 
-`.github/CODEOWNERS` separately requests review from `@JFWooten4` when a
-PR touches an archived version, the version manifest, or the ownership file
-itself. CODEOWNERS **does not block a merge by itself**; the active ruleset
-above provides enforcement. If the organization wants a different reviewer,
-update CODEOWNERS in a reviewed PR.
+In [Repository settings → Rules → Rulesets](https://github.com/blocktransfer/org-docs/settings/rules),
+create an **active branch ruleset** called **Version archive protection**:
 
-As an alternative, administrators may enable **Require review from Code
-Owners** on the branch ruleset, but combining that setting with a nonzero
-general approval requirement can require reviews for unrelated pull requests.
-The file-patterned **Required reviewers** rule is preferred for targeted
-protection.
+1. Target the **default branch** (main).
+2. **Require a pull request before merging**, with **0 generally required
+   approving reviews** (the status check handles path-specific approvals).
+3. Under **Require status checks to pass**, add the context
+   **version-archives**. Where available, select **GitHub Actions** as the
+   expected source.
+4. Prohibit force pushes and deletions. Do not configure bypass permissions.
+5. Save the ruleset and confirm an archive-edit PR stays blocked until a
+   separate write/admin collaborator approves the PR's current head commit.
+   Confirm a docs-only PR passes with no additional review.
 
-## Verification
+To make the status selectable, first merge these workflows to main and open
+or update a test PR targeting main so version-archives runs once. You can then
+select it as a required check in the ruleset UI.
 
-After activating the ruleset, confirm that:
+**Important:** Merely merging this PR does not activate protection. The
+ruleset must be created by an administrator, and protecting the ruleset
+settings themselves remains an administrative responsibility. Do not permit
+general GitHub App or administrator bypass if approval is mandatory.
 
-- A PR changing only `docs/` is unaffected by the version-specific approval rule.
-- A PR adding, editing, deleting, or renaming a file under `versions/` is
-  blocked until an eligible team member explicitly approves it.
-- A PR changing `versions.json` or `.github/CODEOWNERS` also requires approval.
-- A new commit changing the PR diff makes the previous approval stale when
-  stale-approval dismissal is enabled.
-- A direct push to `main` does not bypass the PR requirement.
+## Trusted execution design
 
-GitHub documentation:
-- [Available rules for rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets)
-- [About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+- The privileged workflow version-archive-review.yml only checks out the
+  trusted main branch (never the contributor's PR head). It reads changed file
+  names, reviewers, and permissions from GitHub's API and writes a status.
+- A separate, unprivileged pull_request_review workflow uploads only a
+  numeric PR identifier to prompt reevaluation when an approval is added,
+  edited, or dismissed. The privileged workflow validates that identifier
+  and independently fetches the current PR, diff, and reviews.
+- Tests run locally using:
+  node --test .github/scripts/version-archive-review.test.cjs
+- Review the required checks again if changing these workflow files.

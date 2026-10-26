@@ -1,0 +1,54 @@
+name: Version archive review
+
+on:
+  pull_request_target:
+    branches: [main]
+    types: [opened, reopened, synchronize, ready_for_review, edited]
+  workflow_run:
+    workflows: [Version archive review signal]
+    types: [completed]
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read
+  statuses: write
+
+jobs:
+  verify:
+    if: github.event_name == 'pull_request_target' || (github.event.workflow_run.event == 'pull_request_review' && github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      # The workflow and checked-out code both originate from trusted main.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const { run } = require('./.github/scripts/version-archive-review.cjs');
+            let pull_number = context.payload.pull_request?.number;
+            if (context.eventName === 'workflow_run') {
+              // The artifact is untrusted: extract ONLY a decimal PR number.
+              const { owner, repo } = context.repo;
+              const run_id = context.payload.workflow_run.id;
+              const artifacts = await github.paginate(github.rest.actions.listWorkflowRunArtifacts, {
+                owner, repo, run_id, per_page: 100
+              });
+              const artifact = artifacts.find(a => a.name === 'version-archive-pr' && !a.expired);
+              if (!artifact) throw new Error('Review signal artifact is missing');
+              const response = await github.rest.actions.downloadArtifact({
+                owner, repo, artifact_id: artifact.id, archive_format: 'zip'
+              });
+              const fs = require('node:fs');
+              const cp = require('node:child_process');
+              const filename = process.env.RUNNER_TEMP + '/review-signal.zip';
+              fs.writeFileSync(filename, Buffer.from(response.data));
+              const text = cp.execFileSync('unzip', ['-p', filename, 'pr-number.txt'], {
+                encoding: 'utf8', maxBuffer: 1024
+              }).trim();
+              if (!/^[1-9][0-9]{0,8}$/.test(text)) throw new Error('Invalid review signal PR number');
+              pull_number = Number(text);
+            }
+            await run({ github, context, core, pull_number });
