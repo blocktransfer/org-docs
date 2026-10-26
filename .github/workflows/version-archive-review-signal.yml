@@ -1,0 +1,23 @@
+name: Version archive review signal
+
+on:
+  pull_request_review:
+    types: [submitted, dismissed, edited]
+
+# Review workflows can be changed by a contributor's PR; NEVER give this write access.
+permissions:
+  contents: read
+
+jobs:
+  signal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Record PR number as untrusted data
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: printf '%s\n' "$PR_NUMBER" > pr-number.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: version-archive-pr
+          path: pr-number.txt
+          retention-days: 1
