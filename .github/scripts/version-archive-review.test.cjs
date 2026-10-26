@@ -9,8 +9,7 @@ test('detects all protected version paths and historic rename sources', () => {
     { filename: 'docs/intro.md' },
     { filename: 'versions/archive-0.1.0/intro.md' },
     { filename: 'new/location.md', previous_filename: 'versions/archive-0.1.0/old.md' },
-    { filename: 'versions/history.json' },
-    { filename: 'versions.json' },
+    { filename: 'versions/sidebars/version-0.1.0.json' },
     { filename: '.github/scripts/version-archive-review.cjs' },
     { filename: '.github/workflows/version-archive-review.yml' },
     { filename: '.github/VERSION_PROTECTION.md' }
@@ -18,10 +17,9 @@ test('detects all protected version paths and historic rename sources', () => {
     '.github/VERSION_PROTECTION.md',
     '.github/scripts/version-archive-review.cjs',
     '.github/workflows/version-archive-review.yml',
-    'versions.json',
     'versions/archive-0.1.0/intro.md',
     'versions/archive-0.1.0/old.md',
-    'versions/history.json'
+    'versions/sidebars/version-0.1.0.json'
   ]);
   assert.deepEqual(protectedFiles([{ filename: 'docs/intro.md' }]), []);
 });
@@ -85,8 +83,8 @@ test('unrelated docs changes pass automatically without fetching reviews', async
 });
 
 for (const filename of [
-  'versions/archive-0.1.0/intro.md', 'versions/history.json',
-  'versions.json', '.github/scripts/version-archive-review.cjs',
+  'versions/archive-0.1.0/intro.md', 'versions/sidebars/version-0.1.0.json',
+  '.github/scripts/version-archive-review.cjs',
   '.github/VERSION_PROTECTION.md'
 ]) {
   test('unapproved protected change fails: ' + filename, async () => {
@@ -108,7 +106,7 @@ test('renaming a file out of versions still requires approval', async () => {
 
 test('fresh independent contributor approval passes', async () => {
   const gh = fake({
-    files: [{ filename: 'versions.json' }],
+    files: [{ filename: 'versions/sidebars/version-0.1.0.json' }],
     reviews: [{ id: 1, user: { login: 'reviewer', type: 'User' }, state: 'APPROVED', commit_id: 'head' }]
   });
   await run({ github: gh, context, core: { setFailed: () => { throw new Error('unexpected'); } } });
@@ -122,7 +120,7 @@ test('stale review, bot review, self approval, or read-only reviewer fail', asyn
     [{ id: 1, user: { login: 'foo[bot]', type: 'Bot' }, state: 'APPROVED', commit_id: 'head' }, 'admin'],
     [{ id: 1, user: { login: 'other', type: 'User' }, state: 'APPROVED', commit_id: 'head' }, 'read']
   ]) {
-    const gh = fake({ files: [{ filename: 'versions/history.json' }], reviews: [reviewer], permission });
+    const gh = fake({ files: [{ filename: 'versions/sidebars/version-0.1.0.json' }], reviews: [reviewer], permission });
     const failures = [];
     await run({ github: gh, context, core: { setFailed: x => failures.push(x) } });
     assert.deepEqual(gh.statuses.map(x => x.state), ['pending', 'failure']);
@@ -138,7 +136,7 @@ test('GitHub API errors fail closed, not pass', async () => {
   assert.deepEqual(gh.statuses.map(x => x.state), ['failure']);
 
   const gh2 = fake({
-    files: [{ filename: 'versions.json' }],
+    files: [{ filename: 'versions/sidebars/version-0.1.0.json' }],
     reviews: [{ id: 1, user: { login: 'reviewer', type: 'User' }, state: 'APPROVED', commit_id: 'head' }],
     throwPermissions: true
   });
@@ -156,20 +154,21 @@ test('fails closed when GitHub caps changed files at 3000', async () => {
   assert.deepEqual(gh.statuses.map(x => x.state), ['failure']);
 });
 
-
-test('protects version-generation scripts and manifest removal', () => {
+test('protects version-generation scripts and archives', () => {
   assert.deepEqual(protectedFiles([
     {filename: 'scripts/archive-versions.cjs'},
     {filename: 'scripts/build-docusaurus.cjs'},
     {filename: '.gitignore'},
-    {filename: 'versions.json'},
-    {filename: 'versions/history.json'},
+    {filename: 'versions/sidebars/version-0.1.0.json'},
     {filename: 'docs/ordinary.md'}
   ]), [
     '.gitignore',
     'scripts/archive-versions.cjs',
     'scripts/build-docusaurus.cjs',
-    'versions.json',
-    'versions/history.json'
+    'versions/sidebars/version-0.1.0.json'
   ]);
+});
+
+test('generated root manifest does not require archive reviewer approval', () => {
+  assert.deepEqual(protectedFiles([{filename: 'versions.json'}]), []);
 });

@@ -11,7 +11,6 @@ The root manifest is ignored by Git. Do **not** create `versions/history.json`.
 Protected changes include:
 
 - All paths under `versions/`, including archived snapshots and sidebars.
-- `versions.json` to prevent reintroducing a checked-in version list.
 - The version generation, staging and cleanup scripts under `scripts/`.
 - `package.json`, `.gitignore`, the version-protection policy, and the
   privileged verifier workflow and helper files to prevent unreviewed bypasses.

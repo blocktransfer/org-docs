@@ -24,7 +24,7 @@ function protectedFiles(files) {
     // Check both locations to prevent rename-based approval bypasses.
     for (const path of [file.filename, file.previous_filename]) {
       if (typeof path !== 'string') continue;
-      if (path.startsWith('versions/') || path === 'versions.json' || POLICY_PATHS.has(path)) {
+      if (path.startsWith('versions/') || POLICY_PATHS.has(path)) {
         matches.add(path);
       }
     }
