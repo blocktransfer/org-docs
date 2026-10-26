@@ -1,62 +1,75 @@
 # Version archive approval policy
 
-Protected content:
+The **sole source of truth** for archived versions is the directory suffixes
+under `versions/archive-<version>/`. No committed version manifest is needed.
 
-- All files under versions/, including archived snapshots, sidebars, and a
-  future versions/history.json manifest.
-- The current Docusaurus manifest at the repository root: versions.json.
-- This policy and the privileged verification workflow/helper scripts, to
-  prevent changes that could quietly disable the approval gate.
+Docusaurus itself still requires a root `versions.json`. The build, development,
+and version-creation scripts reconstruct that file **temporarily** from the
+archive directories, then delete it and the generated Docusaurus inputs.
+The root manifest is ignored by Git. Do **not** create `versions/history.json`.
 
-A pull request targeting main that changes any protected path (including a
-deletion or a rename out of a protected path) requires an explicit APPROVED
-GitHub review **on its current head commit** from a different human with
-write/admin access to this repository. Older approvals, the PR author's own
-approval, bot approvals, dismissed approvals, and read-only reviews do not
-qualify. If a newer commit is pushed, a fresh approval is necessary.
+Protected changes include:
 
-Pull requests that change no protected paths receive a successful
-version-archives commit status automatically without requiring review.
-Failures querying GitHub fail closed.
+- All paths under `versions/`, including archived snapshots and sidebars.
+- `versions.json` to prevent reintroducing a checked-in version list.
+- The version generation, staging and cleanup scripts under `scripts/`.
+- `package.json`, `.gitignore`, the version-protection policy, and the
+  privileged verifier workflow and helper files to prevent unreviewed bypasses.
 
-## Activate the ruleset after merging
+Any PR targeting main that modifies a protected path (including removals
+and old names of renamed files) requires an explicit APPROVED review of
+the PR's **current head commit** from another human with write/admin
+permission on this repository. A stale, self, bot, dismissed, or read-only
+review does not qualify.
 
-GitHub rulesets are administrator-managed repository settings; they cannot be
-activated by committing a file. Unlike CODEOWNERS, this project uses the same
-trusted status-check architecture as the SEC-publications repository.
+Other PRs automatically receive a passing `version-archives` status
+without any approval requirement. GitHub API failures fail closed.
+
+## Configure the ruleset after merging
+
+As with SEC-publications, the enforcement is a GitHub branch ruleset
+requiring a verified status check; **CODEOWNERS is not used**. Committing
+workflows does not itself enable GitHub branch protection.
 
 In [Repository settings → Rules → Rulesets](https://github.com/blocktransfer/org-docs/settings/rules),
-create an **active branch ruleset** called **Version archive protection**:
+create an active branch ruleset called **Version archive protection**:
 
-1. Target the **default branch** (main).
-2. **Require a pull request before merging**, with **0 generally required
-   approving reviews** (the status check handles path-specific approvals).
-3. Under **Require status checks to pass**, add the context
-   **version-archives**. Where available, select **GitHub Actions** as the
-   expected source.
-4. Prohibit force pushes and deletions. Do not configure bypass permissions.
-5. Save the ruleset and confirm an archive-edit PR stays blocked until a
-   separate write/admin collaborator approves the PR's current head commit.
-   Confirm a docs-only PR passes with no additional review.
+1. Target the default branch (`main`).
+2. Require a pull request before merging, with 0 generally required
+   approvals (the status check handles path-specific approvals).
+3. Require the commit status `version-archives` to pass. Where available,
+   select GitHub Actions as the expected source.
+4. Prohibit force pushes and deletions; do not configure bypass permissions.
+5. Verify a test PR changing `versions/archive-0.1.0/` is blocked until
+   another write/admin collaborator approves the current head SHA.
+   Confirm that a `docs/`-only PR passes without this approval.
 
-To make the status selectable, first merge these workflows to main and open
-or update a test PR targeting main so version-archives runs once. You can then
-select it as a required check in the ruleset UI.
+After merging the workflow, open or update a PR to produce the first
+`version-archives` check if the ruleset UI does not yet list it.
 
-**Important:** Merely merging this PR does not activate protection. The
-ruleset must be created by an administrator, and protecting the ruleset
-settings themselves remains an administrative responsibility. Do not permit
-general GitHub App or administrator bypass if approval is mandatory.
+## Testing and version creation
 
-## Trusted execution design
+- `npm run test:versions` verifies archive detection, manifest generation,
+  staging, and cleanup.
+- `npm run build` reconstructs the temporary manifest, runs Docusaurus,
+  then cleans it up **even on failure**.
+- `npm start` reconstructs the same inputs for the development server
+  and cleans up when the server exits.
+- `npm run version:docs -- <version>` reconstructs the current versions,
+  runs Docusaurus version creation, copies the new archive and sidebar to
+  `versions/`, and removes the temporary manifest. Existing archives
+  cannot be overwritten by this command.
 
-- The privileged workflow version-archive-review.yml only checks out the
-  trusted main branch (never the contributor's PR head). It reads changed file
-  names, reviewers, and permissions from GitHub's API and writes a status.
-- A separate, unprivileged pull_request_review workflow uploads only a
-  numeric PR identifier to prompt reevaluation when an approval is added,
-  edited, or dismissed. The privileged workflow validates that identifier
-  and independently fetches the current PR, diff, and reviews.
-- Tests run locally using:
-  node --test .github/scripts/version-archive-review.test.cjs
-- Review the required checks again if changing these workflow files.
+The version number list is generated newest-first using numeric-aware
+sorting of folder suffixes, matching Docusaurus's required ordering.
+
+## Trusted status-check execution
+
+The privileged `version-archive-review.yml` workflow checks out **main**
+only, never PR-controlled code. An unprivileged
+`version-archive-review-signal.yml` workflow emits a validated numeric
+PR number for review-event rechecks. The trusted workflow independently
+fetches the changed paths and reviews through the GitHub API.
+
+Run `node --test .github/scripts/version-archive-review.test.cjs`
+to verify approval logic.

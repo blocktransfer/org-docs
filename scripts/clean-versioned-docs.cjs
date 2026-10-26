@@ -1,10 +1,14 @@
-const fs = require('fs');
-const path = require('path');
+'use strict';
 
-const siteDir = path.resolve(__dirname, '..');
+const fs = require('node:fs');
+const path = require('node:path');
+const defaultSiteDir = path.resolve(__dirname, '..');
 
-fs.rmSync(path.join(siteDir, 'versioned_docs'), {recursive: true, force: true});
-fs.rmSync(path.join(siteDir, 'versioned_sidebars'), {
-  recursive: true,
-  force: true,
-});
+function cleanVersionedDocs(siteDir = defaultSiteDir) {
+  fs.rmSync(path.join(siteDir, 'versioned_docs'), {recursive: true, force: true});
+  fs.rmSync(path.join(siteDir, 'versioned_sidebars'), {recursive: true, force: true});
+  fs.rmSync(path.join(siteDir, 'versions.json'), {force: true});
+}
+
+if (require.main === module) cleanVersionedDocs();
+module.exports = {cleanVersionedDocs};

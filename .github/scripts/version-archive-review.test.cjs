@@ -155,3 +155,21 @@ test('fails closed when GitHub caps changed files at 3000', async () => {
   );
   assert.deepEqual(gh.statuses.map(x => x.state), ['failure']);
 });
+
+
+test('protects version-generation scripts and manifest removal', () => {
+  assert.deepEqual(protectedFiles([
+    {filename: 'scripts/archive-versions.cjs'},
+    {filename: 'scripts/build-docusaurus.cjs'},
+    {filename: '.gitignore'},
+    {filename: 'versions.json'},
+    {filename: 'versions/history.json'},
+    {filename: 'docs/ordinary.md'}
+  ]), [
+    '.gitignore',
+    'scripts/archive-versions.cjs',
+    'scripts/build-docusaurus.cjs',
+    'versions.json',
+    'versions/history.json'
+  ]);
+});

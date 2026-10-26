@@ -6,7 +6,16 @@ const POLICY_PATHS = new Set([
   '.github/workflows/version-archive-review.yml',
   '.github/workflows/version-archive-review-signal.yml',
   '.github/scripts/version-archive-review.cjs',
-  '.github/scripts/version-archive-review.test.cjs'
+  '.github/scripts/version-archive-review.test.cjs',
+  '.gitignore',
+  'package.json',
+  'scripts/archive-versions.cjs',
+  'scripts/archive-versions.test.cjs',
+  'scripts/sync-versioned-docs.cjs',
+  'scripts/clean-versioned-docs.cjs',
+  'scripts/build-docusaurus.cjs',
+  'scripts/start-docusaurus.cjs',
+  'scripts/create-docs-version.cjs'
 ]);
 
 function protectedFiles(files) {

@@ -1,52 +1,46 @@
-const fs = require('fs');
-const path = require('path');
+'use strict';
 
-const siteDir = path.resolve(__dirname, '..');
-const sourceDocsDir = path.join(siteDir, 'versions');
-const docusaurusDocsDir = path.join(siteDir, 'versioned_docs');
-const sourceSidebarsDir = path.join(siteDir, 'versions', 'sidebars');
-const docusaurusSidebarsDir = path.join(siteDir, 'versioned_sidebars');
+const fs = require('node:fs');
+const path = require('node:path');
+const {generateManifest} = require('./archive-versions.cjs');
+const {cleanVersionedDocs} = require('./clean-versioned-docs.cjs');
 
-function syncDocs(sourceDir, targetDir) {
-  if (!fs.existsSync(sourceDir)) {
-    return;
-  }
+const defaultSiteDir = path.resolve(__dirname, '..');
 
-  fs.rmSync(targetDir, {recursive: true, force: true});
-  fs.mkdirSync(targetDir, {recursive: true});
+function syncVersionedDocs(siteDir = defaultSiteDir) {
+  const sourceDocsDir = path.join(siteDir, 'versions');
+  const docusaurusDocsDir = path.join(siteDir, 'versioned_docs');
+  const sourceSidebarsDir = path.join(sourceDocsDir, 'sidebars');
+  const docusaurusSidebarsDir = path.join(siteDir, 'versioned_sidebars');
 
-  for (const dirent of fs.readdirSync(sourceDir, {withFileTypes: true})) {
-    const match = /^archive-(.+)$/.exec(dirent.name);
-
-    if (dirent.isDirectory() && match) {
+  cleanVersionedDocs(siteDir);
+  try {
+    const versions = generateManifest(siteDir);
+    if (versions.length) {
+      fs.mkdirSync(docusaurusDocsDir, {recursive: true});
+      fs.mkdirSync(docusaurusSidebarsDir, {recursive: true});
+    }
+    for (const version of versions) {
       fs.cpSync(
-        path.join(sourceDir, dirent.name),
-        path.join(targetDir, `version-${match[1]}`),
-        {recursive: true},
+        path.join(sourceDocsDir, 'archive-' + version),
+        path.join(docusaurusDocsDir, 'version-' + version),
+        {recursive: true}
       );
-    }
-  }
-}
-
-function syncSidebars(sourceDir, targetDir) {
-  if (!fs.existsSync(sourceDir)) {
-    return;
-  }
-
-  fs.rmSync(targetDir, {recursive: true, force: true});
-  fs.mkdirSync(targetDir, {recursive: true});
-
-  for (const fileName of fs.readdirSync(sourceDir)) {
-    const match = /^version-(.+)\.json$/.exec(fileName);
-
-    if (match) {
+      const sidebar = path.join(sourceSidebarsDir, 'version-' + version + '.json');
+      if (!fs.existsSync(sidebar)) {
+        throw new Error('Missing archived sidebar for version ' + version + ': ' + sidebar);
+      }
       fs.copyFileSync(
-        path.join(sourceDir, fileName),
-        path.join(targetDir, `version-${match[1]}-sidebars.json`),
+        sidebar,
+        path.join(docusaurusSidebarsDir, 'version-' + version + '-sidebars.json')
       );
     }
+    return versions;
+  } catch (error) {
+    cleanVersionedDocs(siteDir);
+    throw error;
   }
 }
 
-syncDocs(sourceDocsDir, docusaurusDocsDir);
-syncSidebars(sourceSidebarsDir, docusaurusSidebarsDir);
+if (require.main === module) syncVersionedDocs();
+module.exports = {syncVersionedDocs};
