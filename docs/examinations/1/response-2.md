@@ -1,6 +1,6 @@
 ---
 title: "Examination Response #2"
-description: Redacted: Lost-securityholder searches, issuer records, onboarding, identity verification, and AML controls.
+description: "Redacted: Lost-securityholder searches, issuer records, onboarding, identity verification, and AML controls."
 sidebar_label: "Response #2"
 slug: /examinations/2
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Examination Response #8"
-description: Public: Response to examination findings and proposed operational remediation.
+description: "Public: Response to examination findings and proposed operational remediation."
 sidebar_label: "Response #8"
 slug: /examinations/8
 ---
