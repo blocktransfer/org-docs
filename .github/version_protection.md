@@ -36,8 +36,12 @@ create an active branch ruleset called **Version archive protection**:
 1. Target the default branch (`main`).
 2. Require a pull request before merging, with 0 generally required
    approvals (the status check handles path-specific approvals).
-3. Require the commit status `version-archives` to pass. Where available,
-   select GitHub Actions as the expected source.
+3. In the ruleset's **Require status checks to pass before merging** rule,
+   add the exact commit-status context `version-archives`. Where available,
+   choose GitHub Actions as its expected source. This is a commit **status**
+   posted by the verification workflow, not a ruleset-managed required workflow.
+   Do not use the separate organization-level **Require workflows to pass** rule
+   for this SEC-publications-style implementation.
 4. Prohibit force pushes and deletions; do not configure bypass permissions.
 5. Verify a test PR changing `versions/archive-0.1.0/` is blocked until
    another write/admin collaborator approves the current head SHA.

@@ -12,10 +12,10 @@ test('detects all protected version paths and historic rename sources', () => {
     { filename: 'versions/sidebars/version-0.1.0.json' },
     { filename: '.github/scripts/version-archive-review.cjs' },
     { filename: '.github/workflows/version-archive-review.yml' },
-    { filename: '.github/VERSION_PROTECTION.md' }
+    { filename: '.github/version_protection.md' }
   ]), [
-    '.github/VERSION_PROTECTION.md',
     '.github/scripts/version-archive-review.cjs',
+    '.github/version_protection.md',
     '.github/workflows/version-archive-review.yml',
     'versions/archive-0.1.0/intro.md',
     'versions/archive-0.1.0/old.md',
@@ -85,7 +85,7 @@ test('unrelated docs changes pass automatically without fetching reviews', async
 for (const filename of [
   'versions/archive-0.1.0/intro.md', 'versions/sidebars/version-0.1.0.json',
   '.github/scripts/version-archive-review.cjs',
-  '.github/VERSION_PROTECTION.md'
+  '.github/version_protection.md'
 ]) {
   test('unapproved protected change fails: ' + filename, async () => {
     const gh = fake({ files: [{ filename }] });

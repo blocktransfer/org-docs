@@ -2,7 +2,7 @@
 
 const STATUS_CONTEXT = 'version-archives';
 const POLICY_PATHS = new Set([
-  '.github/VERSION_PROTECTION.md',
+  '.github/version_protection.md',
   '.github/workflows/version-archive-review.yml',
   '.github/workflows/version-archive-review-signal.yml',
   '.github/scripts/version-archive-review.cjs',
