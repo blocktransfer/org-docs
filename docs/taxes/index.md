@@ -14,5 +14,13 @@ description: Tax checklist and records.
 
 ## Records
 
-- [2024 tax PDF](/files/taxes/2024.pdf)
-- [2025 tax PDF](/files/taxes/2025.pdf)
+### 2024
+
+- [Tax return](/ref/taxes/2024/return.pdf)
+- [Tax transcript](/ref/taxes/2024/transcript.pdf)
+
+### 2025
+
+- [Tax return](/ref/taxes/2025/return.pdf)
+- [Tax transcript](/ref/taxes/2025/transcript.pdf)
+- [Tax notice](/ref/taxes/2025/notice.pdf)
