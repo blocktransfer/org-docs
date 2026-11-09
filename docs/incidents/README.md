@@ -1,4 +1,4 @@
-# ORGANIZATION final as README
+# Sections
 
 - Risk registry
   - Control assessments
