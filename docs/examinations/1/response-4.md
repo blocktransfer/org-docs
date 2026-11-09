@@ -1,6 +1,6 @@
 ---
 title: "Examination Response #4"
-description: Redacted: Transaction evidence, account records, combined transactions, and public-ledger privacy.
+description: "Redacted: Transaction evidence, account records, combined transactions, and public-ledger privacy."
 sidebar_label: "Response #4"
 slug: /examinations/4
 ---
