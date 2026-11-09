@@ -24,13 +24,13 @@ Now consider Bitcoin, the only digital asset presently classified by our governm
 
 ## Early Bitcoin Days
 
-In the beginning, I think there is a real argument that Nakamoto was an insider out of the [few hundred](https://www.youtube.com/watch?v=r8xCmCq1muE&list=PLD_o9ntBnmGam9BuoTr_4cjPOksi1Dl1A) early Bitcoin adopters. Namely, Nakamoto was a driving force in building out new network infrastructure themself. They were effectively releasing a new product and then letting others claim their own stake vis-a-vi mining.
+In the beginning, I think there is a real argument that Nakamoto was an insider out of the [few hundred](https://www.youtube.com/watch?v=r8xCmCq1muE&list=PLD_o9ntBnmGam9BuoTr_4cjPOksi1Dl1A) early Bitcoin adopters. Namely, Nakamoto was a driving force in building out new network infrastructure themself. They were effectively releasing a new product and then letting others claim their own stake vis-à-vis mining.
 
 A [series of dot-com companies](https://www.bloomberglaw.com/external/document/X3SPR1KG000000/capital-markets-professional-perspective-airdrops-are-free-token) gave away free stock early on, in a similar spirit of fostering user adoption, increasing total investors, and gaining beneficial publicity. The SEC ultimately ruled these giveaway offerings as illegal securities law violations. And I think Bitcoin would have faced a similar outcome early on if meaningfully brought into courts before 2013.
 
 Could the government have shut it down? [Certainly not](https://www.youtube.com/watch?v=97ufCT6lQcY&list=PLWUFvhKuc_5uICfadww4PR76Rd2bl2MdT). But we might at least have better case law to reference today than the nuanced and intricate Ripple ruling with qualified purchasers. However, relevant to this discussion, very quickly after Nakamoto disappeared, Bitcoin effectively became a living thing.
 
-While control of certain web2 functions was handed off to another active developer, the actual Bitcoin blockchain was off to the races with an independent, completely decentralized, and self-incentivizing system. A radical [innovation](https://www.linkedin.com/pulse/step-function-innovation-myth-overnight-success-john-wooten-akl7e/) that ultimately lead an self-organizing community of open-source developers to continually improve upon Nakamoto’s [revelation](https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf).
+While control of certain web2 functions was handed off to another active developer, the actual Bitcoin blockchain was off to the races with an independent, completely decentralized, and self-incentivizing system. A radical [innovation](https://www.linkedin.com/pulse/step-function-innovation-myth-overnight-success-john-wooten-akl7e/) that ultimately led a self-organizing community of open-source developers to continually improve upon Nakamoto’s [revelation](https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf).
 
 Over a decade and a half later, regulators, investors, and users alike agree that nobody has any **inside knowledge** of Bitcoin’s next steps. Everything from code, mining software, and wallet implementations are open-source for everyone to see. Therefore there arguably exists no insider knowledge across digital assets (and therefore no need to regulate many cryptosystems for investor protections, like with commodities disclosures).
 
@@ -66,7 +66,7 @@ Capital (mostly) flows intelligently to any market's best opportunities, no matt
 
 In the internet era, international companies can access international investors with the [click of a button](https://finance.yahoo.com/news/traders-flouted-bitmex-us-trading-142817763.html). Entering web3, how do we protect investors against widespread [fraud](https://www.sec.gov/news/press-release/2018-53), [deceit](https://www.justice.gov/usao-sdny/pr/manhattan-us-attorney-announces-charges-against-leaders-onecoin-multibillion-dollar), and [inadequate disclosures](https://fortune.com/crypto/2024/03/03/sec-coinbase-insider-trading-kraken-howey-binance-ripple-terra/) in an increasingly worldwide capital market?
 
-This roots of this question came up in last week’s [Taking Stock](https://linktr.ee/takingstockpodcast). Namely, we were quibbling with how to prevent insider trading while protecting investor privacies.
+The roots of this question came up in last week’s [Taking Stock](https://linktr.ee/takingstockpodcast). Namely, we were quibbling with how to prevent insider trading while protecting investor privacies.
 
 ### Is Insider Trading Bad?
 
@@ -75,7 +75,6 @@ Say 5–40% of public company employees have insider knowledge at any time. I th
 The challenge with insider trading is investors don’t really see their losses. It’s a more nuanced, delayed extraction of value by corporate crooks. When they dump their shares after incredible earnings, for example, the stock still increases X%. But in reality, without insiders cashing in, you could argue that shares should’ve gone up Y%. It’s the same difficulty I face in explaining the international suppression of securities prices [from FTDs](https://www.youtube.com/watch?v=544BAtk2KLg&list=PLWUFvhKuc_5tD62OdZIv3HUaf4eBaQzG8).
 
 Mixed opinions surfaced with [Chives](https://www.youtube.com/watch?v=pfwEXHaNM54&list=PLD_o9ntBnmGaSraKlePO35JwWLvr2dl0r). I’d appreciate further discussion with everyone here. We can effectively police insider trading thoughtfully without completely revoking user privacy. It just comes down to designing open community reporting, analysis, and enforcement tools.
-
 
 ## Replacing Trade Reporting Facility/Rule 613
 
