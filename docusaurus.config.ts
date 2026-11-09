@@ -121,7 +121,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: 'BlockTransfer · <a href="https://github.com/blocktransfer/org-docs/blob/main/LICENSE-content">CC BY-SA 4.0</a>',
+      copyright: `BlockTransfer ${new Date().getFullYear()} · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>`,
     },
     prism: {
       additionalLanguages: ['powershell', 'bash'],
