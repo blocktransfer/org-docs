@@ -3,7 +3,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'BlockTransfer Org Docs',
-  tagline: 'Operational documents, records, and archived posts.',
+  tagline: 'Operational documents and records.',
   favicon: 'img/icon.png',
   url: 'https://blocktransfer.org',
   baseUrl: '/',
@@ -39,16 +39,7 @@ const config: Config = {
             },
           },
         },
-        blog: {
-          path: 'old_posts',
-          routeBasePath: 'blog',
-          blogTitle: 'Archived Posts',
-          blogDescription: 'Older BlockTransfer posts preserved with the organization docs.',
-          showReadingTime: true,
-          editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
-          onInlineAuthors: 'ignore',
-          onUntruncatedBlogPosts: 'ignore',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -62,7 +53,7 @@ const config: Config = {
         hashed: true,
         language: ['en'],
         indexDocs: true,
-        indexBlog: true,
+        indexBlog: false,
         indexPages: true,
         highlightSearchTermsOnTargetPage: true,
         searchResultLimits: 12,
@@ -86,7 +77,6 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Posts', position: 'left'},
         {
           type: 'docsVersionDropdown',
           position: 'right',

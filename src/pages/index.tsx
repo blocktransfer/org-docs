@@ -27,7 +27,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="BlockTransfer Org Docs"
-      description="Operational documents, records, and archived posts for BlockTransfer."
+      description="Operational documents and records for BlockTransfer."
     >
       <main>
         <section className={styles.hero}>
@@ -37,14 +37,14 @@ export default function Home(): ReactNode {
               BlockTransfer Org Docs
             </Heading>
             <p className={styles.subtitle}>
-              A Docusaurus site for internal documentation, public records, and archived posts.
+              A Docusaurus site for internal documentation and public records.
             </p>
             <div className={styles.actions}>
               <Link className="button button--primary" to="/docs/intro">
                 Open docs
               </Link>
-              <Link className="button button--secondary" to="/blog">
-                View posts
+              <Link className="button button--secondary" to="/docs/records">
+                Browse records
               </Link>
             </div>
           </div>
