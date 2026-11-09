@@ -1,0 +1,100 @@
+{
+  "docsSidebar": [
+    "intro",
+    "records",
+    {
+      "type": "category",
+      "label": "Examinations",
+      "link": {
+        "type": "doc",
+        "id": "examinations/index"
+      },
+      "items": [
+        {
+          "type": "category",
+          "label": "Examination #1",
+          "link": {
+            "type": "doc",
+            "id": "examinations/1/index"
+          },
+          "items": [
+            "examinations/1/response-1",
+            "examinations/1/response-2",
+            "examinations/1/response-3",
+            "examinations/1/response-4",
+            "examinations/1/response-5",
+            "examinations/1/response-6",
+            "examinations/1/response-7",
+            "examinations/1/response-8"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Operations",
+      "link": {
+        "type": "generated-index",
+        "title": "Operations"
+      },
+      "items": [
+        "operations/hot-operations",
+        "operations/extreme-compliance",
+        "operations/branding-internally"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Platform",
+      "link": {
+        "type": "generated-index",
+        "title": "Platform"
+      },
+      "items": [
+        "platform/backend-stellar",
+        "platform/issuerlink-features",
+        "platform/issuers-dot-info"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Investors",
+      "link": {
+        "type": "generated-index",
+        "title": "Investors"
+      },
+      "items": [
+        "investors/investor-banking",
+        "investors/investor-correspondence"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Incidents",
+      "items": [
+        "incidents/index",
+        "incidents/disposal-responsibility-map",
+        "incidents/disposal",
+        "incidents/customer-information",
+        "incidents/containment",
+        "incidents/assessment",
+        "incidents/notices",
+        "incidents/response",
+        "incidents/vendor-oversight",
+        "incidents/sections"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Taxes",
+      "items": [
+        "taxes/index",
+        "taxes/cash/index",
+        "taxes/cash/2025"
+      ]
+    },
+    "glossary",
+    "team",
+    "values"
+  ]
+}

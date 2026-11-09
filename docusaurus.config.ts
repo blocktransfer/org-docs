@@ -33,6 +33,10 @@ const config: Config = {
               label: 'Current',
               badge: false,
             },
+            '0.2.0': {
+              label: '14 Sep 2026',
+              banner: 'none',
+            },
             '0.1.0': {
               label: '2 Jun 2026',
               banner: 'none',
