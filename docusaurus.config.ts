@@ -111,7 +111,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} BlockTransfer.`,
+      copyright: `BlockTrans Syndicate · ${new Date().getFullYear()} <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>`,
     },
     prism: {
       additionalLanguages: ['powershell', 'bash'],
