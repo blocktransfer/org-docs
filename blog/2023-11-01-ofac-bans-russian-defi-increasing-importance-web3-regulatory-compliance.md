@@ -20,13 +20,13 @@ tags:
 
 Two days ago, WalletConnect restricted its availability in Russia in response to new legal and OFAC guidelines. WalletConnect, for those who aren't familiar, is a linchpin in the Web3 ecosystem. It's a crucial bridge that allows for seamless interactions between decentralized applications and personal crypto wallets. 
 
-The update has broader implications than just affecting Russian users—it's sending ripples through the Web3 and financial spaces. T his situation is a perfect example of how Web3 innovations and regulatory preparedness intersect—and why it’s more crucial than ever to be informed and ready. 
+The update has broader implications than just affecting Russian users—it's sending ripples through the Web3 and financial spaces. This situation is a perfect example of how Web3 innovations and regulatory preparedness intersect—and why it’s more crucial than ever to be informed and ready. 
 
 ## Financial Markets and Web3 
 
 In the traditional financial world, regulations are stringent, and for a good reason. They protect investors, maintain trust, and ensure the stability of capital markets. Web3 projects, especially those related to decentralized finance, are challenging the status quo by democratizing access to financial instruments. But with great power comes great responsibility—and that includes adhering to regulations designed to promote global stability. 
 
-Non-compliance can result in hefty fines, legal disputes, and can even spell the end for your project. I've seen projects go from hot to not overnight (and [vice versa](https://www.fxstreet.com/cryptocurrencies/news/xlm-price-skyrockets-nearly-100-enjoys-passive-gains-from-xrp-win-in-the-sec-vs-ripple-lawsuit-202307140106?utm_source=blog_refferal&utm_medium=block_transfer) ) because they ignored or underestimated compliance requirements. It's a reality check that comes in hard and fast. 
+Non-compliance can result in hefty fines, legal disputes, and can even spell the end for your project. I've seen projects go from hot to not overnight (and [vice versa](https://www.fxstreet.com/cryptocurrencies/news/xlm-price-skyrockets-nearly-100-enjoys-passive-gains-from-xrp-win-in-the-sec-vs-ripple-lawsuit-202307140106?utm_source=blog_refferal&utm_medium=block_transfer)) because they ignored or underestimated compliance requirements. It's a reality check that comes in hard and fast. 
 
 ### Regulatory Compliance? 
 
