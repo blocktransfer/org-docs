@@ -15,4 +15,4 @@ description: Incident response and Regulation S-P notes.
 - [Breach Notifications](notices.md)
 - [Incident Response Program](response.md)
 - [Vendor Oversight](vendor-oversight.md)
-- [Organization Notes](sections.md)
+- [Sections](README.md)

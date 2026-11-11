@@ -1,3 +1,8 @@
+---
+id: sections
+slug: /incidents/sections
+---
+
 # Sections
 
 - Risk registry
