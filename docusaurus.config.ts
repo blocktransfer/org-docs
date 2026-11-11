@@ -43,7 +43,6 @@ const config: Config = {
             },
           },
         },
-        // Retired blog posts leave no blog sidebar to configure.
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
