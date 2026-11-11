@@ -51,6 +51,8 @@ const config: Config = {
           routeBasePath: 'blog',
           blogTitle: 'Posts',
           blogDescription: 'BlockTransfer posts and organizational references.',
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
           onInlineAuthors: 'ignore',
