@@ -24,7 +24,7 @@ The checklist identifies forms tracked during preparation. The forms required in
 ## Supporting material
 
 - [Annual financial records](../finance/annual-records.md)
-- [Cash-tax working notes](./cash/index.md)
+- [Cash-tax working notes](./cash/README.md)
 
 :::caution Sensitive information
 

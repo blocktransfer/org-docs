@@ -13,7 +13,7 @@ This section explains how BlockTrans Syndicate records its finances and provides
 - [How the finances work](./how-finances-work.md) explains the reporting cycle and how the statements relate to one another.
 - [Operating balances](./operating-balances.md) presents period-end balances and explains which assets are available for operations.
 - [Annual financial records](./annual-records.md) collects the balance sheets, income statements, and supporting data by year.
-- [Taxes](../taxes/index.md) lists the tax forms tracked by the organization and the filed records available for download.
+- [Taxes](../taxes/README.md) lists the tax forms tracked by the organization and the filed records available for download.
 
 ## Latest published records
 

@@ -46,4 +46,4 @@ Downloads:
 
 ## Related records
 
-See [Taxes](../taxes/index.md) for the corresponding tax-return downloads and filing checklist.
+See [Taxes](../taxes/README.md) for the corresponding tax-return downloads and filing checklist.
