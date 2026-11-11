@@ -5,7 +5,9 @@ description: Balance sheets, income statements, and supporting financial data or
 
 # Annual Financial Records
 
-The downloadable workbooks are the source financial records. The summaries below make the headline figures easier to review; amounts are rounded to two decimal places for display.
+The balance sheets and income statements can be read directly on this site as Markdown tables, with separate links for each statement and year. This makes the figures easier to search, quote, share, and review without downloading spreadsheet software. The original workbooks remain available from their respective statement pages.
+
+Summaries below show headline figures rounded to two decimal places for display.
 
 ## 2025
 
@@ -20,11 +22,11 @@ Reporting period: January 1–December 31, 2025.
 | Operating expenses | $1,696.40 |
 | Net loss | $(696.40) |
 
-Downloads:
+Read the statements:
 
-- [Balance sheet](/files/financials/2025/Balance%20Sheet.xlsx)
-- [Income statement](/files/financials/2025/Income%20Statement.xlsx)
-- [XLM deposit detail](/files/financials/2025/xlm-deposits.csv)
+- [2025 balance sheet — full table](./2025-balance-sheet.md)
+- [2025 income statement — full table](./2025-income-statement.md)
+- [XLM deposit detail (CSV)](/files/financials/2025/xlm-deposits.csv)
 
 ## 2024
 
@@ -39,10 +41,10 @@ Reporting period: January 1–December 31, 2024.
 | Operating expenses | $2,718.83 |
 | Net loss | $(2,571.83) |
 
-Downloads:
+Read the statements:
 
-- [Balance sheet](/files/financials/2024/Balance%20Sheet.xlsx)
-- [Income statement](/files/financials/2024/Income%20Statement.xlsx)
+- [2024 balance sheet — full table](./2024-balance-sheet.md)
+- [2024 income statement — full table](./2024-income-statement.md)
 
 ## Related records
 

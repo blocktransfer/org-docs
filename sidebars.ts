@@ -96,7 +96,20 @@ const sidebars: SidebarsConfig = {
       items: [
         'finance/how-finances-work',
         'finance/operating-balances',
-        'finance/annual-records',
+        {
+          type: 'category',
+          label: 'Annual financial records',
+          link: {
+            type: 'doc',
+            id: 'finance/annual-records',
+          },
+          items: [
+            'finance/2025-balance-sheet',
+            'finance/2025-income-statement',
+            'finance/2024-balance-sheet',
+            'finance/2024-income-statement',
+          ],
+        },
         {
           type: 'category',
           label: 'Taxes',
