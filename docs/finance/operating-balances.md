@@ -35,4 +35,4 @@ The remaining reported assets primarily consisted of $14,230.21 in Stellar lumen
 - **Total assets** also include longer-term, deposited, or less-liquid holdings and therefore are not the same as the operating balance.
 - **Liabilities** are obligations recorded in the published balance sheet. A zero balance means none were recorded there at year-end; it does not predict future expenses.
 
-For the underlying figures, see [Annual financial records](./annual-records.md). These balances are historical snapshots and are not a live treasury dashboard.
+For the underlying figures, see the [2025 balance sheet](./2025-balance-sheet.md), the [2024 balance sheet](./2024-balance-sheet.md), and [Annual financial records](./annual-records.md). These balances are historical snapshots and are not a live treasury dashboard.
