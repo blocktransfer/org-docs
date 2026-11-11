@@ -86,7 +86,7 @@ const sidebars: SidebarsConfig = {
         'incidents/notices',
         'incidents/response',
         'incidents/vendor-oversight',
-        'incidents/sections',
+        'incidents/README',
       ],
     },
     {

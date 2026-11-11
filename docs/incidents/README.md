@@ -1,5 +1,4 @@
 ---
-id: sections
 slug: /incidents/sections
 ---
 
