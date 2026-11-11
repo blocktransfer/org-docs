@@ -75,7 +75,7 @@ const sidebars: SidebarsConfig = {
       label: 'Incidents',
       link: {
         type: 'doc',
-        id: 'incidents/index',
+        id: 'incidents/README',
       },
       items: [
         'incidents/disposal-responsibility-map',
@@ -86,7 +86,6 @@ const sidebars: SidebarsConfig = {
         'incidents/notices',
         'incidents/response',
         'incidents/vendor-oversight',
-        'incidents/README',
       ],
     },
     {
