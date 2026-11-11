@@ -75,6 +75,7 @@ const sidebars: SidebarsConfig = {
       label: 'Incidents',
       items: [
         'incidents/index',
+        'incidents/log',
         'incidents/disposal-responsibility-map',
         'incidents/disposal',
         'incidents/customer-information',
