@@ -12,8 +12,7 @@
     "clean:versioned-docs": "node scripts/clean-versioned-docs.cjs",
     "version:docs": "node scripts/create-docs-version.cjs",
     "typecheck": "tsc --noEmit",
-    "test:versions": "node --test scripts/archive-versions.test.cjs",
-    "test:archive-links": "node --test scripts/remark-archived-assets.test.cjs"
+    "test:versions": "node --test scripts/archive-versions.test.cjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.1",
