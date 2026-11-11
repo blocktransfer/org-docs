@@ -7,6 +7,8 @@ const { run, protectedFiles, approvedReviewers } = require('./version-archive-re
 test('detects all protected version paths and historic rename sources', () => {
   assert.deepEqual(protectedFiles([
     { filename: 'docs/intro.md' },
+    { filename: 'docs/bylaws.md' },
+    { filename: 'docs/renamed-bylaws.md', previous_filename: 'docs/bylaws.md' },
     { filename: 'versions/archive-0.1.0/intro.md' },
     { filename: 'new/location.md', previous_filename: 'versions/archive-0.1.0/old.md' },
     { filename: 'versions/sidebars/version-0.1.0.json' },
@@ -17,11 +19,25 @@ test('detects all protected version paths and historic rename sources', () => {
     '.github/scripts/version-archive-review.cjs',
     '.github/version_protection.md',
     '.github/workflows/version-archive-review.yml',
+    'docs/bylaws.md',
     'versions/archive-0.1.0/intro.md',
     'versions/archive-0.1.0/old.md',
     'versions/sidebars/version-0.1.0.json'
   ]);
   assert.deepEqual(protectedFiles([{ filename: 'docs/intro.md' }]), []);
+});
+
+test('protects bylaws additions, edits, deletions, and both rename directions', () => {
+  for (const file of [
+    { filename: 'docs/bylaws.md', status: 'added' },
+    { filename: 'docs/bylaws.md', status: 'modified' },
+    { filename: 'docs/bylaws.md', status: 'removed' },
+    { filename: 'docs/relocated.md', previous_filename: 'docs/bylaws.md', status: 'renamed' },
+    { filename: 'docs/bylaws.md', previous_filename: 'docs/old.md', status: 'renamed' }
+  ]) {
+    assert.ok(protectedFiles([file]).includes('docs/bylaws.md'));
+  }
+  assert.deepEqual(protectedFiles([{ filename: 'docs/bylaws-notes.md' }]), []);
 });
 
 test('only most recent independent human approval on exact head counts', () => {
@@ -85,7 +101,8 @@ test('unrelated docs changes pass automatically without fetching reviews', async
 for (const filename of [
   'versions/archive-0.1.0/intro.md', 'versions/sidebars/version-0.1.0.json',
   '.github/scripts/version-archive-review.cjs',
-  '.github/version_protection.md'
+  '.github/version_protection.md',
+  'docs/bylaws.md'
 ]) {
   test('unapproved protected change fails: ' + filename, async () => {
     const gh = fake({ files: [{ filename }] });
@@ -104,14 +121,16 @@ test('renaming a file out of versions still requires approval', async () => {
   assert.equal(errors.length, 1);
 });
 
-test('fresh independent contributor approval passes', async () => {
-  const gh = fake({
-    files: [{ filename: 'versions/sidebars/version-0.1.0.json' }],
-    reviews: [{ id: 1, user: { login: 'reviewer', type: 'User' }, state: 'APPROVED', commit_id: 'head' }]
+for (const filename of ['versions/sidebars/version-0.1.0.json', 'docs/bylaws.md']) {
+  test('fresh independent contributor approval passes: ' + filename, async () => {
+    const gh = fake({
+      files: [{ filename }],
+      reviews: [{ id: 1, user: { login: 'reviewer', type: 'User' }, state: 'APPROVED', commit_id: 'head' }]
+    });
+    await run({ github: gh, context, core: { setFailed: () => { throw new Error('unexpected'); } } });
+    assert.deepEqual(gh.statuses.map(x => x.state), ['pending', 'success']);
   });
-  await run({ github: gh, context, core: { setFailed: () => { throw new Error('unexpected'); } } });
-  assert.deepEqual(gh.statuses.map(x => x.state), ['pending', 'success']);
-});
+}
 
 test('stale review, bot review, self approval, or read-only reviewer fail', async () => {
   for (const [reviewer, permission] of [
