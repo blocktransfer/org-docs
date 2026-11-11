@@ -13,19 +13,22 @@ These files are copied into the Docusaurus static output so they remain availabl
 
 ## Taxes
 
-- [2024 tax PDF](/files/taxes/2024.pdf)
-- [2025 tax PDF](/files/taxes/2025.pdf)
+- [2024 tax return](/ref/taxes/2024/return.pdf)
+- [2024 tax transcript](/ref/taxes/2024/transcript.pdf)
+- [2025 tax return](/ref/taxes/2025/return.pdf)
+- [2025 tax transcript](/ref/taxes/2025/transcript.pdf)
+- [2025 tax notice](/ref/taxes/2025/notice.pdf)
 
 ## Financials
 
 For explanations and summarized figures, see [Taxes & Financials](./finance/index.md).
 
-- [2024 balance sheet](/files/financials/2024/Balance%20Sheet.xlsx)
-- [2024 income statement](/files/financials/2024/Income%20Statement.xlsx)
-- [2025 balance sheet](/files/financials/2025/Balance%20Sheet.xlsx)
-- [2025 income statement](/files/financials/2025/Income%20Statement.xlsx)
-- [2025 XLM deposits CSV](/files/financials/2025/xlm-deposits.csv)
+- [2024 balance sheet](/ref/financials/2024/Balance%20Sheet.xlsx)
+- [2024 income statement](/ref/financials/2024/Income%20Statement.xlsx)
+- [2025 balance sheet](/ref/financials/2025/Balance%20Sheet.xlsx)
+- [2025 income statement](/ref/financials/2025/Income%20Statement.xlsx)
+- [2025 XLM deposits CSV](/ref/financials/2025/xlm-deposits.csv)
 
 ## Onboarding
 
-- [Private client application](/files/onboarding/Private%20Client%20Application.pdf)
+- [Private client application](/ref/onboarding/Private%20Client%20Application.pdf)
