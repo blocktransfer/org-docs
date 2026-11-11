@@ -21,3 +21,5 @@ jobs:
         run: node --test scripts/archive-versions.test.cjs
       - name: Test historical asset link handling
         run: node --test .github/scripts/remark-archived-assets.test.cjs
+      - name: Test 404 history links
+        run: node --test .github/scripts/not-found-history.test.cjs
