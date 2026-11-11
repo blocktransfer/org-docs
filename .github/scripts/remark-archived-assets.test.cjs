@@ -2,7 +2,7 @@
 
 const assert = require("node:assert/strict");
 const {test} = require("node:test");
-const remarkArchivedAssets = require("./remark-archived-assets.cjs");
+const remarkArchivedAssets = require("../../scripts/remark-archived-assets.cjs");
 
 function run(file, nodes) {
   const tree = {type: "root", children: nodes};
