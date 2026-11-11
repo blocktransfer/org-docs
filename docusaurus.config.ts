@@ -76,10 +76,48 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'docsSidebar',
+          type: 'dropdown',
+          label: 'Organization',
           position: 'left',
-          label: 'Docs',
+          items: [
+            {type: 'doc', docId: 'intro', label: 'Introduction'},
+            {type: 'doc', docId: 'team', label: 'Team'},
+            {type: 'doc', docId: 'values', label: 'Values'},
+            {type: 'doc', docId: 'glossary', label: 'Glossary'},
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'Operations',
+          position: 'left',
+          items: [
+            {type: 'doc', docId: 'operations/hot-operations', label: 'Hot Operations'},
+            {type: 'doc', docId: 'operations/extreme-compliance', label: 'Extreme Compliance'},
+            {type: 'doc', docId: 'platform/issuerlink-features', label: 'Issuerlink Features'},
+            {type: 'doc', docId: 'investors/investor-correspondence', label: 'Investor Correspondence'},
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'Compliance',
+          position: 'left',
+          items: [
+            {type: 'doc', docId: 'examinations/index', label: 'Examinations'},
+            {type: 'doc', docId: 'incidents/index', label: 'Incidents'},
+            {type: 'doc', docId: 'incidents/response', label: 'Incident Response Program'},
+            {type: 'doc', docId: 'records', label: 'Records'},
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'Financials',
+          position: 'left',
+          items: [
+            {type: 'doc', docId: 'finance/index', label: 'Taxes & Financials'},
+            {type: 'doc', docId: 'finance/how-finances-work', label: 'How Finances Work'},
+            {type: 'doc', docId: 'finance/annual-records', label: 'Annual Financial Records'},
+            {type: 'doc', docId: 'taxes/index', label: 'Tax Records'},
+          ],
         },
         {
           type: 'docsVersionDropdown',

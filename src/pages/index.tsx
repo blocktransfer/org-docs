@@ -5,21 +5,36 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-const sections = [
+const featuredDocuments = [
   {
-    title: 'Operations',
-    description: 'Internal workflows, compliance planning, and support operations.',
-    to: '/docs/category/operations',
+    title: 'Our Values',
+    description: 'The principles behind how the organization operates.',
+    to: '/docs/values',
   },
   {
-    title: 'Platform',
-    description: 'Issuerlink, Stellar, disclosure, and platform planning notes.',
-    to: '/docs/category/platform',
+    title: 'Incident Response Program',
+    description: 'How incidents are assessed, contained, and handled.',
+    to: '/docs/incidents/response',
   },
   {
-    title: 'Records',
-    description: 'Static financial, tax, and onboarding records served with the site.',
-    to: '/docs/records',
+    title: 'Regulatory Examinations',
+    description: 'Examination records and responses.',
+    to: '/docs/examinations',
+  },
+  {
+    title: 'Issuerlink Features',
+    description: 'A closer look at the platform and its capabilities.',
+    to: '/docs/platform/issuerlink-features',
+  },
+  {
+    title: 'Operating Balances',
+    description: 'Period-end balances and their availability for operations.',
+    to: '/docs/finance/operating-balances',
+  },
+  {
+    title: 'Annual Financial Records',
+    description: 'Balance sheets, income statements, and supporting records.',
+    to: '/docs/finance/annual-records',
   },
 ];
 
@@ -49,13 +64,24 @@ export default function Home(): ReactNode {
             </div>
           </div>
         </section>
-        <section className={styles.sectionGrid}>
-          {sections.map((section) => (
-            <Link className={clsx(styles.sectionLink)} to={section.to} key={section.title}>
-              <Heading as="h2">{section.title}</Heading>
-              <p>{section.description}</p>
-            </Link>
-          ))}
+        <section className={styles.featuredDocuments} aria-labelledby="featured-documents-heading">
+          <div className={styles.featuredHeader}>
+            <Heading as="h2" id="featured-documents-heading">
+              Featured documents
+            </Heading>
+            <p>
+              A few starting points from the collection. Browse the navigation groups
+              or the documentation sidebar to explore the complete library.
+            </p>
+          </div>
+          <div className={styles.sectionGrid}>
+            {featuredDocuments.map((document) => (
+              <Link className={clsx(styles.sectionLink)} to={document.to} key={document.title}>
+                <Heading as="h3">{document.title}</Heading>
+                <p>{document.description}</p>
+              </Link>
+            ))}
+          </div>
         </section>
       </main>
     </Layout>
