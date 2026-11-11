@@ -13,7 +13,7 @@ BlockTrans Syndicate organizes its published financial information around an ann
 2. **Classify balances.** Period-end holdings are grouped as cash, cash equivalents, fixed assets, other investments, liabilities, or equity.
 3. **Prepare annual statements.** The income statement reports activity during the year. The balance sheet reports balances at the end of that year.
 4. **Prepare tax filings.** The annual statements and transaction details support the organization's tax return and related schedules.
-5. **Publish final records.** Completed statements, filings, and selected supporting data are made available in [Annual financial records](./annual-records.md) and [Taxes](../taxes/index.md).
+5. **Publish final records.** Completed statements, filings, and selected supporting data are made available in [Annual financial records](./annual-records.md) and [Taxes](../taxes/README.md).
 
 ## How to read the statements
 

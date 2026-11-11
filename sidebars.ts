@@ -9,7 +9,7 @@ const sidebars: SidebarsConfig = {
       label: 'Examinations',
       link: {
         type: 'doc',
-        id: 'examinations/index',
+        id: 'examinations/README',
       },
       items: [
         {
@@ -17,7 +17,7 @@ const sidebars: SidebarsConfig = {
           label: 'Examination #1',
           link: {
             type: 'doc',
-            id: 'examinations/1/index',
+            id: 'examinations/1/README',
           },
           items: [
             'examinations/1/response-1',
@@ -93,7 +93,7 @@ const sidebars: SidebarsConfig = {
       label: 'Taxes & Financials',
       link: {
         type: 'doc',
-        id: 'finance/index',
+        id: 'finance/README',
       },
       items: [
         'finance/how-finances-work',
@@ -103,8 +103,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Taxes',
           items: [
-            'taxes/index',
-            'taxes/cash/index',
+            'taxes/README',
+            'taxes/cash/README',
             'taxes/cash/2025',
           ],
         },

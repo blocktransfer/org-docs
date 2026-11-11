@@ -18,7 +18,7 @@ These files are copied into the Docusaurus static output so they remain availabl
 
 ## Financials
 
-For explanations and summarized figures, see [Taxes & Financials](./finance/index.md).
+For explanations and summarized figures, see [Taxes & Financials](./finance/README.md).
 
 - [2024 balance sheet](/files/financials/2024/Balance%20Sheet.xlsx)
 - [2024 income statement](/files/financials/2024/Income%20Statement.xlsx)

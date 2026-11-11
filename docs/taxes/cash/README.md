@@ -11,4 +11,4 @@ These are internal working notes for cash-basis tax preparation. They are not fi
 - Reconcile any cash-basis adjustments.
 - Complete basis tracking.
 
-See the [filed tax records](../index.md) for completed returns.
+See the [filed tax records](../README.md) for completed returns.
