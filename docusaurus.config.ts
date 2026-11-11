@@ -1,6 +1,8 @@
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const remarkArchivedAssets = require('./scripts/remark-archived-assets.cjs');
+
 const config: Config = {
   title: 'BlockTransfer Org Docs',
   tagline: 'Operational documents and records.',
@@ -25,6 +27,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          beforeDefaultRemarkPlugins: [remarkArchivedAssets],
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
           lastVersion: 'current',
