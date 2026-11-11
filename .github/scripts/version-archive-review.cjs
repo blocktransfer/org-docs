@@ -3,6 +3,7 @@
 const STATUS_CONTEXT = 'version-archives';
 const POLICY_PATHS = new Set([
   '.github/version_protection.md',
+  'docs/bylaws.md',
   '.github/workflows/version-archive-review.yml',
   '.github/workflows/version-archive-review-signal.yml',
   '.github/scripts/version-archive-review.cjs',
@@ -68,10 +69,10 @@ async function run({ github, context, core, pull_number }) {
     if (files.length >= 3000) throw new Error('PR has 3000+ files; cannot verify complete changes');
     const paths = protectedFiles(files);
     if (!paths.length) {
-      await status('success', 'No archive approval required');
+      await status('success', 'No protected-file approval required');
       return;
     }
-    await status('pending', 'Checking approvals for archived documentation changes');
+    await status('pending', 'Checking approvals for protected documentation changes');
     const reviews = await github.paginate(github.rest.pulls.listReviews, {
       owner, repo, pull_number: prNumber, per_page: 100
     });
@@ -83,14 +84,14 @@ async function run({ github, context, core, pull_number }) {
       if (['admin', 'write'].includes(data.permission)) eligible.push(reviewer);
     }
     if (eligible.length) {
-      await status('success', 'Archive changes approved by ' + eligible[0]);
+      await status('success', 'Protected changes approved by ' + eligible[0]);
     } else {
-      await status('failure', 'Archived documentation changes require approval');
+      await status('failure', 'Protected documentation changes require approval');
       core.setFailed('Changes to ' + paths.join(', ') +
         ' require a fresh APPROVED review from a different human with write/admin access on SHA ' + sha);
     }
   } catch (error) {
-    await status('failure', 'Unable to verify version archive approvals');
+    await status('failure', 'Unable to verify protected-file approvals');
     throw error;
   }
 }
