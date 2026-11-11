@@ -1,12 +1,9 @@
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const stripBlogPostDate = (permalink: string): string =>
-  permalink.replace(/^(\/blog)\/\d{4}\/\d{1,2}\/\d{1,2}\//, '$1/');
-
 const config: Config = {
   title: 'BlockTransfer Org Docs',
-  tagline: 'Operational documents, records, and posts.',
+  tagline: 'Operational documents and records.',
   favicon: 'img/icon.png',
   url: 'https://blocktransfer.org',
   baseUrl: '/',
@@ -46,37 +43,7 @@ const config: Config = {
             },
           },
         },
-        blog: {
-          path: 'blog',
-          routeBasePath: 'blog',
-          blogTitle: 'Posts',
-          blogDescription: 'BlockTransfer posts and organizational references.',
-          blogSidebarTitle: 'All posts',
-          blogSidebarCount: 'ALL',
-          showReadingTime: true,
-          editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
-          onInlineAuthors: 'ignore',
-          onUntruncatedBlogPosts: 'ignore',
-          processBlogPosts: async ({blogPosts}) => {
-            const processedPosts = blogPosts.map((post) => ({
-              ...post,
-              metadata: {
-                ...post.metadata,
-                permalink: stripBlogPostDate(post.metadata.permalink),
-              },
-            }));
-            const permalinks = new Set<string>();
-            for (const post of processedPosts) {
-              if (permalinks.has(post.metadata.permalink)) {
-                throw new Error(
-                  `Duplicate blog-post permalink: ${post.metadata.permalink}`,
-                );
-              }
-              permalinks.add(post.metadata.permalink);
-            }
-            return processedPosts;
-          },
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -90,7 +57,7 @@ const config: Config = {
         hashed: true,
         language: ['en'],
         indexDocs: true,
-        indexBlog: true,
+        indexBlog: false,
         indexPages: true,
         highlightSearchTermsOnTargetPage: true,
         searchResultLimits: 12,
@@ -114,7 +81,6 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Posts', position: 'left'},
         {
           type: 'docsVersionDropdown',
           position: 'right',
