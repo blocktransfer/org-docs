@@ -22,9 +22,9 @@ Reporting period: January 1–December 31, 2025.
 
 Downloads:
 
-- [Balance sheet](/files/financials/2025/Balance%20Sheet.xlsx)
-- [Income statement](/files/financials/2025/Income%20Statement.xlsx)
-- [XLM deposit detail](/files/financials/2025/xlm-deposits.csv)
+- [Balance sheet](/ref/financials/2025/Balance%20Sheet.xlsx)
+- [Income statement](/ref/financials/2025/Income%20Statement.xlsx)
+- [XLM deposit detail](/ref/financials/2025/xlm-deposits.csv)
 
 ## 2024
 
@@ -41,8 +41,8 @@ Reporting period: January 1–December 31, 2024.
 
 Downloads:
 
-- [Balance sheet](/files/financials/2024/Balance%20Sheet.xlsx)
-- [Income statement](/files/financials/2024/Income%20Statement.xlsx)
+- [Balance sheet](/ref/financials/2024/Balance%20Sheet.xlsx)
+- [Income statement](/ref/financials/2024/Income%20Statement.xlsx)
 
 ## Related records
 
