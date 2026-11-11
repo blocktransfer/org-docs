@@ -73,8 +73,11 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Incidents',
+      link: {
+        type: 'doc',
+        id: 'incidents/README',
+      },
       items: [
-        'incidents/index',
         'incidents/disposal-responsibility-map',
         'incidents/disposal',
         'incidents/customer-information',
@@ -83,16 +86,28 @@ const sidebars: SidebarsConfig = {
         'incidents/notices',
         'incidents/response',
         'incidents/vendor-oversight',
-        'incidents/sections',
       ],
     },
     {
       type: 'category',
-      label: 'Taxes',
+      label: 'Taxes & Financials',
+      link: {
+        type: 'doc',
+        id: 'finance/index',
+      },
       items: [
-        'taxes/index',
-        'taxes/cash/index',
-        'taxes/cash/2025',
+        'finance/how-finances-work',
+        'finance/operating-balances',
+        'finance/annual-records',
+        {
+          type: 'category',
+          label: 'Taxes',
+          items: [
+            'taxes/index',
+            'taxes/cash/index',
+            'taxes/cash/2025',
+          ],
+        },
       ],
     },
     'glossary',

@@ -3,7 +3,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'BlockTransfer Org Docs',
-  tagline: 'Operational documents, records, and archived posts.',
+  tagline: 'Operational documents and records.',
   favicon: 'img/icon.png',
   url: 'https://blocktransfer.org',
   baseUrl: '/',
@@ -33,22 +33,17 @@ const config: Config = {
               label: 'Current',
               badge: false,
             },
+            '0.2.0': {
+              label: '14 Sep 2026',
+              banner: 'none',
+            },
             '0.1.0': {
               label: '2 Jun 2026',
               banner: 'none',
             },
           },
         },
-        blog: {
-          path: 'old_posts',
-          routeBasePath: 'blog',
-          blogTitle: 'Archived Posts',
-          blogDescription: 'Older BlockTransfer posts preserved with the organization docs.',
-          showReadingTime: true,
-          editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
-          onInlineAuthors: 'ignore',
-          onUntruncatedBlogPosts: 'ignore',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -62,7 +57,7 @@ const config: Config = {
         hashed: true,
         language: ['en'],
         indexDocs: true,
-        indexBlog: true,
+        indexBlog: false,
         indexPages: true,
         highlightSearchTermsOnTargetPage: true,
         searchResultLimits: 12,
@@ -86,7 +81,6 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Posts', position: 'left'},
         {
           type: 'docsVersionDropdown',
           position: 'right',
@@ -117,7 +111,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} BlockTransfer.`,
+      copyright: `BlockTrans Syndicate · ${new Date().getFullYear()} <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>`,
     },
     prism: {
       additionalLanguages: ['powershell', 'bash'],

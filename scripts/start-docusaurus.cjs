@@ -1,49 +1,32 @@
-const {spawn} = require('child_process');
-const fs = require('fs');
-const path = require('path');
+'use strict';
+
+const {spawn} = require('node:child_process');
+const path = require('node:path');
+const {syncVersionedDocs} = require('./sync-versioned-docs.cjs');
+const {cleanVersionedDocs} = require('./clean-versioned-docs.cjs');
 
 const siteDir = path.resolve(__dirname, '..');
 const docusaurusBin = process.platform === 'win32' ? 'npx.cmd' : 'npx';
 const args = ['docusaurus', 'start', ...process.argv.slice(2)];
-const useShell = process.platform === 'win32';
 
-function cleanup() {
-  fs.rmSync(path.join(siteDir, 'versioned_docs'), {
-    recursive: true,
-    force: true,
-  });
-  fs.rmSync(path.join(siteDir, 'versioned_sidebars'), {
-    recursive: true,
-    force: true,
-  });
-}
-
-require('./sync-versioned-docs.cjs');
+syncVersionedDocs(siteDir);
 
 const child = spawn(docusaurusBin, args, {
   cwd: siteDir,
-  shell: useShell,
+  shell: process.platform === 'win32',
   stdio: 'inherit',
 });
 
-child.on('error', (error) => {
-  cleanup();
+child.on('error', error => {
+  cleanVersionedDocs(siteDir);
   console.error(error);
-  process.exit(1);
+  process.exitCode = 1;
 });
-
 child.on('exit', (code, signal) => {
-  cleanup();
-
-  if (signal) {
-    process.kill(process.pid, signal);
-  } else {
-    process.exit(code ?? 0);
-  }
+  cleanVersionedDocs(siteDir);
+  if (signal) process.kill(process.pid, signal);
+  else process.exitCode = code ?? 1;
 });
-
 for (const signal of ['SIGINT', 'SIGTERM']) {
-  process.on(signal, () => {
-    child.kill(signal);
-  });
+  process.on(signal, () => child.kill(signal));
 }
