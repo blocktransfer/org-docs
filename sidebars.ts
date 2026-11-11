@@ -73,8 +73,11 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Incidents',
+      link: {
+        type: 'doc',
+        id: 'incidents/index',
+      },
       items: [
-        'incidents/index',
         'incidents/disposal-responsibility-map',
         'incidents/disposal',
         'incidents/customer-information',
