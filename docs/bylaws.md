@@ -1,52 +1,38 @@
-<!--
-Transcription of Corporate Bylaws.pdf (7 pages), retrieved 2026-11-12.
-Source: https://workdrive.zohoexternal.com/file/m9dnr5d30879b418549f1955458a415816e64
-Requested destination: docs/bylaws.md (https://github.com/blocktransfer/org-docs/pull/56).
-Original wording, blank fields, and checked/unchecked choices are retained.
-Form field values were read separately and checked against all rendered pages.
-Handwritten signature and date are transcribed in brackets; this is not a new signature.
-The title's corporation-name line and Article IV's meeting-demand deadline are blank in the source.
-Page numbers, repeated eForms footer graphics, and physical page breaks are omitted.
-No substantive amendments or corrections have been made.
--->
+# Bylaws of BlockTrans Syndicate
 
-# BYLAWS OF
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-## I. INCORPORATION
+## I. Incorporation
 
 It is recognized that BlockTrans Syndicate (“Corporation”) is a duly organized corporation authorized to do business in the State of Delaware, ("State of Formation") by its Articles of Incorporation or similar registered documents.
 
-## II. STATE LAW
+## II. State Law
 
 The Corporation is organized under the relevant laws of the State of Formation (“Statutes”), and except as otherwise provided herein, the Statutes shall apply to the governance of the Corporation.
 
-## III. PURPOSE
+## III. Purpose
 
 The purpose of the Corporation is to engage in any lawful activity for which corporations may be formed.
 
-## IV. ANNUAL MEETING
+## IV. Annual Meeting
 
 Meetings of Shareholders shall be held at the principal office of the Corporation or at such other place that may be determined from time to time by the Board of Directors of the Corporation. The purpose of the annual meeting shall be to elect the Board of Directors, officers and decide on any other business activities and/or corporate decisions.
 
-An annual meeting must be held within 13 months after the last annual meeting or the date of the original organization of the Corporation. If an annual meeting has not been made within such time, then any Shareholder or Director may demand a meeting to be held within \_\_\_\_ days after proper notice has been made.
+An annual meeting must be held within 13 months after the last annual meeting or the date of the original organization of the Corporation. If an annual meeting has not been made within such time, then any Shareholder or Director may demand a meeting to be held within [unspecified number of] days after proper notice has been made.
 
-## V. SPECIAL MEETINGS
+## V. Special Meetings
 
 Unless otherwise proscribed by statute, special meetings of the Shareholders may be called by: (check all that apply)
 
 - [x] President (or Chief Executive Officer).
 
-- [ ] \_\_\_\_% of the Board of Directors.
+- [ ] [unspecified percentage] of the Board of Directors.
 
-- [ ] \_\_\_\_% of the Shareholders.
+- [ ] [unspecified percentage] of the Shareholders.
 
-- [ ] Other. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- [ ] Other. [left blank]
 
 After a special meeting has been called, the Board of Directors shall decide its time and place within 14 days after the special meeting has been called.
 
-## VI. PLACE OF MEETINGS
+## VI. Place of Meetings
 
 Annual and special meetings shall be determined by the Board of Directors. By default, such meetings shall take place at the principal office of the Corporation. Shareholders of all classes and series may attend any meeting of the Corporation.
 
@@ -56,21 +42,21 @@ Such meetings may be attended: (check all that apply)
 
 - [x] Via remote communication, the method to be determined by the Board of Directors.
 
-- [ ] Other. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- [ ] Other. [left blank]
 
 All communication methods shall offer each attending Shareholder the right to be present, vote on business matters, and provide their consent or dissent for any actionable item.
 
-## VII. DISSOLUTION
+## VII. Dissolution
 
 The Corporation may only be dissolved in the following ways: (check all that apply)
 
-- [ ] \_\_\_\_% vote by the Board of Directors.
+- [ ] [unspecified percentage] vote by the Board of Directors.
 
 - [x] 90% vote by the Shareholders.
 
-- [ ] Other. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- [ ] Other. [left blank]
 
-## VIII. NOTICE OF MEETINGS
+## VIII. Notice of Meetings
 
 Written notice shall be provided to each Shareholder of any meeting that such Shareholder is permitted to take action in the form of a vote and/or offer their consent or dissent for any actionable item. Such written notice shall detail the time, place, remote access (if available), and in the case of a special meeting, the purpose or purposes for which the meeting is called. Unless otherwise provided by law, written notice of any meeting shall be given not less than ten (10) days and no more than sixty (60) days before the date of the meeting.
 
@@ -84,21 +70,21 @@ Notice of any meeting can be sent to the Shareholders by the following method(s)
 
 - [ ] Hand-Delivered.
 
-- [ ] Other. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- [ ] Other. [left blank]
 
-## IX. QUORUM
+## IX. Quorum
 
 A quorum, which represents the required number of individuals to be present to hold an annual or special meeting, shall be: (check all that apply)
 
-- [ ] \_\_\_\_% of the Board of Directors being present.
+- [ ] [unspecified percentage] of the Board of Directors being present.
 
 - [x] 10% of the Shareholders being present.
 
-- [ ] Other. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- [ ] Other. [left blank]
 
 Upon meeting the requirements of the quorum, the attending individuals of the meeting shall be able to take action and make decisions for the Corporation.
 
-## X. ACTIONS OF THE CORPORATION
+## X. Actions of the Corporation
 
 Actions made on behalf of the Corporation must be: (check one)
 
@@ -106,7 +92,7 @@ Actions made on behalf of the Corporation must be: (check one)
 
 - [x] Can be Made WITHOUT a Meeting. Any action required to be taken or which may be taken at any meeting, whether annual or special, may be taken without a meeting, without prior notice, and without a vote, if consent is in writing, setting forth the action so taken, and shall be signed by the holders of outstanding shares having not less than the minimum number of votes that would be necessary to take such action at a meeting at which all Shareholders entitled to vote were present and voted.
 
-## XI. CORPORATE SEAL
+## XI. Corporate Seal
 
 The Corporation shall: (check one)
 
@@ -114,7 +100,7 @@ The Corporation shall: (check one)
 
 - [x] NOT HAVE a Corporate Seal.
 
-## XII. EXECUTION OF DOCUMENTS
+## XII. Execution of Documents
 
 All contracts, checks, drafts, demands for money, notes, and other legal instruments or rights of any nature of the Corporation may be signed by: (check all that apply)
 
@@ -130,7 +116,7 @@ All contracts, checks, drafts, demands for money, notes, and other legal instrum
 
 - [x] Other. John Wooten.
 
-## XIII. INDEMNIFICATION
+## XIII. Indemnification
 
 Subject to any applicable statute, any Director or Officer of the Corporation shall: (check one)
 
@@ -138,17 +124,17 @@ Subject to any applicable statute, any Director or Officer of the Corporation sh
 
 - [ ] NOT BE INDEMNIFIED or held harmless in any way by the Corporation.
 
-## XIV. AMENDMENTS
+## XIV. Amendments
 
 These Bylaws may be amended by: (check all that apply):
 
-- [ ] \_\_\_\_% vote of the Board of Directors.
+- [ ] [unspecified percentage] vote of the Board of Directors.
 
 - [x] 75% vote of the Shareholders.
 
-- [ ] Other. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- [ ] Other. [left blank]
 
-## XV. STOCK CERTIFICATES
+## XV. Stock Certificates
 
 The Corporation may provide shares of stock: (check one)
 
@@ -156,7 +142,7 @@ The Corporation may provide shares of stock: (check one)
 
 - [x] WITHOUT CERTIFICATES. The Corporation, within a reasonable time after issue or transfer of shares without certificates, provide Shareholders a written statement of the information that is required by law to be on the certificates.
 
-## XVI. DIRECTORS
+## XVI. Directors
 
 The Corporation shall be managed by 1 Directors, who together constitute the Board of Directors.
 
@@ -184,11 +170,11 @@ The Corporation shall be managed by 1 Directors, who together constitute the Boa
 
 **l.) Compensation.** The Board of Directors shall have the authority to fix the compensation of Directors. A fixed sum and expenses of attendance may be allowed for each regular or special meeting of the Board, including their services as a member of committees of the Board.
 
-## XVII. CONFLICT OF INTEREST
+## XVII. Conflict of Interest
 
 A Director of the Corporation has a conflict of interest if the Director has an existing or potential business, financial or personal interest or holds an elected or appointed position that could impair or might reasonably appear to impair the exercise of independent, unbiased judgment in the discharge of his or her responsibilities to the Corporation. A conflict will be deemed to exist if the business, financial or personal interest or elected or appointed position is held by the Director or by a family member (spouse, parent, siblings, children or another close relative), or any organization in which the Director; or family member as defined, is an officer, Director, employee, trustee or material stockholder. If the Director in question disputes as to whether a conflict of interest is present, the matter shall be decided by a majority vote of the Board of Directors.
 
-## XVIII. OFFICERS
+## XVIII. Officers
 
 The officers of the Corporation shall be a Chairperson, a President, a Secretary, and a Treasurer, and such other officers as the Board may from time to time appoint, including one or more Vice Presidents and such other officers as it deems advisable. Each such officer shall exercise such powers and perform such duties as shall be set forth herein and such other powers and duties as may be specified from time to time by the Board of Directors. The officers of the Corporation shall be elected by the Board of Directors. Each of the Chairperson, President, and/or any Vice Presidents may have powers that are only delegated to them by the Board of Directors.
 
@@ -202,11 +188,11 @@ The officers of the Corporation shall be a Chairperson, a President, a Secretary
 
 The officers of the Corporation shall hold office until their successors are chosen and have qualified or until their earlier resignation or removal. Any officer or agent elected or appointed by the Board may be removed at any time, with or without cause, by the affirmative vote of a majority of the Board of Directors. Any vacancy occurring in any office as a result of death, resignation, removal, or otherwise shall be filled for the unexpired portion of the term by a majority vote of the Board of Directors. Any and all compensation of officers of the Corporation shall be fixed by the Board of Directors.
 
-## XIX. LIST OF SHAREHOLDERS
+## XIX. List of Shareholders
 
 The officer of the Corporation who has charge of the stock ledger of the Corporation shall prepare and make, at least ten (10) days before any meeting of Shareholders, a complete list of the Shareholders entitled to vote at the meeting, arranged alphabetically, and showing the address of each Shareholder and the number of shares held by each Shareholder. The list shall be open to the examination of any Shareholder for any purpose germane to the meeting, during ordinary business hours, for a period of at least ten (10) days before the meeting, either at a mutually agrees upon location or where the meeting is to be held. The list shall also be produced and kept available at the time and place of the meeting, for the entire duration of the meeting, and can be inspected by any shareholder present at the meeting.
 
-## XX. CERTIFICATION
+## XX. Certification
 
 The original, or a copy of these bylaws, as amended or otherwise altered to date, certified by the Secretary, shall be kept at the Corporation's principal executive office and shall be open to inspection by the stockholders of the Corporation, at all reasonable times during office hours.
 
