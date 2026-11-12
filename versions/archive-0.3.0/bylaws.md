@@ -1,15 +1,3 @@
-<!--
-Transcription of Corporate Bylaws.pdf (7 pages), retrieved 2026-11-12.
-Source: https://workdrive.zohoexternal.com/file/m9dnr5d30879b418549f1955458a415816e64
-Requested destination: docs/bylaws.md (https://github.com/blocktransfer/org-docs/pull/56).
-The checked and unchecked choices are retained; original unfilled form fields are explicitly marked.
-Form field values were read separately and checked against all rendered pages.
-Handwritten signature and date are transcribed in brackets; this is not a new signature.
-The corporation-name line was blank in the source and is completed from Article I; Article IV's meeting-demand deadline remains unspecified.
-Page numbers, repeated eForms footer graphics, and physical page breaks are omitted.
-No substantive amendments or corrections have been made.
--->
-
 # Bylaws of BlockTrans Syndicate
 
 ## I. incorporation
