@@ -6,6 +6,21 @@ const sidebars: SidebarsConfig = {
     'records',
     {
       type: 'category',
+      label: 'Governance',
+      link: {
+        type: 'generated-index',
+        title: 'Governance',
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'bylaws',
+          label: 'Bylaws',
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Examinations',
       link: {
         type: 'doc',
