@@ -11,6 +11,8 @@ The root manifest is ignored by Git. Do **not** create `versions/history.json`.
 Protected changes include:
 
 - All paths under `versions/`, including archived snapshots and sidebars.
+- `docs/bylaws.md`, the governing bylaws path proposed in PR #56, including
+  additions, amendments, deletions, and renames to or from this path.
 - The version generation, staging and cleanup scripts under `scripts/`.
 - `package.json`, `.gitignore`, the version-protection policy, and the
   privileged verifier workflow and helper files to prevent unreviewed bypasses.
@@ -45,7 +47,8 @@ create an active branch ruleset called **Version archive protection**:
 4. Prohibit force pushes and deletions; do not configure bypass permissions.
 5. Verify a test PR changing `versions/archive-0.1.0/` is blocked until
    another write/admin collaborator approves the current head SHA.
-   Confirm that a `docs/`-only PR passes without this approval.
+   Confirm that an unrelated `docs/`-only PR passes without this approval,
+   while a PR modifying `docs/bylaws.md` requires approval.
 
 After merging the workflow, open or update a PR to produce the first
 `version-archives` check if the ruleset UI does not yet list it.
