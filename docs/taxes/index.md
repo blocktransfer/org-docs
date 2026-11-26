@@ -33,9 +33,3 @@ The checklist identifies forms tracked during preparation. The forms required in
 
 - [Annual financial records](../finance/annual-records.md)
 - [Cash-tax working notes](./cash/index.md)
-
-:::caution Sensitive information
-
-Review tax documents for information that should not be disclosed before sharing them beyond their intended audience.
-
-:::
