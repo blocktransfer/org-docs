@@ -19,8 +19,8 @@ This section explains how BlockTrans Syndicate records its finances and provides
 
 The latest complete period currently published is the year ended December 31, 2025.
 
-- [2025 balance sheet](/ref/financials/2025/Balance%20Sheet.xlsx)
-- [2025 income statement](/ref/financials/2025/Income%20Statement.xlsx)
+- 2025 balance sheet: [Published PDF](https://issuers.info/1846058/bal/2025-12-31_annual.pdf) · [Source workbook](/ref/financials/2025/Balance%20Sheet.xlsx)
+- 2025 income statement (profit and loss): [Published PDF](https://issuers.info/1846058/pnl/2025-12-31_annual.pdf) · [Source workbook](/ref/financials/2025/Income%20Statement.xlsx)
 - [2025 XLM deposit detail](/ref/financials/2025/xlm-deposits.csv)
 - [2025 tax return](/ref/taxes/2025/return.pdf)
 
