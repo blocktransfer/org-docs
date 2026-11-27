@@ -2,7 +2,7 @@
 
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { run, protectedFiles, approvedReviewers } = require('./version-archive-review.cjs');
+const { run, protectedFiles, approvedReviewers, exactNewArchive, parseSidebarSource } = require('./version-archive-review.cjs');
 
 test('detects all protected version paths and historic rename sources', () => {
   assert.deepEqual(protectedFiles([
@@ -171,4 +171,80 @@ test('protects version-generation scripts and archives', () => {
 
 test('generated root manifest does not require archive reviewer approval', () => {
   assert.deepEqual(protectedFiles([{filename: 'versions.json'}]), []);
+});
+
+function snapshotFixture() {
+  const entry = (path, sha, type = 'tree') => ({ path, sha, type, mode: type === 'tree' ? '040000' : '100644' });
+  const source = "const sidebars: SidebarsConfig = { docsSidebar: ['intro', { type: 'doc', id: 'bylaws', },], }; export default sidebars;";
+  const blobs = new Map([['source', source], ['snapshot', JSON.stringify({docsSidebar: ['intro', {id: 'bylaws', type: 'doc'}]})]]);
+  const trees = new Map([
+    ['base', [entry('docs', 'docs'), entry('sidebars.ts', 'source', 'blob'), entry('versions', 'oldVersions')]],
+    ['head', [entry('docs', 'docs'), entry('sidebars.ts', 'source', 'blob'), entry('versions', 'newVersions')]],
+    ['oldVersions', [entry('archive-0.2.0', 'oldDocs'), entry('sidebars', 'oldSidebars')]],
+    ['newVersions', [entry('archive-0.2.0', 'oldDocs'), entry('archive-0.3.0', 'docs'), entry('sidebars', 'newSidebars')]],
+    ['oldSidebars', [entry('version-0.2.0.json', 'oldSidebar', 'blob')]],
+    ['newSidebars', [entry('version-0.2.0.json', 'oldSidebar', 'blob'), entry('version-0.3.0.json', 'snapshot', 'blob')]]
+  ]);
+  const files = [
+    { filename: 'versions/archive-0.3.0/intro.md', status: 'added' },
+    { filename: 'versions/archive-0.3.0/bylaws.md', status: 'added' },
+    { filename: 'versions/sidebars/version-0.3.0.json', status: 'added' },
+    { filename: 'docusaurus.config.ts', status: 'modified' }
+  ];
+  const pr = { state: 'open', base: { ref: 'main', sha: 'base' }, head: { sha: 'head' }, user: { login: 'author' } };
+  const github = fake({ files });
+  github.rest.pulls.get = async () => ({ data: pr });
+  github.rest.git = {
+    getCommit: async ({ commit_sha }) => ({ data: { tree: { sha: commit_sha } } }),
+    getTree: async ({ tree_sha }) => ({ data: { tree: trees.get(tree_sha), truncated: false } }),
+    getBlob: async ({ file_sha }) => ({ data: { encoding: 'base64', content: Buffer.from(blobs.get(file_sha)).toString('base64') } })
+  };
+  return { github, owner: 'blocktransfer', repo: 'org-docs', pr, files, trees, blobs, entry };
+}
+
+test('static sidebar parser does not evaluate code', () => {
+  assert.deepEqual(parseSidebarSource("const sidebars: SidebarsConfig = { docsSidebar: ['a', {type: 'doc', id: 'b',},], }; export default sidebars;"),
+    { docsSidebar: ['a', {type: 'doc', id: 'b'}] });
+  assert.throws(() => parseSidebarSource("const sidebars: SidebarsConfig = { docsSidebar: [process.exit()] }; export default sidebars;"), SyntaxError);
+});
+
+test('exact new snapshot passes without an independent reviewer', async () => {
+  const f = snapshotFixture();
+  assert.equal(await exactNewArchive(f), true);
+  await run({ github: f.github, context, core: { setFailed: () => { throw new Error('unexpected'); } } });
+  assert.deepEqual(f.github.statuses.map(x => x.state), ['pending', 'success']);
+  assert.match(f.github.statuses.at(-1).description, /exactly matches/);
+});
+
+for (const [label, mutate] of [
+  ['partial or altered snapshot', f => { f.trees.get('newVersions')[1].sha = 'different'; }],
+  ['changed live docs', f => { f.trees.get('head')[0].sha = 'different'; }],
+  ['changed live sidebar', f => { f.trees.get('head')[1].sha = 'different'; }],
+  ['incorrect sidebar', f => { f.blobs.set('snapshot', '{"docsSidebar":[]}'); }],
+  ['missing sidebar', f => { f.trees.get('newSidebars').pop(); }],
+  ['new files in an existing version', f => { f.trees.get('oldVersions').push(f.entry('archive-0.3.0', 'oldDocs')); }],
+  ['existing sidebar version', f => { f.trees.get('oldSidebars').push(f.entry('version-0.3.0.json', 'oldSidebar', 'blob')); }],
+  ['mixed archive modifications', f => { f.files.push({filename: 'versions/archive-0.2.0/intro.md', status: 'modified'}); }],
+  ['mixed policy modifications', f => { f.files.push({filename: '.github/scripts/version-archive-review.cjs', status: 'modified'}); }],
+  ['rename from an older archive', f => { f.files[0].previous_filename = 'versions/archive-0.2.0/intro.md'; f.files[0].status = 'renamed'; }],
+  ['unexpected old archive tree change', f => { f.trees.get('newVersions')[0].sha = 'different'; }],
+  ['unexpected old sidebar change', f => { f.trees.get('newSidebars')[0].sha = 'different'; }],
+  ['multiple new versions', f => { f.files.push({filename: 'versions/archive-0.4.0/intro.md', status: 'added'}); }]
+]) {
+  test('new snapshot exemption rejects ' + label, async () => {
+    const f = snapshotFixture();
+    mutate(f);
+    assert.equal(await exactNewArchive(f), false);
+    const failures = [];
+    await run({ github: f.github, context, core: { setFailed: x => failures.push(x) } });
+    assert.equal(f.github.statuses.at(-1).state, 'failure');
+    assert.equal(failures.length, 1);
+  });
+}
+
+test('new snapshot Git API failure fails closed', async () => {
+  const f = snapshotFixture();
+  f.github.rest.git.getTree = async () => ({ data: { tree: [], truncated: true } });
+  await assert.rejects(run({ github: f.github, context, core: { setFailed() {} } }), /Incomplete Git tree/);
+  assert.equal(f.github.statuses.at(-1).state, 'failure');
 });

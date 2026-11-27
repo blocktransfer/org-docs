@@ -15,7 +15,15 @@ Protected changes include:
 - `package.json`, `.gitignore`, the version-protection policy, and the
   privileged verifier workflow and helper files to prevent unreviewed bypasses.
 
-Any PR targeting main that modifies a protected path (including removals
+A PR adding one entirely new archive and its sidebar may pass without an
+independent review when the archive is an exact Git-tree copy of `docs/`
+from the PR's pinned main base commit, the sidebar is structurally equal to
+that commit's static `sidebars.ts`, and neither live source changes in the PR.
+All existing archive and sidebar entries must be unchanged. Mixed protected
+changes, renames, partial snapshots, and unverifiable sidebar syntax do not
+qualify for the exemption.
+
+Any other PR targeting main that modifies a protected path (including removals
 and old names of renamed files) requires an explicit APPROVED review of
 the PR's **current head commit** from another human with write/admin
 permission on this repository. A stale, self, bot, dismissed, or read-only
@@ -45,7 +53,7 @@ create an active branch ruleset called **Version archive protection**:
 4. Prohibit force pushes and deletions; do not configure bypass permissions.
 5. Verify a test PR changing `versions/archive-0.1.0/` is blocked until
    another write/admin collaborator approves the current head SHA.
-   Confirm that a `docs/`-only PR passes without this approval.
+   Confirm that a `docs/`-only PR and an exact new archive pass without this approval.
 
 After merging the workflow, open or update a PR to produce the first
 `version-archives` check if the ruleset UI does not yet list it.
@@ -72,7 +80,8 @@ The privileged `version-archive-review.yml` workflow checks out **main**
 only, never PR-controlled code. An unprivileged
 `version-archive-review-signal.yml` workflow emits a validated numeric
 PR number for review-event rechecks. The trusted workflow independently
-fetches the changed paths and reviews through the GitHub API.
+fetches the changed paths, pinned Git trees, sidebar blobs, and reviews through
+the GitHub API. It parses static sidebar data without evaluating PR code.
 
 Run `node --test .github/scripts/version-archive-review.test.cjs`
 to verify approval logic.
