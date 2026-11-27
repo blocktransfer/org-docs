@@ -16,7 +16,7 @@ The purpose of the Corporation is to engage in any lawful activity for which cor
 
 Meetings of Shareholders shall be held at the principal office of the Corporation or at such other place that may be determined from time to time by the Board of Directors of the Corporation. The purpose of the annual meeting shall be to elect the Board of Directors, officers and decide on any other business activities and/or corporate decisions.
 
-An annual meeting must be held within 13 months after the last annual meeting or the date of the original organization of the Corporation. If an annual meeting has not been made within such time, then any Shareholder or Director may demand a meeting to be held within [unspecified number of] days after proper notice has been made.
+An annual meeting must be held within 13 months after the last annual meeting or the date of the original organization of the Corporation. If an annual meeting has not been made within such time, then any Shareholder or Director may demand a meeting to be held within [TODO: unspecified number of] days after proper notice has been made.
 
 ## V. Special Meetings
 
@@ -24,11 +24,11 @@ Unless otherwise proscribed by statute, special meetings of the Shareholders may
 
 - [x] President (or Chief Executive Officer).
 
-- [ ] [unspecified percentage] of the Board of Directors.
+- [ ] [TODO: unspecified percentage] of the Board of Directors.
 
-- [ ] [unspecified percentage] of the Shareholders.
+- [ ] [TODO: unspecified percentage] of the Shareholders.
 
-- [ ] Other. [left blank]
+- [ ] Other. [TODO: left blank]
 
 After a special meeting has been called, the Board of Directors shall decide its time and place within 14 days after the special meeting has been called.
 
@@ -42,7 +42,7 @@ Such meetings may be attended: (check all that apply)
 
 - [x] Via remote communication, the method to be determined by the Board of Directors.
 
-- [ ] Other. [left blank]
+- [ ] Other. [TODO: left blank]
 
 All communication methods shall offer each attending Shareholder the right to be present, vote on business matters, and provide their consent or dissent for any actionable item.
 
@@ -50,11 +50,11 @@ All communication methods shall offer each attending Shareholder the right to be
 
 The Corporation may only be dissolved in the following ways: (check all that apply)
 
-- [ ] [unspecified percentage] vote by the Board of Directors.
+- [ ] [TODO: unspecified percentage] vote by the Board of Directors.
 
 - [x] 90% vote by the Shareholders.
 
-- [ ] Other. [left blank]
+- [ ] Other. [TODO: left blank]
 
 ## VIII. Notice of Meetings
 
@@ -70,17 +70,17 @@ Notice of any meeting can be sent to the Shareholders by the following method(s)
 
 - [ ] Hand-Delivered.
 
-- [ ] Other. [left blank]
+- [ ] Other. [TODO: left blank]
 
 ## IX. Quorum
 
 A quorum, which represents the required number of individuals to be present to hold an annual or special meeting, shall be: (check all that apply)
 
-- [ ] [unspecified percentage] of the Board of Directors being present.
+- [ ] [TODO: unspecified percentage] of the Board of Directors being present.
 
 - [x] 10% of the Shareholders being present.
 
-- [ ] Other. [left blank]
+- [ ] Other. [TODO: left blank]
 
 Upon meeting the requirements of the quorum, the attending individuals of the meeting shall be able to take action and make decisions for the Corporation.
 
@@ -128,11 +128,11 @@ Subject to any applicable statute, any Director or Officer of the Corporation sh
 
 These Bylaws may be amended by: (check all that apply):
 
-- [ ] [unspecified percentage] vote of the Board of Directors.
+- [ ] [TODO: unspecified percentage] vote of the Board of Directors.
 
 - [x] 75% vote of the Shareholders.
 
-- [ ] Other. [left blank]
+- [ ] Other. [TODO: left blank]
 
 ## XV. Stock Certificates
 
