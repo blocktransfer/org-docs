@@ -5,7 +5,7 @@ description: Balance sheets, income statements, and supporting financial data or
 
 # Annual Financial Records
 
-The downloadable workbooks are the source financial records. The summaries below make the headline figures easier to review; amounts are rounded to two decimal places for display.
+The downloadable workbooks are the source financial records. Published PDF statements are available through the [issuer disclosure page](https://issuers.info/1846058/). The summaries below make the headline figures easier to review; amounts are rounded to two decimal places for display.
 
 ## 2025
 
@@ -22,9 +22,9 @@ Reporting period: January 1–December 31, 2025.
 
 Downloads:
 
-- [Balance sheet](/files/financials/2025/Balance%20Sheet.xlsx)
-- [Income statement](/files/financials/2025/Income%20Statement.xlsx)
-- [XLM deposit detail](/files/financials/2025/xlm-deposits.csv)
+- Balance sheet: [Published PDF](https://issuers.info/1846058/bal/2025-12-31_annual.pdf) · [Source workbook](/ref/financials/2025/Balance%20Sheet.xlsx)
+- Income statement (profit and loss): [Published PDF](https://issuers.info/1846058/pnl/2025-12-31_annual.pdf) · [Source workbook](/ref/financials/2025/Income%20Statement.xlsx)
+- [XLM deposit detail](/ref/financials/2025/xlm-deposits.csv)
 
 ## 2024
 
@@ -41,8 +41,8 @@ Reporting period: January 1–December 31, 2024.
 
 Downloads:
 
-- [Balance sheet](/files/financials/2024/Balance%20Sheet.xlsx)
-- [Income statement](/files/financials/2024/Income%20Statement.xlsx)
+- Balance sheet: [Published PDF](https://issuers.info/1846058/bal/2024-12-31_annual.pdf) · [Source workbook](/ref/financials/2024/Balance%20Sheet.xlsx)
+- Income statement (profit and loss): [Published PDF](https://issuers.info/1846058/pnl/2024-12-31_annual.pdf) · [Source workbook](/ref/financials/2024/Income%20Statement.xlsx)
 
 ## Related records
 

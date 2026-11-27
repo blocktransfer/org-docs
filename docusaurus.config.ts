@@ -1,6 +1,8 @@
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const remarkArchivedAssets = require('./scripts/remark-archived-assets.cjs');
+
 const config: Config = {
   title: 'BlockTransfer Org Docs',
   tagline: 'Operational documents and records.',
@@ -25,12 +27,13 @@ const config: Config = {
       'classic',
       {
         docs: {
+          beforeDefaultRemarkPlugins: [remarkArchivedAssets],
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/blocktransfer/org-docs/tree/main/',
           lastVersion: 'current',
           versions: {
             current: {
-              label: 'Current',
+              label: '0.3.0',
               badge: false,
             },
             '0.2.0': {
@@ -81,6 +84,7 @@ const config: Config = {
           position: 'left',
           items: [
             {type: 'doc', docId: 'intro', label: 'Introduction'},
+            {type: 'doc', docId: 'bylaws', label: 'Bylaws'},
             {type: 'doc', docId: 'team', label: 'Team'},
             {type: 'doc', docId: 'values', label: 'Values'},
             {type: 'doc', docId: 'glossary', label: 'Glossary'},
@@ -103,7 +107,7 @@ const config: Config = {
           position: 'left',
           items: [
             {type: 'doc', docId: 'examinations/index', label: 'Examinations'},
-            {type: 'doc', docId: 'incidents/index', label: 'Incidents'},
+            {type: 'doc', docId: 'incidents/README', label: 'Incidents'},
             {type: 'doc', docId: 'incidents/response', label: 'Incident Response Program'},
             {type: 'doc', docId: 'records', label: 'Records'},
           ],

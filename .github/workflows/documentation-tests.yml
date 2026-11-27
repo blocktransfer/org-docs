@@ -1,0 +1,25 @@
+name: Documentation regression tests
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test version archive generation
+        run: node --test scripts/archive-versions.test.cjs
+      - name: Test historical asset link handling
+        run: node --test .github/scripts/remark-archived-assets.test.cjs
+      - name: Test 404 history links
+        run: node --test .github/scripts/not-found-history.test.cjs
