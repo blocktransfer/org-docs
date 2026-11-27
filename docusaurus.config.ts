@@ -33,8 +33,12 @@ const config: Config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '0.3.0',
+              label: 'Current',
               badge: false,
+            },
+            '0.3.0': {
+              label: '27 Nov 2026',
+              banner: 'none',
             },
             '0.2.0': {
               label: '14 Sep 2026',
