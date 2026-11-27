@@ -5,8 +5,6 @@ sidebar_label: "Response #6"
 slug: /examinations/6
 ---
 
-import ExamPdf from '@site/src/components/ExamPdf';
-
 # Examination Response #6
 
 This July 1, 2025 letter responds to staff's June 27 document request. It addresses controls over authorized supply, the recording of issue dates and investor information, and the documentation used when holdings are revoked or reissued.
@@ -20,4 +18,4 @@ This July 1, 2025 letter responds to staff's June 27 document request. It addres
 - Capitalization-table omissions involving minor or beneficial ownership
 - Revocation, reissuance, claimable balances, and supporting authorization records
 
-<ExamPdf src="/ref/exams/6.pdf" title="Examination Response #6 PDF" />
+<Pdf src="/ref/exams/6.pdf" title="Examination Response #6 PDF" />

@@ -5,8 +5,6 @@ sidebar_label: "Response #8"
 slug: /examinations/8
 ---
 
-import ExamPdf from '@site/src/components/ExamPdf';
-
 # Examination Response #8
 
 This September 15, 2025 letter responds to the findings of BlockTransfer's first Commission examination, including the August 14 deficiency letter reproduced in the response. It combines responses to individual findings with proposed technical, procedural, and governance improvements.
@@ -21,4 +19,4 @@ This September 15, 2025 letter responds to the findings of BlockTransfer's first
 - Principal-office requirements, mail-processing arrangements, and distributed operational models
 - Proposed community participation and governance structures for future remediation
 
-<ExamPdf src="/ref/exams/8.pdf" title="Examination Response #8 PDF" />
+<Pdf src="/ref/exams/8.pdf" title="Examination Response #8 PDF" />
